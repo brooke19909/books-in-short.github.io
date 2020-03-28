@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🏂🏻 ⏪ 🙅🏼 Theoretical Foundations of Electrical Engineering: Nodal Stress Method 👨🏻‍🌾 ⚗️ 🌦️</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="The method of nodal stresses is the calculation of electrical circuits in which the voltage values ​​in the nodes of the circuits relative to the base...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Theoretical Foundations of Electrical Engineering: Nodal Stress Method</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  The method of nodal stresses is the calculation of electrical circuits in which the voltage values ​​in the nodes of the circuits relative to the base node are variables.  The equations are compiled on the basis of the first <span>Kirchhoff law,</span> which allows us to reduce the number of system equations to a value of k-1, where k is the number of chain nodes.  This method is best used when the number of branches of an electric circuit is more than two.  The method of nodal stresses has found application in computer programs for modeling electrical circuits, due to the simplicity of the algorithm for generating equations of nodes. </p><div class="photo iau"><img itemprop="image" alt="Nodal stress method" class="if" height="202" src="//fb.ru/misc/i/gallery/14901/275698.jpg" width="472"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  Nodal voltages are the voltages between an arbitrary reference node (in it, the potential is taken equal to zero) and each of the nodes.  In the diagrams, the reference node is displayed grounded. </p><p>  <strong>Consider various methods for calculating electrical circuits</strong> </p><p>  The essence of this method is to solve a system of equations by which the potentials of each circuit node are determined with respect to the reference node.  After that, the circuit is calculated using Ohm's law, that is, the values ​​of the currents of all branches are determined. </p><p>  Complex circuits are calculated in the following sequence: </p><p>  1. A schematic diagram is drawn up, with all the elements. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><p>  2. An arbitrary reference node is assigned.  Moreover, it is recommended to choose a node in which the largest number of branches converges. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="methods for calculating electrical circuits" class="if" height="410" src="//fb.ru/misc/i/gallery/14901/275700.jpg" width="438"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  3. An arbitrary <span>direction of the currents</span> in all branches is specified, which is indicated in the diagram. </p><p>  4. To calculate the potentials of the remaining nodes in relation to the selected reference node, a system of equations is compiled. </p><p>  The equalities of such a system will have the following form: </p><p>  U1G11 - U2G12 - ... - UsG1s - UnG1n = ∑1EG + ∑1J </p><p>  -U1G21 + U2G22 - ... - UsG2s - UnG2n = ∑2EG + ∑2J </p><p>  …………………………………………………………………………………. </p><p>  U1Gn1 - U2Gn2 - ... - UsGns + UnGnn = ∑nEG + ∑nJ, where: </p><ul><li>  G is the sum of the conductivity of the branches connected to the node; </li><li>  U is the value of nodal stresses; </li><li>  ∑EG is the algebraic sum of the values ​​of the products of the EMF of the branches that are adjacent to the node on their conductivity.  (In the case when the emf acts in the direction of the node, then the product is assigned the sign "+", otherwise - "-".) </li></ul>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="circuit design" class="if" height="287" src="//fb.ru/misc/i/gallery/14901/275702.jpg" width="390"></div>  The system of equations described above makes it easy to calculate the desired values ​​of nodal stresses.  It has a name - a system of nodal equations.  In the case when a complex electrical circuit consists of the nth number of nodes, it is necessary to draw up the nodal equations one less than the number of nodes.  Considering that all equations are written on the basis of the first Kirchhoff law, the calculated circuit must contain exclusively independent sources of electric current.  In the event that the circuit contains voltage sources, they must be replaced with equivalent <span>current sources.</span>  In addition, nodal equations can be written in matrix form. 
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  5. The system of equations is solved with respect to the nodal stresses, determining their values. </p><p>  6. After that, for each branch separately, according to Ohm's law, all values ​​of the electric current in the circuit are calculated. </p><p>  I = (Ua - Ub + ∑Eab) / ∑Rab, where: </p><ul><li>  I is the current value of the branch of the circuit; </li><li>  Ua is the potential of node a; </li><li>  Ub is the potential of node b; </li><li>  ∑Eab is the algebraic sum of this branch; </li><li>  ∑Rab is the arithmetic sum of the resistances of this branch. </li></ul><p>  <strong>Nodal stress method for circuits consisting of two nodes</strong> </p><p>  When calculating electrical circuits that contain only two nodes, the system of equations will consist of one equation, from which it is possible to directly calculate the value of the node voltage: </p><p>  U = (∑nEnGn + ∑nJn) / ∑mGm, where: </p><ul><li>  ∑nEnGn is the algebraic sum of the values ​​of the products of the EMF of the branches on the conductivity of these branches; </li><li>  ∑nJn is the algebraic sum of the values ​​of current sources; </li><li>  ∑mGm is the arithmetic sum of the conductivities of all branches between nodes. </li></ul><p>  The nodal stress method has the following mathematical advantages: ease of calculation and a significant reduction in the number of arithmetic operations. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G2647/index.html">Monument to Peter 1 "The Bronze Horseman". Where is the monument to Peter 1</a></li>
+<li><a href="../G26470/index.html">Bely Yar, Verkhneketsky district of Tomsk region: location, attractions, standard of living and infrastructure</a></li>
+<li><a href="../G26471/index.html">Herbert Clark Hoover, 31st US President: biography, personal life, political career</a></li>
+<li><a href="../G26472/index.html">What is a germ in zoology and botany</a></li>
+<li><a href="../G26473/index.html">Glavstroy: Northern Valley - description of residential complex, reviews</a></li>
+<li><a href="../G26475/index.html">The outflow of capital is the reason. Capital outflows - statistics</a></li>
+<li><a href="../G26476/index.html">Novgorod veche. History of the Novgorod Republic</a></li>
+<li><a href="../G26477/index.html">Periodization of Roman law, stages of evolution</a></li>
+<li><a href="../G26478/index.html">IPhone 4 how to flash? Instructions and firmware methods</a></li>
+<li><a href="../G26479/index.html">Citin Garden Resort 3 * (Thailand, Pattaya): hotel description, reviews</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

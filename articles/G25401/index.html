@@ -1,0 +1,234 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>😄 💇🏼 👩🏽‍🤝‍👨🏿 Logistic regression: model and methods 🧒🏼 ◻️ 👨🏿</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="Methods of logistic regression and discriminant analysis are used when it is necessary to clearly differentiate respondents by target categories. More...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Logistic regression: model and methods</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  <span>Methods of logistic regression</span> and discriminant analysis are used when it is necessary to clearly differentiate respondents by target categories.  Moreover, the groups themselves are represented by the levels of one univariate parameter.  Let us consider in more detail the <span>model of logistic regression,</span> and also find out why it is needed. </p><div class="photo iau"><img itemprop="image" alt="logistic regression" class="if" height="289" src="//fb.ru/misc/i/gallery/20016/1528655.jpg" width="438"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  General information </h2><p>  An example of a problem in the solution of which <span>logistic regression</span> is used can be the classification of respondents by groups of buyers and non-buyers of mustard.  Differentiation is carried out in accordance with socio-demographic characteristics.  These, in particular, include age, gender, number of relatives, income, etc. In operations, there are differentiation criteria and a variable.  The latter encodes target categories into which, in fact, it is necessary to divide respondents. </p><h2>  Nuances </h2><p>  It should be said that the range of cases in which <span>logistic regression</span> is applied is much narrower than for discriminant analysis.  In this regard, the use of the latter as a universal method of differentiation is considered more preferable.  Moreover, experts recommend starting classification studies with discriminant analysis.  And only in case of uncertainty about the results can logistic regression be used.  This need is due to several factors.  <span>Logistic regression is</span> used when there is a clear idea of ​​the type of independent and dependent variables.  In accordance with this, one of the 3 possible procedures is selected.  In discriminant analysis, the researcher always deals with one static operation.  It involves one dependent and several independent categorical variables with a scale of any type. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  Kinds </h2><p>  The task of a statistical study that uses <span>logistic regression</span> is to determine the likelihood that a particular respondent will be assigned to a particular group.  Differentiation is carried out according to certain parameters.  In practice, in accordance with the values ​​of one or several independent factors, it is possible to classify respondents into two groups.  In this case, there is a <span>binary logistic regression</span> .  Also, the specified parameters can be used when distributing to groups of more than two.  In such a situation, there is a multinomial logistic regression.  The resulting groups are expressed by the levels of a single variable. </p><div class="photo iau"><img itemprop="image" alt="logistic regression" class="if" height="400" src="//fb.ru/misc/i/gallery/20016/1528656.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  Example </h2><p>  Suppose there are respondents' answers to the question of whether they are interested in a proposal to acquire a land plot in a suburb of Moscow.  In this case, the options are "no" and "yes."  It is necessary to find out exactly which factors have a primary influence on the decision of potential buyers.  To do this, the respondents are asked questions about the infrastructure of the territory, the distance to the capital, the area of ​​the plot, the presence / absence of a residential building, etc. Using binary regression, we can distribute the respondents into two groups.  The first will include those who are interested in acquiring potential buyers, and the second, respectively, those who are not interested in such an offer.  For each respondent, in addition, the probability of being assigned to one or another category will be calculated. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><h2>  Comparative characteristics </h2><p>  The difference from the two options indicated above is in the different number of groups and the type of dependent and independent variables.  In binary regression, for example, the dependence of the dichotomous factor on one or more independent conditions is studied.  Moreover, the latter can have any type of scale.  Multinominal regression is considered a variation of this classification option.  In it, more than 2 groups belong to the dependent variable.  Independent factors must have either an ordinal or nominal scale. </p><h2>  Logistic regression in spss </h2><p>  In statistical package 11-12, a new version of the analysis was introduced - ordinal.  This method is used when the dependent factor refers to the eponymous (ordinal) scale.  In this case, independent variables are selected of one particular type.  They must be either ordinal or nominal.  Classification into several categories is considered the most universal.  This method can be used in all studies that use <span>logistic regression.</span>  <span>Improving the quality of the model</span> , however, is only possible with all three tricks. </p><div class="photo iau"><img itemprop="image" alt="quality control of adequacy and logistic regression" class="if" height="500" src="//fb.ru/misc/i/gallery/20016/1528657.jpg" width="500"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  Ordinal classification </h2><p>  It is worth saying that earlier in the statistical package there was no standard possibility of performing specialized analysis for dependent factors with an ordinal scale.  For all variables with the number of groups more than 2, the multinominal option was used.  The recently introduced ordinal analysis has a number of features.  They take into account the specifics of the scale.  Meanwhile, in methodological manuals, ordinal <span>logistic regression is</span> often not considered as a separate technique.  This is due to the following: ordinal analysis does not have any significant advantages over multinominal.  The researcher may well use the latter in the presence of both an ordinal and a nominal dependent variable.  Moreover, the classification processes themselves hardly differ from each other.  This means that conducting an ordinal analysis will not cause any difficulties. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><h2>  Analysis Option </h2><p>  Let's consider a simple case - binary regression.  Suppose, in the process of marketing research, the demand for graduates of a certain metropolitan university is assessed.  The questionnaire asked respondents questions, including: </p><ol><li>  Are you working?  (ql). </li><li>  Indicate the year of graduation (q 21). </li><li>  What is the average graduation point (aver). </li><li>  Gender (q22). </li></ol><p>  <span>Logistic regression</span> will allow us to evaluate the effect of independent factors aver, q 21 and q 22 on the variable ql.  Simply put, the purpose of the analysis will be to determine the likely employment of graduates based on gender, graduation year, and GPA. </p><div class="photo iau"><img itemprop="image" alt="logistic sigmoid regression indicator" class="if" height="450" src="//fb.ru/misc/i/gallery/20016/1528658.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  Logistic regression </h2><p>  To set parameters using binary regression, use the Analyze►Regression►Binary Logistic menu.  In the Logistic Regression window, you need to select the dependent factor in the left list of available variables.  It is ql.  This variable must be placed in the Dependent field.  After that, independent factors must be introduced into the Covariates site - q 21, q 22, aver.  Then you need to choose the method of their inclusion in the analysis.  If the number of independent factors is more than 2, not the method of simultaneous introduction of all variables, which is set by default, is used, but step-by-step.  The most popular way is Backward: LR.  Using the Select button, you can include in the study not all respondents, but only a specific target category. </p><h2>  Define Categorical Variables </h2><p>  The Categorical button should be used when one of the independent variables is the nominal one with more than 2 categories.  In this situation, just such a parameter is placed in the Define Categorical Variables window on the Categorical Covariates section.  In this example, such a variable is absent.  After that, in the Contrast drop-down list, select the Deviation item and click the Change button.  As a result, several dependent variables will be formed from each nominal factor.  Their number corresponds to the number of categories of the initial condition. </p><h2>  Save New Variables </h2><p>  Using the Save button in the main study dialog box, you can create new parameters.  They will contain indicators calculated during the regression process.  In particular, you can create variables that define: </p><ol><li>  Belonging to a specific classification category (Groupmembership). </li><li>  The probability of assigning the respondent to each study group (Probabilities). </li></ol><p>  When using the Options button, the researcher does not receive any significant opportunities.  Accordingly, it can be ignored.  After clicking the “OK” button, the analysis results will be displayed in the main window. </p><div class="photo iau"><img itemprop="image" alt="logistic regression coefficient" class="if" height="384" src="//fb.ru/misc/i/gallery/20016/1528659.jpg" width="587"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  Verification of the quality of adequacy and logistic regression </h2><p>  Consider the Omnibus Testsof Model Coefficients table.  It displays the results of the analysis of the quality of approximation of the model.  Due to the fact that a step-by-step option was set, you need to look at the results of the last stage (Step2).  A positive result will be considered such that an increase in the Chi-square indicator is detected when moving to the next stage with a high degree of significance (Sig. &lt;0.05).  The quality of the model is evaluated on the Model line.  If a negative value is obtained, but it is not considered significant when the overall high materiality of the model, the latter can be considered practically suitable. </p><h2>  Tables </h2><p>  Model Summary makes it possible to evaluate the indicator of total dispersion, which is described by the constructed model (indicator R Square).  The Nagelker value is recommended.  A positive indicator can be considered the parameter Nagelkerke R Square, if it is higher than 0.50.  After that, the classification results are evaluated, in which the actual indicators of belonging to one or another of the studied categories are compared with those predicted on the basis of the regression model.  To do this, use the Classification Table.  It also allows us to draw conclusions about the correctness of differentiation for each group under consideration. </p><div class="photo iau"><img itemprop="image" alt="logistic regression model" class="if" height="338" src="//fb.ru/misc/i/gallery/20016/1528660.jpg" width="600"></div>  The following table makes it possible to find out the statistical significance of the independent factors introduced into the analysis, as well as each non-standardized <span>coefficient of logistic regression</span> .  Based on these indicators, it is possible to predict that each respondent in the sample belongs to a specific group.  Using the Save button, you can enter new variables.  They will contain information about belonging to a specific classification category (Predicted category) and the probability of inclusion in these groups (Predicted probabilities membership).  After clicking "OK" in the main window of the Multinomial Logistic Regression, the calculation results will appear. 
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The first table in which indicators important for the researcher are present is Model Fitting Information.  A high level of <span>statistical significance</span> will indicate the high quality and suitability of using the model in solving practical problems.  Another significant table is the Pseudo R-Square.  It allows you to estimate the proportion of the total variance in the dependent factor, which is determined by the independent variables selected for analysis.  According to the Likelihood Ratio Tests table, conclusions can be drawn about the statistical significance of the latter.  Parameter Estimates reflects non-standard ratios.  They are used in the construction of the equation.  In addition, for each combination of variables, the statistical significance of their impact on the dependent factor is determined.  Meanwhile, in marketing research, there is often a need to differentiate by categories of respondents, not separately, but as part of the target group.  To do this, use the table Observedand Predicted Frequencies. </p><h2>  Practical use </h2><p>  The considered analysis method is widely used in the work of traders.  In 1991, an indicator of logistic sigmoid regression was developed.  It is an easy-to-use and effective tool with which you can predict likely prices before they "overheat".  The indicator is presented on the chart in the form of a channel formed by two lines running in parallel.  They are removed at an equal distance from the trend.  The width of the corridor will depend solely on the timeframe.  The indicator is used when working with almost all assets - from currency pairs to precious metals. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="logistic regression in spss" class="if" height="333" src="//fb.ru/misc/i/gallery/20016/1528661.jpg" width="570"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  In practice, 2 key strategies for using the tool have been developed: for breakdown and for reversal.  In the latter case, the trader will focus on the dynamics of price changes within the channel.  As the cost approaches the support or resistance line, the bet is on the likelihood that the movement will begin in the opposite direction.  If the price comes close to the upper limit, then you can get rid of the asset.  If it is at the lower limit, then you should think about the acquisition.  The strategy for the breakdown involves the use of orders.  They are set outside the boundaries at a relatively small distance.  Taking into account that the price in some cases violates them for a short time, you should play it safe and set stop loss.  At the same time, of course, regardless of the chosen strategy, the trader needs to calmly perceive and evaluate the situation that has arisen on the market. </p><h2>  Conclusion </h2><p>  Thus, the use of logistic regression allows you to quickly and easily classify respondents into categories according to specified parameters.  In the analysis, you can use any specific method.  In particular, multinominal regression is universal.  However, experts recommend applying all of the above methods in combination.  This is due to the fact that in this case the quality of the model will be significantly higher.  This, in turn, will expand the range of its application. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G25398/index.html">Installing APK files on a smartphone or tablet</a></li>
+<li><a href="../G25399/index.html">Animal Cell - The History of Knowledge</a></li>
+<li><a href="../G254/index.html">How to sew a boho style skirt.</a></li>
+<li><a href="../G2540/index.html">Oriel 963: user manual, specifications, review, reviews, problems</a></li>
+<li><a href="../G25400/index.html">Chukchi Sea: salinity and temperature</a></li>
+<li><a href="../G25402/index.html">LCD "Youth", Podolsk: developer "Stroyservis", address, reviews</a></li>
+<li><a href="../G25403/index.html">What are the circuits on microcontrollers?</a></li>
+<li><a href="../G25404/index.html">Ancient Egyptian symbol of scarab: description, meaning of the mascot</a></li>
+<li><a href="../G25405/index.html">How to return insurance to Sberbank: types, procedures and sample form</a></li>
+<li><a href="../G25406/index.html">The Best Poker Books - List, Features and Reviews</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

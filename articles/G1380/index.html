@@ -1,0 +1,262 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🤚🏽 🎀 ➖ Frequency converter for asynchronous motor: block diagram and main components 🔘 🕕 👨🏿‍💼</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="A frequency converter is used for an induction motor in several cases. Firstly, to change the rotor speed. Secondly, to make settings, such as braking...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Frequency converter for asynchronous motor: block diagram and main components</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  A frequency converter is used for an induction motor in several cases.  Firstly, to change the rotor speed.  Secondly, to make settings, such as braking and acceleration times, changing the degree of protection.  Thirdly, to convert single-phase voltage to three-phase.  It is not always possible to supply power to an asynchronous motor from a <span>three-phase network.</span>  And for its normal operation and achievement of maximum power, such a network is required.  Unfortunately, in private homes it is quite difficult to make three-phase voltage.  And the frequency converter allows you to carry out proper motor power. </p><h2>  Rectifier Cascade </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="frequency converter for asynchronous motor" class="if" height="500" src="//fb.ru/misc/i/gallery/33200/815143.jpg" width="375"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  Any converter, even the most complex in design, incorporates several blocks.  The first is the rectifier stage, which serves to convert AC to DC.  Depending on which network the power is supplied from, it is necessary to use various rectifier circuits.  So, when an alternating single-phase current is included in the network, it is sufficient to use a <span>half-wave rectifier.</span>  It is worth noting that the rotor of an induction motor has short-circuited turns, therefore it does not need power. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><p>  It can be implemented using a single semiconductor diode.  But the bridge rectifier has the best characteristics: there are less voltage losses.  Silicon is used as a semiconductor.  If you decide to independently manufacture <span>a frequency converter for an induction motor,</span> then for the rectifier it is necessary to select elements according to the magnitude of the reverse current, conductivity.  This will improve the performance of the device. </p><h2>  Voltage Filtering Unit </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="induction motor circuit" class="if" height="358" src="//fb.ru/misc/i/gallery/29489/815159.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  After the rectifier stage, the filter unit follows.  In the simplest version, this is the inductance (inductor) included in the plus gap.  Between the plus and minus the electrolytic capacitor is switched on.  With its help, we get rid of all the variable components that remain in the rectified voltage.  As a result, all ripples are removed.  If you connect the filter output to an oscilloscope and look at the monitor, you can see that the lines are straight, without unnecessary ripple. </p><p>  But the circuit of an induction motor is such that it can only be powered with alternating current.  And at the output of the filter there is a constant.  Therefore, it is required to return everything to normal, to make an alternating voltage from a constant voltage.  Moreover, its value should be 220 volts (when measuring between phase and zero).  And the number of phases is three.  Only under this condition will it be possible to ensure the operation of the induction motor in normal mode. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><h2>  Inverter unit </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="induction motor rotor" class="if" height="256" src="//fb.ru/misc/i/gallery/33200/814485.jpg" width="468"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  This cascade is used to convert direct current to alternating current.  It is in this unit that you can adjust and change the output current parameters.  The basis of the inverter is powerful transistors.  Any modern frequency converter for an induction motor in this cascade contains an assembly of six IGBT transistors.  In total, two semiconductors are used for each phase.  They are controlled based on the database, the inclusion of pn junctions is performed sequentially.  At the point of their connection, three phases are removed.  This can be seen from the <span>structural diagram</span> above. </p><p>  When manufacturing a frequency converter or carrying out repairs, it is required to select power assemblies for the output current.  Perhaps this is the only parameter that needs to be adhered to.  The capabilities of the microprocessor control system should also be considered.  Not all transistor assemblies allow you to change certain characteristics of the inverter cascade.  Therefore, when choosing power transistors, pay attention to the possibility of control. </p><h2>  Microprocessor control system </h2><p>  It is based on a simple microcontroller, which ensures the operation of the entire system.  This is a small chip that can have either 16 pins, 32, 64, and 128. It all depends on how many I / O ports are available.  To control the frequency converter, it is necessary to control several parameters.  Firstly, shutdown when the temperature of the inverter case is exceeded.  Secondly, turn on the fans when a certain temperature value is reached.  Thirdly, to measure current at each phase of the output stage.  The frequency of the induction motor must be changed, this is done using the installed variable resistor. </p><h2>  Frequency converter protection </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="induction motor frequency" class="if" height="500" src="//fb.ru/misc/i/gallery/33200/815142.jpg" width="500"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  If temperature control is carried out using the simplest sensors, then <span>special transformers</span> must be used for current protection <span>.</span>  They are called current transformers.  These are small coils on the magnetic circuit through which the output of the phase passes.  Therefore, it remains only to compose simple algorithms, which will be described below.  As for the programming of functions, for this purpose it is necessary to provide for the connection of several buttons with normally open contacts to the microcontroller. </p><h2>  The microcontroller operation algorithm </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="frequency converters for motors" class="if" height="442" src="//fb.ru/misc/i/gallery/33200/814481.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  When making an inverter yourself, you will need to use a lot of knowledge, including programming.  Thus, <span>frequency converters for</span> motors must be protected.  Therefore, when compiling the operation algorithm of the microcontroller control system, it is necessary to prescribe certain parameters at which the device shuts down.  For example, the maximum permissible temperature value of the device housing, as well as the current flowing in each phase at the output, is indicated. </p><p>  In addition, it must be taken into account that at zero current consumption in one phase (provided that there are more in others), an emergency shutdown must be performed.  Based on all this, it is necessary to draw up an operation algorithm that is written to the microcontroller.  It is according to this scheme that the device will work. </p><p>  The frequency converter for an induction motor must also change the rotor speed.  Connect a variable resistor through <span>a voltage divider</span> to the input-output port.  The algorithm should take into account that when changing the resistance at this input of the controller, it is necessary to increase or decrease the rotor speed. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G13796/index.html">Visa-free countries for Russians (2016): list, rating, design features and reviews</a></li>
+<li><a href="../G13797/index.html">Project "Dary Bury": reviews, general information</a></li>
+<li><a href="../G13798/index.html">Decoupage chairs: the decoration process</a></li>
+<li><a href="../G13799/index.html">Useful information on how to get to the metro from Pulkovo</a></li>
+<li><a href="../G138/index.html">Mysterious Mexico: a review of tourists about large resorts and the country as a whole</a></li>
+<li><a href="../G13800/index.html">Crocodile from a cucumber: photo, description of the craft. How to make a crocodile from a cucumber?</a></li>
+<li><a href="../G13801/index.html">Alfa-Bank: customer and employee reviews</a></li>
+<li><a href="../G13802/index.html">Landscape park, Buki: description, mode of operation, how to get, reviews</a></li>
+<li><a href="../G13803/index.html">Empuriabrava, Spain - Spanish Venice: description, reviews</a></li>
+<li><a href="../G13804/index.html">Chemical weapons and their types</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🚇 👶🏼 💔 UC3842: description, principle of operation, wiring diagram, application 🥃 🏑 🌔</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="The article will describe the principle of operation and the circuit diagram of the UC3842. This is a microcircuit that is a pulse-width controller. T...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>UC3842: description, principle of operation, wiring diagram, application</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  The article will describe the principle of operation and the circuit diagram of the UC3842.  This is a microcircuit that is a pulse-width controller.  The scope is in DC / DC converters.  Using one chip, you can create a high-quality voltage converter, which can be used in power supplies for various equipment. </p><h2>  Chip Pin Assignment (Short Review) </h2><div class="photo" data-source="http://hozmaga.ru/2013/07/07/impul-sny-j-blok-pitaniya-shema-uc3842/" data-original="hozmaga.ru" data-author=": "><img itemprop="image" alt="The power supply board on the UC3842 chip" class="if uuid-2256586" src="https://fb.ru/misc/i/gallery/57090/2256586.jpg"></div><p>  First you need to consider the purpose of all the conclusions of the chip.  The description of the UC3842 looks like this: </p><ol><li>  At the first output of the microcircuit, the voltage necessary for the implementation of feedback is applied.  For example, if you lower the voltage on it to 1 V or lower, on pulse 6, the pulse time will begin to significantly decrease. </li><li>  The second conclusion is also necessary to create feedback.  However, unlike the first, it is necessary to apply a voltage of more than 2.5 V to it, so that the pulse duration is reduced.  Power is also reduced. </li><li>  If a voltage of more than 1 V is applied to the third output, then the pulses will stop appearing at the output of the microcircuit. </li><li>  A variable resistor is connected to the fourth output - with its help you can set the pulse frequency.  An electrolytic capacitor is connected between this terminal and ground. </li><li>  The fifth conclusion is general. </li><li>  PWM pulses are removed from the sixth pin. </li><li>  The seventh terminal is for connecting power in the range of 16..34 V. Built-in surge protection.  Please note that with a voltage below 16 V the chip will not work. </li><li>  To carry out stabilization of the pulse frequency, a special device is used, which feeds +5 V to the eighth output. </li></ol><p>  Before considering practical designs, you need to carefully study the description, principle of operation and circuit diagrams of the UC3842. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  How does the chip work? </h2><p>  And now we need to consider briefly the operation of the element.  When a +5 V DC voltage appears on the eighth leg, the OSC generator starts.  At the inputs of the trigger RS ​​and S receives a positive pulse of small length.  Further, after applying the pulse, the trigger switches and the output appears zero.  As soon as the OSC pulse begins to decline, the voltage at the direct inputs of the element will be equal to zero.  But on the inverting output a logical unit will appear. </p><p>  This logical unit allows you to open the transistor, so the electric current will begin to flow from the power source through the collector-emitter circuit to the sixth pin of the chip.  This shows that the output will be an open pulse.  And it will stop only when a voltage of 1 V or higher is applied to the third terminal. </p><h2>  Why check the chip </h2><div class="photo" data-source="http://godude.myftp.org/2013/09/03/shema-istochnika-pitaniya-na-uc3842/" data-original="godude.myftp.org" data-author=": "><img itemprop="image" alt="Pulse transformers for use in power supplies" class="if uuid-2256598" src="https://fb.ru/misc/i/gallery/57090/2256598.jpg"></div><p>  Many hams who are involved in the design and installation of electrical circuits purchase parts in bulk.  It’s no secret that the most popular shopping places are Chinese online stores.  The cost of products there is many times less than on radio markets.  But there are also many defective products.  Therefore, you need to know how to check the UC3842 before starting to build the circuit.  This will avoid frequent wiring of the board. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><h2>  Where is the chip used? </h2><p>  Often a chip is used to assemble power supplies for modern monitors.  They are used in <span>switching voltage regulators,</span> in the horizontal scan of televisions and monitors.  With its help, transistors operating in the key mode are controlled.  But elements fail quite often.  And the most common reason is the breakdown of the fieldwork, which is controlled by the microcircuit.  Therefore, when self-designing a power supply or repair, it is necessary to diagnose the element. </p><h2>  What you need for troubleshooting </h2><div class="photo" data-source="https://electronics.stackexchange.com/questions/171789/understanding-smps-with-uc3845" data-original="electronics.stackexchange.com" data-author=": "><img itemprop="image" alt="Schematic diagram of the power source" class="if uuid-2256592" src="https://fb.ru/misc/i/gallery/57090/2256592.jpg"></div><p>  It should be noted that the application of the UC3842 found exclusively in the conversion technology.  And for the normal operation of the power supply, you need to make sure that the element is working.  You will need such devices for diagnostics: </p><ol><li>  Ohmmeter and voltmeter (the simplest digital multimeter will do). </li><li>  Oscilloscope. </li><li>  Source stabilized by current and voltage.  It is recommended to use adjustable ones with a maximum output voltage of 20..30 V. </li></ol><p>  If you do not have any measuring equipment, then the easiest way to check the output resistance during diagnostics is to simulate the operation of the microcircuit when working from an external power source. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><h2>  Output Resistance Test </h2><p>  One of the main diagnostic methods is to measure the resistance value at the output.  We can say that this is the most accurate way to determine breakdowns.  Please note that in the event of a breakdown of the power transistor, a high voltage pulse will be applied to the output stage of the element.  For this reason, microcircuit failure occurs.  At the output, the resistance will be infinitely large if the element is operational. </p><div class="photo" data-original="e2e.ti.com" data-author=": "><img itemprop="image" alt="The appearance of the board of the monitor power supply" class="if uuid-2256603" src="https://fb.ru/misc/i/gallery/57090/2256603.jpg"></div><p>  Resistance is measured between terminals 5 (mass) and 6 (output).  The measuring device (ohmmeter) is connected without special requirements - the polarity does not matter.  It is recommended to start the microchip before starting the diagnosis.  During breakdown, the resistance will be several ohms.  In that case, if you carry out a resistance measurement without evaporating the microcircuit, then the gate-source chain can ring.  And do not forget that in the circuit of power supplies on the UC3842 there is a constant resistor that is connected between the ground and the output.  If present, the element will have an output impedance.  Therefore, if the output resistance is very low or equal to 0, then the microcircuit is faulty. </p><h2>  How to simulate a chip </h2><p>  When simulating the work, there is no need to solder the microcircuit.  But be sure to turn off the device before starting work.  Testing the circuit on the UC3842 is to apply voltage to it from an external source and evaluate the performance.  The work procedure looks like this: </p><ol><li>  The power supply is disconnected from the AC mains. </li><li>  From an external source of <span>stabilized voltage and current</span> , voltage greater than 16 <span>V</span> is supplied to the seventh contact of the microcircuit. At this point, the microcircuit should start.  Please note that the microcircuit will not start working until the voltage is above 16 V. </li><li>  Using an oscilloscope or voltmeter, you need to measure the voltage on the eighth pin.  It should be +5 V. </li><li>  Verify that the voltage at pin 8 is stable.  If you reduce the voltage of the power source below 16 V, then the current will disappear on the eighth output. </li><li>  Using an oscilloscope, measure the voltage at the fourth pin.  In the event that the element is serviceable, there will be sawtooth pulses on the graph. </li><li>  Change the voltage of the power supply - while the frequency and amplitude of the signal on the fourth pin will remain unchanged. </li><li>  Check with an oscilloscope if there are any rectangular impulses on the sixth leg. </li></ol><p>  Only if all of the above signals are present and behave as they should, we can talk about the health of the chip.  But it is recommended to check the serviceability and output circuits - diode, resistors, zener diode.  Using these elements, signals are generated to provide current protection.  They fail during breakdown. </p><h2>  Pulse PSU on a chip </h2><p>  For clarity, you need to consider the description of the power source on the UC3842.  For the first time, it began to be used in household appliances in the second half of the 90s.  She has a clear advantage over all competitors - low cost.  Moreover, reliability and efficiency are not inferior.  To build a full-fledged <span>voltage stabilizer circuit,</span> additional components are practically not required.  Everything is done by the "internal" elements of the chip. </p><div class="photo" data-source="http://radiotech.inf.ua/Shematic_PCB/PowerSources/pulse_bp_UC3842.htm" data-original="radiotech.inf.ua" data-author=": "><img itemprop="image" alt="Schematic diagram of a pulse-type PSU" class="if uuid-2256596" src="https://fb.ru/misc/i/gallery/57090/2256596.jpg"></div><p>  An element can be made in one of two types of housing - SOIC-14 or SOIC-8.  But often it is possible to meet modifications made in DIP-8 cases.  It should be noted that the last digits (8 and 14) indicate the number of microcircuit pins.  True, there are not very many differences - if there is an element with 14 pins, just add pins to connect the mass, power and output stage.  On the chip, stabilized pulse-type power supplies with PWM modulation are built.  Be sure to use a MOS transistor to amplify the signal. </p><h2>  Turn on the chip </h2><p>  And now you need to consider the description, principle of operation and circuit diagrams of the UC3842.  Usually, microcircuit parameters are not indicated on the power supplies, so you need to refer to the special literature - datasheets.  Very often you can find circuits that are designed to be powered from an AC network of 110-120 V. But thanks to just a few modifications, you can increase the supply voltage to 220 V. </p><div class="photo" data-original="www.bu-shen.com" data-author=": "><img itemprop="image" alt="Type of power supply circuit board" class="if uuid-2256606" src="https://fb.ru/misc/i/gallery/57090/2256606.jpg"></div><p>  To do this, such changes are made in the power supply circuit on the UC3842: </p><ol><li>  The diode assembly, which is located at the input of the power source, is replaced.  It is necessary that the new diode bridge operates at a reverse voltage of 400 V or more. </li><li>  Replaced electrolytic capacitor, which is located in the power circuit and serves as a filter.  Installed after the diode bridge.  It is necessary to supply a similar one, but with an operating voltage of 400 V and higher. </li><li>  The nominal <span>resistance of the resistors</span> in the power circuit increases to 80 kOhm. </li><li>  Check if the power transistor can operate at a voltage between the drain and the source of 600 V. You can use transistors BUZ90. </li></ol><p>  The article provides a <span>diagram of the power supply</span> on the UC3842.  <span>The integrated circuit</span> has a number of features that must be taken into account when designing and repairing power supplies. </p><h2>  Features of the chip </h2><p>  If there is a short circuit in the secondary circuit, then during the breakdown of diodes or capacitors, the loss of electricity in the pulse transformer begins to increase.  It may happen that there is not enough voltage for the normal functioning of the microcircuit.  During operation, you can hear the characteristic "chatter" that comes from the pulse transformer. </p><div class="photo" data-source="http://e2e.ti.com/support/power_management/isolated_controllers/f/188/t/388426" data-original="e2e.ti.com" data-author=": "><img itemprop="image" alt="Power supply board" class="if uuid-2256602" src="https://fb.ru/misc/i/gallery/57090/2256602.jpg"></div><p>  Considering the description, principle of operation and the circuit of the UC3842, it is difficult to ignore the features of the repair.  It is possible that the reason for the behavior of the transformer is not a breakdown in its winding, but a malfunction of the capacitor.  This happens as a result of the failure of one or more diodes that are included in the power circuit.  But if there is a breakdown of the field effect transistor, it is necessary to completely change the chip. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G45897/index.html">Pernstein Castle: address, history and date of construction, unusual cases, photos and reviews of tourists</a></li>
+<li><a href="../G45898/index.html">"Mountain Ezhovaya" - ski resort. Reviews on the ski complex "Mountain Ezhovaya"</a></li>
+<li><a href="../G45899/index.html">Griffith Observatory - a unique attraction in Los Angeles</a></li>
+<li><a href="../G459/index.html">Hotel Island View (Phuket): reviews and photos of tourists</a></li>
+<li><a href="../G4590/index.html">Hotel Central Hersonissos Hotel 3 * (Crete, Greece): description and reviews of tourists</a></li>
+<li><a href="../G45901/index.html">Character and biography of Nadezhda Alliluyeva, Stalin's beloved wife</a></li>
+<li><a href="../G45902/index.html">Hotel Sentido Sandy Beach 4 * (Cyprus / Larnaca) - photo and reviews of tourists</a></li>
+<li><a href="../G45903/index.html">Alexander Sizov - the only survivor of a plane crash near Yaroslavl</a></li>
+<li><a href="../G45904/index.html">What should be a tablet for children?</a></li>
+<li><a href="../G45905/index.html">Rhythm in biology. The value of biological rhythms. Human biorhythms</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>📐 🎚️ 👓 Differential amplifier: principle of operation 🔋 🤲🏻 🥛</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="A differential amplifier (remote control) is used to amplify the difference between the two input signals. It can be considered as an analog circuit c...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Differential amplifier: principle of operation</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  A differential amplifier (remote control) is used to amplify the difference between the two input signals.  It can be considered as an analog circuit consisting of two inputs and one output. </p><p>  Amplifiers used in various electrical and electronic circuits for generating signals and performing mathematical operations are called operational amplifiers (op amps).  They are key components of an electronic analog computer.  Their invention in the early 1940s led to the replacement of mechanical computing devices with quiet and fast electronics.  Many <span>analog computers</span> relied on vacuum tubes sold by George Philbrick in 1952. </p><div class="photo" data-original="www.computerhistory.org" data-author=": "><img itemprop="image" alt="Differential operational amplifier" class="if uuid-2305853" src="https://fb.ru/misc/i/gallery/73564/2305853.jpg"></div><p>  In 1963, Bob Widlar at Fairchild Semiconductor made op-amps on a single <span>integrated circuit</span> A702 - the very first monolithic operational amplifier IC. </p><h2>  Transistor amplifier circuit </h2><p>  The differential operational amplifier can be assembled according to the scheme as shown in the figure below, which consists of two transistors T1 and T2. </p><div class="photo" data-original="www.circuitstoday.com" data-author=": "><img itemprop="image" alt="Differential amplifier" class="if uuid-2305856" src="https://fb.ru/misc/i/gallery/73564/2305856.jpg"></div><p>  The remote control circuit has two inputs I1 and I2 and two outputs V1out and V2out.  Input I1 is fed to the base terminal of transistor T1, input I2 is fed to the base terminal of transistor T2.  The emitter outputs of transistor T1 and transistor T2 are connected to a common emitter resistor.  Thus, the two input signals I1 and I2 will affect the outputs V1out and V2out.  The circuit consists of two power supply voltages Vcc and Vee, but there is no grounding terminal.  Even with a single supply voltage, the circuit can operate normally (similarly when using two supply voltages).  Therefore, the opposite points of the positive voltage and negative supply voltage are connected to ground. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  Schematic diagram of the DT </h2><p>  The operation of the differential amplifier is shown in the diagram in the figure below. </p><div class="photo" data-original="www.elprocus.com" data-author=": "><img itemprop="image" alt="Differential operational amplifier" class="if uuid-2305867" src="https://fb.ru/misc/i/gallery/73564/2305867.jpg"></div><p>  If the input signal (I1) is supplied to the base of the transistor T1, then through the resistor connected to the transistor transistor T1, a positive voltage drop appears, which will be less.  If the input signal (I1) is not supplied to the base of the transistor T1, then through the resistor connected to the transistor transistor T1, a positive voltage drop appears, which will be large. </p><p>  We can say that the inverting output exiting through the collector terminal of transistor T1 is based on the input signal I1 supplied to the base terminal T1.  If T1 is turned on using a positive value of I1, then the current passing through the emitter resistance increases when the emitter current and collector current are almost equal.  If the voltage drop across the emitter resistance increases, then the emitter of both transistors goes in a positive direction.  If the emitter of transistor T2 is positive, then the base of T2 will be negative, and in this state the current will be less.  And there will be less voltage drop across the resistor connected to the collector terminal of transistor T2. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><p>  Therefore, for this positive input collector, T2 will go in the positive direction.  We can say that the non-inverting output that occurs on the collector terminal of transistor T2 is based on the input signal supplied to the base T1.  The differential amplifier receives the output signal between the terminals of the collector of transistors T1 and T2.  From the above circuit diagram, it is assumed that all the characteristics of the transistors T1 and T2 are identical, and if the base voltages Vb1 are equal to Vb2 (the base voltage of the transistor T1 is equal to the base voltage of the transistor T2), then the emitter currents of both transistors will be equal (Iem1 = Iem2). </p><p>  Thus, the total emitter current will be equal to the sum of the emitter currents T1 (Iem1) and T2 (Iem2).  <span>Calculation of differential</span> amplifier.  Iem1 = Iem2 Ie = Iem1 + Iem2 Vev = Vb-Vb em I em = (Vb-Vb em) / Rem.  Thus, the emitter current remains unchanged regardless of the value hfe of the transistors T1 and T2.  If the resistances connected to the collector terminals T1 and T2 are equal, then their collector voltages are also equal. </p><h2>  A brief description of the operation of the operational amplifier </h2><div class="photo" data-original="playelek.com" data-author=": "><img itemprop="image" alt="Operational amplifier" class="if uuid-2305915" src="https://fb.ru/misc/i/gallery/73564/2305915.jpg"></div><p>  This amplifier (Op-amp, English) may be ideal with infinite gain and bandwidth when used in Open-loop mode with a typical DC gain of more than 100,000 or 100 dB.  The differential op amp current amplifier has two inputs, one of which is inverted.  The amplified difference of these inputs is output as voltage.  The ideal operational amplifier has an infinitely high gain.  This should express an infinity symbol with a new symbol.  The operational amplifier operates either with double positive (+ V), or with corresponding negative (-V) power, or it can operate on one constant voltage supply. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><h2>  Two basic laws related to OS </h2><p>  They consist in the fact that such an amplifier has an infinite input impedance (Z = ∞), which leads to the absence of current flowing into one of its two inputs and to a zero input bias voltage V1 = V2.  The op amp also has zero output impedance (Z = 0).  Optical amplifiers determine the difference between the voltage signals supplied to their two input terminals, and then multiply them by some predetermined gain (A).  This gain (A) is often referred to as - Open Loop.  Op-amps can be connected in two main configurations - inverting and non-inverting. </p><div class="photo" data-original="www.electronics-tutorials.ws" data-author=": "><img itemprop="image" alt="Differential amplifier" class="if uuid-2306235" src="https://fb.ru/misc/i/gallery/73564/2306235.jpg"></div><p>  For negative feedback, if the feedback voltage is in antiphase at the input, the overall gain is reduced.  For positive feedback, when the feedback voltage is in "phase", the input signal of the amplifier increases.  By connecting the output back to the negative input connector, 100% feedback is achieved, as a result of which the voltage follower circuit (buffer) is obtained with a constant gain of 1 (Unity).  Replacing the fixed feedback resistor (Rƒ) for the potentiometer, the circuit will have an adjustable gain. </p><h2>  Specifications </h2><p>  The main ones: </p><ol><li>  The zero sequence input current (input bias current) is at rest, different currents can flow at two inputs.  This in practice means that the voltage is distorted in the case of signal sources with high internal resistance, since the sources are subjected to different voltage levels. </li><li>  Input resistance can be measured against ground at the inputs, provided that the other input is grounded.  The disadvantage here is sources with high internal resistance, which are partially loaded with input resistance. </li><li>  Input capacitance - capacitors parallel to the input resistors.  They have a disturbing effect, especially at high frequencies, since capacitances create additional parallel input resistances, which depend on the frequency.  For a differential amplifier, the principle of operation depends on this indicator. </li><li>  A low gain (increase in signal gain) indicates a gain that is obtained without feedback.  It is determined with a load resistance of 2 kΩ and an output voltage fluctuation of ± 10 V. In practice, the indicated value of 200,000 has never been reached and is usually 10 times lower. </li><li>  The deviation coefficient of the supply voltage.  With a change in the supply voltage of one volt, the bias changes by 0.3 μV.  However, with a gain of 300 times, the error increases by 0.1 mV. </li><li>  Swing output voltage.  An op-amp can never generate a full input voltage at its output.  In any case, the maximum output voltage at an input voltage of ± 15 V will be significantly higher than ± 10 V. At normal loads, about ± 13 V and ideal - only 1 V below the supply voltage. </li><li>  Output impedance is the effective AC resistance of the output, only for output signals with low and offset output.  Practically applicable only in borderline cases. </li><li>  Output short circuit current. </li><li>  Supply current with a unloaded operational amplifier, with a type of 1.7 mA. </li><li>  Performance - power losses, of course, in the unloaded operational amplifier caused by the supply current and depend on the operating voltage.  A <span>transistor</span> differential <span>amplifier</span> needs a specific response time and degrades the hopping input signal.  This applies to a load of 2 kΩ ||  100 pF and the strengthening of "unity" (single gain). </li><li>  Slew rate to prevent uncontrolled span.  If the output voltage changes to 10 V, the op-amp requires a time of typically 5 μs.  It becomes critical at high frequencies, as its output signal is greatly attenuated. </li></ol><h2>  Boundary Application Conditions </h2><p>  The main ones: </p><ol><li>  Supply voltage max. ± 18V.  Most circuits operate at ± 15 V, therefore on the safe side. </li><li>  The maximum power loss (power dissipation) depends on the housing version and the maximum allowable temperature.  A simple 8-pin plastic casing can handle 310 mW, a 14-pin double-row casing can work about twice as much. </li><li>  Input voltages and differences can be in the range of -15 ... + 15 V. Solder.  During soldering (soldering), the terminals are allowed to warm to 300 ° C for one minute.  Soldering to the terminals is not performed simultaneously, but one after the other and only after the entire component is completely cooled. </li><li>  Short circuit on the output side.  According to the manufacturer, the output short circuit can last indefinitely if all the boundary conditions are met. </li><li>  Limitation: the case temperature must not exceed 125 ° C, therefore the ambient temperature must not exceed 75 ° C </li></ol><h2>  Differential amplifier using BJT </h2><p>  The principle of its operation is shown in the diagram below. </p><div class="photo" data-original="electrosome.com" data-author=": "><img itemprop="image" alt="Bipolar current amplifier" class="if uuid-2306239" src="https://fb.ru/misc/i/gallery/73564/2306239.jpg"></div><p>  It is built using two matching transistors in a common emitter configuration, the emitters of which are connected to each other.  A simple circuit capable of amplifying small signals between two inputs, but suppressing noise signals common to both inputs. </p><p>  Bipolar Transistor Differential Amplifier (BJT) has a unique topology: two inputs and two outputs.  Although you can use the signal from only one output, the difference between the two outputs provides twice as much gain!  And this improves common mode rejection (CMR) when the common mode signal is a noise source or a DC bias from the previous step. </p><h2>  Transistor Computer Configuration </h2><div class="photo" data-original="www.redov.ru" data-author=": "><img itemprop="image" alt="DC amplifier" class="if uuid-2306237" src="https://fb.ru/misc/i/gallery/73564/2306237.jpg"></div><p>  Based on input and output data input methods, differential amplifiers can have four different configurations, as shown below. </p><ol><li>  Single-phase unbalanced output. </li><li>  Single input balanced output. </li><li>  Dual input unbalanced output. </li><li>  Dual input balanced output. </li></ol><h2>  Schematic diagram of a DC amplifier </h2><div class="photo" data-original="eeeinterviewtips.blogspot.com" data-author=": "><img itemprop="image" alt="Differential amplifier operation" class="if uuid-2305849" src="https://fb.ru/misc/i/gallery/73564/2305849.jpg"></div><p>  When developing analog building blocks (various types of preamplifiers, filters, etc.), it is important, along with the development of modern solutions for deep submicron technologies, to pay attention to new structural solutions of traditional amplification devices. </p><p>  Differential DC amplifier (DUPT), its output voltage is proportional to the difference between the two input voltages.  This can be represented in the form of an equation as follows: V out = A * ((Vin +) - (Vin-)), where A = gain. </p><h2>  Practical use </h2><div class="photo" data-original="www.mcintoshlabs.com" data-author=": "><img itemprop="image" alt="Vacuum tube amplifier" class="if uuid-2305918" src="https://fb.ru/misc/i/gallery/73564/2305918.jpg"></div><p>  In practical circuits, the remote control is used to amplify: pulses along long wires, sound, radio frequencies, control of motors and servomotors, electrocardiograms, information on magnetic drives. </p><h2>  disadvantages </h2><p>  A differential amplifier has several disadvantages that somewhat limit its use in electronics: </p><ol><li>  A low input resistance, depending on the resistor, for example, with a weak signal from a thermocouple - the remote control will give an erroneous measurement result. </li><li>  A hardly adjustable gain, which will require a change in the value of two resistors, which is practically difficult to implement, and introducing additional elements (potentiometers or multiplexers) into the circuit will unnecessarily complicate the circuit. </li></ol>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G3077/index.html">Salaries of university teachers: both laughter and sin</a></li>
+<li><a href="../G30770/index.html">Flashlights-shockers: principle of operation, instruction, device, circuit</a></li>
+<li><a href="../G30771/index.html">What is the Athos Compound in Moscow?</a></li>
+<li><a href="../G30772/index.html">Hotel "Crystal" (Kemerovo): description, reviews, photos, address, phone, height</a></li>
+<li><a href="../G30773/index.html">The stands of the people are ... The History of Ancient Rome</a></li>
+<li><a href="../G30775/index.html">The Nai Harn Phuket 5 *: hotel description, photos and reviews</a></li>
+<li><a href="../G30776/index.html">Staraya Russa (resort). Rest and treatment in Staraya Russa</a></li>
+<li><a href="../G30777/index.html">Investing in silver: pros and cons, prospects. Silver rate</a></li>
+<li><a href="../G30778/index.html">Pokrovsky Cathedral in Moscow - the eighth wonder of the world</a></li>
+<li><a href="../G30779/index.html">Heptane Isomers: General Description and Application</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>👨🏽‍🤝‍👨🏼 ↙️ ✨ How to remove protection from a flash drive: simple methods, step by step instructions 👩🏻‍🔬 🛥️ 👠</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="If the user finds that he cannot add or delete documents on the media, it is likely that write protection is enabled on it. Sometimes the media is pro...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>How to remove protection from a flash drive: simple methods, step by step instructions</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  If the user finds that he cannot add or delete documents on the media, it is likely that write protection is enabled on it.  Sometimes the media is protected by the manufacturer, or a similar situation appears due to a malfunction of the disk itself.  And then you need to know how to remove the protection from the flash drive. </p><p>  If the user is not prompted for a password to make changes, you can unlock them using the Windows DiskPart utility.  And before you remove the protection from the flash drive as a precaution, it is better to reformat the disk.  This process is available on any version of Windows. </p><h2>  Login with administrator account </h2><div class="photo" data-original="winitpro.ru" data-author=": "><img itemprop="image" alt="Login with administrator account" class="if uuid-2626944" src="https://fb.ru/misc/i/gallery/73564/2626944.jpg"></div><p>  First you need to connect an external drive to your PC and enter the OS with an administrator account.  In Explorer, expand "Properties."  Select the disk file system - either NTFS or FAT32, and its capacity.  Now you need to copy all the files from the media to the computer.  After that, experts strongly recommend reformatting it.  The operation will delete all data on the USB flash drive.  Even if the user does not plan to reformat the media, Windows DiskPart itself can delete some files, so it is very important to prepare backup copies of documents first. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><p>  The sequence of operations to remove write protection on a USB flash drive is as follows: </p><ol><li>  After starting the command line, typing cmd in the search, enter diskpart and Enter.  DiskPart opens. </li><li>  Specify a list of disks in the DiskPart window and then Enter.  Disks will appear, and you can determine the flash drive by its size in the "File Properties" window. </li><li>  Select USB, then a space and the number of the drive, for example, type select disk 1 and then Enter. </li><li>  Type the attributes disk clear readonly and then Enter. </li></ol><p>  Now the protection should be removed. </p><p>  If it is still active, you need to go through another procedure: </p><ol><li>  Before removing the protection from the microflash, simultaneously press [Windows] and [R] to open Run. </li><li>  Enter diskpart and click OK.  The command line opens. </li><li>  Wait a few seconds, then enter the command “lis dis” and confirm with Enter, after which all volumes will be listed. </li><li>  Enter sel dis X. </li><li>  Replace “X” with the displayed drive number. </li><li>  Use the create partition primary, select partition 1, format fs = FAT32 quick and “active” functions one after the other. </li></ol><p>  The flash drive is now formatted and has open access. </p><h2>  Account Permission </h2><div class="photo" data-original="neoserver.ru" data-author=": "><img itemprop="image" alt="Account Permission" class="if uuid-2626962" src="https://fb.ru/misc/i/gallery/73564/2626962.jpg"></div><p>  If the lock is not released, there is a possibility that the user has not gained access to the disk.  You need to check the write permission: </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><ol><li>  Before removing the write protection of a USB flash drive, you need to access its properties through the command line.  After that, a pop-up window will appear - Removable Disk Propertie. </li><li>  Click “Security” in the “Scroll All” section to check if the write function has been checked.  There are times when a problem is associated with a single file.  Usually they are marked as read-only and do not accept any changes. </li><li>  Before removing protection from a USB flash drive, you just need to go to the properties of this particular file and check if Read Only is turned off.  If not, uncheck the box and then gain access. </li></ol><h2>  Preformatting a Disk </h2><div class="photo" data-original="hddiq.ru" data-author=": "><img itemprop="image" alt="DiskPart partition completion" class="if uuid-2626975" src="https://fb.ru/misc/i/gallery/73564/2626975.jpg"></div><p>  To format the external media in the search, type clean and press Enter.  This function deletes all volumes and partitions from the disk, as well as folders and files. </p><p>  The order of operations in order to remove the write protection on the USB flash drive: </p><ol><li>  Enter the initial section and then Enter. </li><li>  Format the USB flash drive in NTFS or FAT32 format, as it was indicated earlier in the properties window.  To do this, enter one of the following commands, and then press Enter: format fs: fat32 or format fs: ntfs.  Progress is displayed in a window, and DiskPart will notify the user of the completion of the partition.  It takes about a minute to format a 1 GB disk. </li><li>  Enter exit when the volume is formatted to close the DiskPart window. </li><li>  Now you can copy or move data that was previously located on the disk or add new files to it. </li></ol><h2>  Lock disk </h2><div class="photo" data-original="howtohackeasily.blogspot.com" data-author=": "><img itemprop="image" alt="Lock disk" class="if uuid-2626922" src="https://fb.ru/misc/i/gallery/73564/2626922.jpg"></div><p>  Some drives have switches between active and inactive protection.  Before you remove the protection from the micro-SD flash drive, you need to look at the device’s case and make sure that any existing switch is set to “unlock”.  If the switch cannot be found, the failure is due to software faults.  In the Windows menu, depending on the type of mobile equipment, you can install program memory protection on the external memory or delete it. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><p>  The list of stages: </p><ol><li>  Open Windows Explorer and click “Computer”. </li><li>  Open the folder section, select "Properties" and find the "read-only" dialog box. </li><li>  Check that there is no checkmark, otherwise remove it.  The subtlety of this process is that it is possible to remove the lock only on the PC on which it was installed. </li></ol><h2>  Unlocking media in the registry </h2><div class="photo" data-original="it-uroki.ru" data-author=": "><img itemprop="image" alt="Unlocking media in the registry" class="if uuid-2626980" src="https://fb.ru/misc/i/gallery/73564/2626980.jpg"></div><p>  If the user accidentally pulled out the drive while reading and without the “safe removal of equipment” function, many folders automatically switch to data write protection.  In this case, you need to unlock: </p><ol><li>  Before removing protection from a flash drive, formatting is performed, and in order to save data, it is recommended to use the Smart Data Recovery tool. </li><li>  In the dialog box, you can try to restore the folder by clicking on "Formatting".  If the system reports an error, you will have to remove protection through the registry. </li><li>  Enter regedit in the Windows search and then select “Registry Editor”. </li><li>  Select HKEY_Local Machine in the navigation panel and open subfolders by clicking on the small arrow next to the name. </li><li>  Select System, Current Control Set, and finally Control. </li><li>  Scroll down the page to go to Storage Device Policies.  If this directory does not already exist, right-click to create a new folder and give it this name.  Pay particular attention to upper and lower case. </li><li>  Open the folder, two files will appear on the right side. </li><li>  Select Write Protect.  If the file does not exist, continue reading up to step 8. In the dialog box that opens, select "Hexadecimal" on the right.  Enter “0” in the left field - this will mean that all external storage devices do not automatically have protection. </li><li>  Confirm the entry with OK and close the editor.  If the file does not exist yet, create it in the above folder and name it Write Protect.  Make sure that a 32-bit or 64-bit file is generated according to which system the PC works with. </li><li>  Restart the computer by pressing Windows and "E". </li></ol><h2>  Removing write protection from exFAT card </h2><p>  Sometimes hard drives and flash drives formatted with exFAT become read-only after a computer crash.  As for the exFAT system, most likely, you will need to remove the dirty bit from it, since this system has automatic protection. </p><p>  There are several common fixes to remove a lock.  Before removing protection from a USB flash drive, you first need to check whether there is a lock slider on its adapter.  If so, turn it off to remove the protection.  Next, you need to fix the existing error on the card and reset it or completely format it, and if necessary, change it to a new file system. </p><p>  Using CMD before removing protection from a USB flash drive: </p><ol><li>  Open Run.  Type CMD and then Enter.  Run as administrator. </li><li>  Type chkdsk / ff: and Enter.  f: This is the drive letter from the exFAT section of the SD card.  The program will find and fix the error on the map. </li><li>  If you receive the following error message: "Operation could not be completed."  You need to run this command: chkdskf: / f / r / x and then Enter, after which the dirty bit and the security attribute will be deleted. </li></ol><h2>  Unlock Card via Phone </h2><div class="photo" data-original="www.remosoftware.com" data-author=": "><img itemprop="image" alt="Card anti-blocking via phone" class="if uuid-2627009" src="https://fb.ru/misc/i/gallery/73564/2627009.jpg"></div><p>  SD is commonly used as expandable storage and is formatted in exFAT format for Android, 3DS or PS4 smartphones.  If it is read-only and impedes its use, such protection may be removed.  Before removing the protection from a flash drive from recording via phone, it is better to use a special program that can be downloaded from the Internet.  Experts advise AOMEI Partition Assistant Standard.  This is a free SD card protection removal program that can solve problems caused by damaged files and incorrect systems.  You can not only completely erase all the information, but also reformat it to any bit depth. </p><p>  Removing exFAT SD Card Protection: </p><ol><li>  Before removing the protection from the USB flash drive to format it, connect the card through the adapter and make sure that it is recognized. </li><li>  Install and run AOMEI Partition Assistant. </li><li>  On the main interface, right-click on SD and select "Format". </li><li>  Indicate the partition information in a small pop-up window, that is, edit the volume name, install the file system and select the cluster size. </li><li>  Confirm the result, click "Run" and "Continue" to complete the procedure. </li></ol><h2>  Partition Manager </h2><div class="photo" data-original="yo-soft.net" data-author=": "><img itemprop="image" alt="Partition Manager" class="if uuid-2627044" src="https://fb.ru/misc/i/gallery/73564/2627044.jpg"></div><p>  If the user still cannot access the drive, you can use Ease US Partition Master Free before removing the protection from the flash drive. </p><p>  Formatting Sequence: </p><ol><li>  Connect the card or drive to the PC. </li><li>  Launch the Ease US Partition Master. </li><li>  Right-click on the device, selecting "Partition Format". </li><li>  Specify a new label / file system and size for the formatted card.  Click “OK” and “Apply” to save all changes.  You can specify disk attributes using commands. </li><li>  To remove read-only, specify disk disk readonly attributes, or to set read-only attribute, use readonly. </li><li>  Then type exit to exit the program. </li></ol><h2>  Download in safe mode </h2><p>  The user will not be able to format the device if you try to do this after a normal boot in Windows and receive a message that the device is write-protected.  To counter this: </p><ol><li>  Restart Windows, as soon as the computer turns on again, press F8.  A menu will appear with BootInto Safe Mode. </li><li>  Select this option using the arrow keys and press Enter. </li><li>  When Windows boots up and the desktop appears, press WinKey + R and enter CMD in the "Run" dialog box to get DOS. </li><li>  In the black window, enter the format followed by the drive letter of the removable storage.  For example, if the desired drive is F, enter the format f, bearing in mind that the input format will delete the contents of the storage device.  In addition, you must specify the exact drive letter, since entering the wrong letter will completely delete the data of the corresponding storage. </li><li>  After the formation, save the files to disk. </li></ol><p>  If the save process is completed, the problem is fixed.  If not, proceed to the next troubleshooting step. </p><h2>  Deleting a destructive record </h2><p>  Destructive write tests often solve the problem when the table files of external storage devices are damaged.  Almost all of them completely destroy the file allocation table and create a new one.  In this case, you may need to format the disk before you can store any data on it - after testing.  There are some good third-party programs that can help achieve this, such as HD Tune.  The free version is enough to fix the disk, however, without restoring old data. </p><p>  HD Tune Pro is a great tool for diagnosing HDD and SSD.  This utility allows you to compare the storage device with the minimum, maximum and average transfer speeds, as well as other useful tools.  Other HD Tune features include driver details, disk error scanning.  Pro versions allow you to monitor the health status of several disks, offer information about the use of folders, safe erasure, file verification, cache and additional tests. </p><h2>  Change Security Permissions </h2><p>  If using diskpart as described above does not work to clear the USB read-only attribute, you may need to change the security permissions. </p><p>  Before removing the protection from the flash drive from the sd write, you need to perform the following steps: </p><ol><li>  Find the flash drive in the My Computer list. </li><li>  Click on the flash drive icon and select “Properties”. </li><li>  Go to the “Security” tab. </li><li>  Next - “Change” in the “Group”. </li><li>  In the Permissions section, click the Everyone entry, if it is not already selected. </li><li>  In the Permissions for All section, verify that the Allow check box is selected for the Edit entry.  If it is not installed, then install. </li><li>  Click OK to save changes to security permissions.  If you want the flash drive to be accessible only to all users, uncheck all the fields in the "Allow" column, except for the "Read" entry. </li></ol><h2>  Protecting individual files </h2><div class="photo" data-original="seloru.blogspot.com" data-author=": "><img itemprop="image" alt="Protecting individual files" class="if uuid-2627067" src="https://fb.ru/misc/i/gallery/73564/2627067.jpg"></div><p>  You can always change the write protection of individual files and folders on a removable disk.  If the following steps do not work for a flash drive, this may prevent permission changes due to blocking by any security program.  In these cases, the user will not be able to make the flash drive writable until it closes the program. </p><p>  Unfortunately, writing to flash drives still causes a lot of problems.  Changes are not accepted, functions are not available, USB is damaged.  If none of the above instructions helped, which, unfortunately, is not an isolated case, especially in Windows 10, you can try additional tools: free LockHunter and Unlocker. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G42170/index.html">How to make a phone call over the Internet?</a></li>
+<li><a href="../G42171/index.html">Sights of Moscow for the child. Where to go with children in Moscow?</a></li>
+<li><a href="../G42172/index.html">iPod Touch 6: Product Overview</a></li>
+<li><a href="../G42173/index.html">Fingerprint reader: technical specification, classification, instructions for use, specification, installation and operating features</a></li>
+<li><a href="../G42174/index.html">Nabeul. Hotel Riadh Club 3</a></li>
+<li><a href="../G42176/index.html">Hotel Nikos Hotel 2 * (Greece, Halkidiki): overview, description, rooms and reviews</a></li>
+<li><a href="../G42177/index.html">Speransky Reforms</a></li>
+<li><a href="../G42178/index.html">Khadyzhensk city, Krasnodar Territory: reviews of people who moved for permanent residence</a></li>
+<li><a href="../G42179/index.html">Flatworms. Some representatives</a></li>
+<li><a href="../G4218/index.html">When is income tax refund possible?</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

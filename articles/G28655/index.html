@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🤷🏻 🔇 👨🏿‍🚒 How to connect soil moisture sensor to Arduino? 👨🏻‍⚖️ 🈲 🧑🏾‍🤝‍🧑🏽</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="When do you go somewhere far away for a certain period of time? There is no one to water your indoor flowers, so you have to ask for help from your ne...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>How to connect soil moisture sensor to Arduino?</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  When do you go somewhere far away for a certain period of time?  There is no one to water your indoor flowers, so you have to ask for help from your neighbors, who, in turn, may neglect this.  As a result, the plants will feel bad for your arrival.  To prevent this, you can make an automatic watering system.  For this purpose we need an Arduino and a soil moisture sensor.  In the article, we consider an example of connecting and working with the FC-28 sensor.  He proved himself on the positive side, with the help of him thousands of projects were created. </p><h2>  About FC-28 </h2><p>  There are a great many sensors for determining the moisture content of the earth, but the most popular model is the FC-28.  It has a low price, due to which it is widely used by all hams in their projects.  Soil moisture sensor with Arduino is used.  He has two probes that conduct electric current through the earth.  It turns out that if the soil is wet, then the resistance between the probes is less.  With dry soil, respectively, the resistance is greater.  Arduino takes these values, compares and, if necessary, turns on, for example, a pump.  The sensor is capable of working with both digital mode and analog mode, we will consider both connection options.  FC-28 is used mainly in small projects, for example, when automatically irrigating one particular plant, since it is inconvenient to use it on a large scale due to the size and minuses, which we will also consider. </p><div class="photo" data-original="www.fasttech.com" data-author=": "><img itemprop="image" alt="Soil moisture sensor FC-28" class="if uuid-2717911" src="https://fb.ru/misc/i/gallery/101519/2717911.jpg"></div><h2>  Where could I buy </h2><p>  The fact is that in Russian stores, sensors for working with Arduino are relatively expensive.  The average price for this sensor in Russia varies from 200 to 300 rubles, while in Aliexpress the same sensor costs only some 30-50.  The extra charge is huge.  Of course, you can still make a sensor for measuring soil moisture with your own hands, but more on that below. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  About connecting </h2><p>  Connecting a humidity sensor to the Arduino is very easy.  A comparator and a potentiometer are included with it to control the sensitivity of the sensor, as well as to set the limit value when connected using a digital output.  The output signal, as mentioned above, can be digital and analog. </p><div class="photo" data-original="www.luisllamas.es" data-author=": "><img itemprop="image" alt="Soil moisture sensor pinout" class="if uuid-2717907" src="https://fb.ru/misc/i/gallery/101519/2717907.jpg"></div><h2>  Digital Output Connection </h2><p>  It connects in almost the same way as analog: </p><ul><li>  VCC - 5V on Arduino. </li><li>  D0 - D8 on the Arduino board. </li><li>  GND is the earth. </li></ul><p>  As mentioned above, a comparator and potentiometer are located on the sensor module.  Everything works as follows: using a potentiometer, we set the limit value of our sensor.  FC-28 compares the value with the limit, and then sends the value to the Arduino.  Suppose the sensor value is above the threshold, in this case the soil moisture sensor on the Arduino transmits 5V, if less - 0V.  Everything is very simple, but the analog mode has more accurate values, therefore it is recommended to use it. </p><div class="photo" data-original="www.circuitstoday.com" data-author=": "><img itemprop="image" alt="Digital Connection" class="if uuid-2717882" src="https://fb.ru/misc/i/gallery/101519/2717882.jpg"></div><p>  The wiring diagram looks as shown in the photo above.  way </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="inpage"></div><div id="NRent-5ced10a04aa78-3"></div><p>  The code for Arduino when using digital mode is shown below. </p><pre class=" language-c"><code class=" language-c"><span class="token keyword">int</span> led_pin <span class="token operator">=</span><span class="token number">13</span><span class="token punctuation">;</span> <span class="token keyword">int</span> sensor_pin <span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">;</span> <span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token function">pinMode</span><span class="token punctuation">(</span>led_pin<span class="token punctuation">,</span> OUTPUT<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">pinMode</span><span class="token punctuation">(</span>sensor_pin<span class="token punctuation">,</span> INPUT<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">digitalRead</span><span class="token punctuation">(</span>sensor_pin<span class="token punctuation">)</span> <span class="token operator">==</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token function">digitalWrite</span><span class="token punctuation">(</span>led_pin<span class="token punctuation">,</span> HIGH<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span> <span class="token function">digitalWrite</span><span class="token punctuation">(</span>led_pin<span class="token punctuation">,</span> LOW<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span></code> </pre> <p>  What does our code do?  The first step was to designate two variables.  The first variable, led_pin, is used to indicate the LED, and the second is to indicate the earth's humidity sensor.  Next, we declare the LED contact as an output, and the sensor contact as an input.  This is necessary so that we can obtain the values ​​and, if necessary, turn on the LED to visually see that the sensor values ​​are above the threshold.  In the loop, we read the values ​​from the sensor.  If the value is above the limit - turn on the LED, if lower - turn off.  Instead of an LED there may be a pump, it all depends on you. </p><h2>  Analog mode </h2><p>  To connect using the analog output, you will need to work with A0.  The capacitive soil moisture sensor in Arduino takes values ​​from 0 to 1023. We connect the sensor as follows: </p><ul><li>  VCC connect at 5V to Arduino. </li><li>  Connect the GND on the sensor to the GND on the Arduino board. </li><li>  A0 connect to A0 on Arduino. </li></ul><p>  Next, in Arduino, we write the code below. </p><pre class=" language-c"> <code class=" language-c"><span class="token keyword">int</span> sensor_pin <span class="token operator">=</span> A0<span class="token punctuation">;</span> <span class="token keyword">int</span> output_value <span class="token punctuation">;</span> <span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">9600</span><span class="token punctuation">)</span><span class="token punctuation">;</span> Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> output_value<span class="token operator">=</span> <span class="token function">analogRead</span><span class="token punctuation">(</span>sensor_pin<span class="token punctuation">)</span><span class="token punctuation">;</span> output_value <span class="token operator">=</span> <span class="token function">map</span><span class="token punctuation">(</span>output_value<span class="token punctuation">,</span><span class="token number">550</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span> Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">" "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>output_value<span class="token punctuation">)</span><span class="token punctuation">;</span> Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"%"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code> </pre> <p>  So what does this program code do?  The first thing to do was set the variables.  The first variable is needed to determine the contact of the sensor, and the other will store the results that we will receive with the sensor.  Next we read the data.  In the loop, we write the values ​​from the sensor to the variable output_value that we created.  Then, the percentage of soil moisture is calculated, and then we display them on the port monitor.  The wiring diagram is shown below. </p><div class="photo" data-original="www.homautomation.org" data-author=": "><img itemprop="image" alt="Analogue soil moisture sensor connection" class="if uuid-2717856" src="https://fb.ru/misc/i/gallery/101519/2717856.jpg"></div><h2>  Do it yourself </h2><p>  It was discussed above how to connect a soil moisture sensor to an Arduino.  The problem with these sensors is that they are short-lived.  The fact is that they are very prone to corrosion.  Some companies make sensors with a special coating to increase the service life, but this is still not the case.  Also considered is the option of using the sensor not often, but only when required.  For example, there is a program code where every second the sensor reads values ​​about soil moisture.  You can extend the life if you include it, for example, once a day.  But if this does not suit you, then you can make a soil moisture sensor with your own hands.  Arduino won't feel the difference.  In principle, the system is the same.  Just instead of two sensors, you can put your own and use material that is less susceptible to corrosion.  It is ideal, of course, to use gold, but given its price, it will come out very expensive.  In general, it’s cheaper to buy, given the price of the FC-28. </p><div class="photo" data-original="tutorial45.com" data-author=": "><img itemprop="image" alt="DIY soil moisture sensor" class="if uuid-2717929" src="https://fb.ru/misc/i/gallery/101519/2717929.jpg"></div><h2>  Pros and cons </h2><p>  The article examined options for connecting a soil moisture sensor to an Arduino, and examples of program code were also presented.  The FC-28 is a really good sensor for determining soil moisture, but what are the specific pros and cons of this sensor? </p><p>  <em>Pros:</em> </p><ul><li>  Price.  This sensor has a very low price, so each hams will be able to buy and build their own automatic irrigation system for plants.  Of course, when working with large scales, this sensor will not work, but it is not intended for this.  If you need a more powerful sensor - SM2802B, then you will have to pay a considerable amount for it. </li><li>  Simplicity.  Everyone can master the work with this soil moisture sensor in Arduino.  Just a few wires, a couple lines of code - that's all.  Soil moisture control done. </li></ul><p>  <em>Minuses:</em> </p><ul><li>  Susceptibility to corrosion.  This is the only drawback of these sensors.  But, considering the price, you can close your eyes to this.  First of all, these sensors were made more for training than for practical use in large projects. </li></ul>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G28650/index.html">Alexander 2: educational reforms (briefly). Reasons, significance, pros and cons of education reform Alexander 2</a></li>
+<li><a href="../G28651/index.html">Reviews about Gold Twins Suite Hotel 3 * (Turkey / Alanya)</a></li>
+<li><a href="../G28652/index.html">Smolenskaya embankment in Moscow: attractions, interesting facts, photos</a></li>
+<li><a href="../G28653/index.html">Leonid Vladimirovich Shebarshin: biography. Aphorisms and quotes</a></li>
+<li><a href="../G28654/index.html">Crochet sneakers how to tie? Knitting patterns with description</a></li>
+<li><a href="../G28656/index.html">3GS iPhone: specifications, reviews and photos</a></li>
+<li><a href="../G28657/index.html">Hours of the Duke of Berry: description, history and photos</a></li>
+<li><a href="../G28658/index.html">Streletsky rebellion of 1698: reasons, participants</a></li>
+<li><a href="../G28659/index.html">DIY topiary: step-by-step instructions</a></li>
+<li><a href="../G2866/index.html">Schrödinger Theory: Description, Features, Experiments and Applications</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

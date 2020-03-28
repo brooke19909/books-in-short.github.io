@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🚭 ✂️ 🤜🏼 Transistor-Transistor Logic (TTL) 🌶️ 🧘 👢</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="The article will consider the logic of TTL, which is still used in some branches of technology. There are several types of logic: transistor-transisto...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Transistor-Transistor Logic (TTL)</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  The article will consider the logic of TTL, which is still used in some branches of technology.  There are several types of logic: transistor-transistor (TTL), diode-transistor (DTL), based on MOS transistors (CMOS), as well as on the basis of bipolar transistors and CMOS.  The very first circuits that were widely used were those that were built using TTL technology.  But one cannot ignore other types of logic that are still used in technology to this day. </p><h2>  Diode transistor logic </h2><p>  Using conventional semiconductor diodes, you can get the simplest logic element (the circuit is shown below).  This element is called “2I” in logic.  When zero potential is applied to any input (or both at once), an electric current will flow through the resistor.  In this case, a significant voltage drop occurs.  We can conclude that at the output of the element the potential will be equal to unity, if this is accurately applied to both inputs simultaneously.  In other words, with the help of such a scheme, the logical operation “2I” is realized. </p><div class="photo" data-original="" data-author=""><img itemprop="image" alt="Logic element on diodes" class="if uuid-2269075" src="https://fb.ru/misc/i/gallery/57090/2269075.jpg"></div><p>  How many inputs the element will have depends on the number of semiconductor diodes.  When using two semiconductors, the “2I” circuit is implemented, the three - “3I” circuit, etc. In modern microcircuits, an element with eight diodes (“8I”) is produced.  a huge drawback of DTL logic is a very small level of load capacity.  For this reason, an <span>amplifier on</span> bipolar <span>transistors</span> must be connected to the logic element. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><p>  But it is much more convenient to implement logic on transistors having several additional emitters.  In such TTL logic circuits, a multi-emitter transistor is used, rather than parallel-connected semiconductor diodes.  This element is similar in principle to “2I”.  but at the output a high level of potential can be obtained only if the two values ​​simultaneously have the same value.  There is no emitter current, and the junctions are locked.  The figure shows a typical logic circuit using transistors. </p><h2>  Inverter circuits on logic elements </h2><p>  Using an amplifier, it is possible to invert the signal at the output of the component.  Elements of the "AND-NOT" type are indicated in serial aircraft circuits.  For example, the K155LA3 series microcircuit has in its design elements of the “2I-NOT” type in the amount of four pieces.  An inverter device is made on the basis of this element.  In this case, a single semiconductor diode is used. </p><p>  If you need to combine several logic elements of type “AND” according to “OR” circuits (or if you want to implement logical elements “OR”), then transistors must be connected in parallel at the points indicated on the circuit.  In this case, only one cascade at the output is obtained.  The logic element of the “2OR-NOT” type is shown in this photo: </p><div class="photo" data-original="" data-author=""><img itemprop="image" alt="TTL transistor logic" class="if uuid-2269081" src="https://fb.ru/misc/i/gallery/57090/2269081.jpg"></div><p>  These elements are available in microcircuits, which are indicated by the letters LR.  But the logic of TTL type "OR-NOT" is indicated by the abbreviation LE, for example, K153LE5.  Four logical elements “2OR-NOT” are built in it at once. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><h2>  Logic Chip Levels </h2><p>  In modern technology, chips with TTL logic are used, which have power from 3 and 5 V. But only the logical level of unity and zero does not depend on voltage.  For this reason, there is no need for additional coordination of microcircuits.  The graph below shows the allowable voltage level at the output of the element. </p><div class="photo" data-original="" data-author=""><img itemprop="image" alt="Logic State Chart" class="if uuid-2269078" src="https://fb.ru/misc/i/gallery/57090/2269078.jpg"></div><p>  The voltage in an undefined state at the input of the microcircuit in comparison with the output is permissible to a lesser extent.  And this graph shows the boundaries of the logical unit and zero levels for TTL type microcircuits. </p><div class="photo" data-original="" data-author=""><img itemprop="image" alt="TTL logic state graph" class="if uuid-2269080" src="https://fb.ru/misc/i/gallery/57090/2269080.jpg"></div><h2>  Schottky diode on </h2><p>  But simple <span>transistor keys</span> have one big drawback - they have a saturation mode when working in the open state.  In order for excess carriers to dissolve, and the semiconductor not to be saturated, a semiconductor diode is turned on between the base and the collector.  The figure shows a method for connecting a Schottky diode and a transistor. </p><div class="photo" data-original="" data-author=""><img itemprop="image" alt="Logic on a Schottky Diode" class="if uuid-2269079" src="https://fb.ru/misc/i/gallery/57090/2269079.jpg"></div><p>  The threshold voltage value of the Schottky diode is about 0.2-0.4 V, and that of the silicon pn junction is not less than 0.7 V. And this is much shorter than the lifetime of the minority type of carriers in a semiconductor crystal.  The Schottky diode allows you to hold the transistor due to the low threshold for opening the junction.  It is for this reason that the triode is prevented from entering the mode. </p><h2>  What are the families of TTL chips </h2><p>  Usually, microcircuits of this type are powered from sources with a voltage of 5 V. There are foreign analogues of domestic elements - the SN74 series.  But after the series is a digital number that indicates the number and type of logical components.  The SN74S00 microcircuit contains 2I-NOT logic gates.  There are microcircuits in which the temperature range is more extended - domestic K133 and foreign SN54. </p><p>  Russian microcircuits, similar in composition to SN74, were produced under the designation K134.  Foreign microcircuits, for which power consumption and speed are low, have the letter L at the end. Foreign microcircuits with the letter S at the end have domestic counterparts in which the number 1 has been replaced by 5. For example, K555 or K531, known to everyone.  Today, several types of microcircuits of the K1533 series are produced, in which the speed and power consumption are very low. </p><h2>  CMOS transistor logic elements </h2><p>  Microcircuits with complementary transistors are based on MOS elements with p- and n-channels.  With the help of one potential, a transistor with a p-channel opens.  When a logical “1” is formed, the upper transistor opens and the lower one closes.  In this case, no current flows through the microcircuit.  When "0" is formed, the lower transistor opens and the upper one closes.  In this case, the current flows through the microcircuit.  An example of a simple logic element is an inverter. </p><div class="photo" data-original="" data-author=""><img itemprop="image" alt="TTL logic elements" class="if uuid-2269082" src="https://fb.ru/misc/i/gallery/57090/2269082.jpg"></div><p>  Please note that in microcircuits on CMOS transistors there is no current consumption in static mode.  Current consumption begins only when switching from one state to another logic element.  TTL logic on such elements is characterized by low energy consumption.  The figure shows a diagram of an element of the type "AND-NOT", compiled on CMOS transistors. </p><div class="photo" data-original="" data-author=""><img itemprop="image" alt="CMOS transistor logic" class="if uuid-2269077" src="https://fb.ru/misc/i/gallery/57090/2269077.jpg"></div><p>  On two transistors, an active load circuit is built.  If it is necessary to form a high potential, these semiconductors open, and low - close.  Please note that transistor-transistor logic (TTL) is based on the operation of the keys.  The semiconductors in the upper shoulder open, and in the lower shoulder.  Moreover, in static mode, the chip will not consume current from the power source. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G16885/index.html">Regional insurance: "Asko", Chelyabinsk</a></li>
+<li><a href="../G16886/index.html">White Lake (Novokosino) - Holidays in Moscow</a></li>
+<li><a href="../G16887/index.html">How to implement a request for details on the number of the Megafon operator</a></li>
+<li><a href="../G16888/index.html">La Fleur Samsung GT-S5230: characteristics, instructions, description and reviews</a></li>
+<li><a href="../G16889/index.html">DIY candy boxes: original ideas, step-by-step description</a></li>
+<li><a href="../G16890/index.html">Berlin public transport: types, tickets, public transport routes</a></li>
+<li><a href="../G16891/index.html">The culture of Russia in the 18th century is brief. Artistic culture of Russia of the 18th century</a></li>
+<li><a href="../G16892/index.html">525707 - robot vacuum cleaner from "Oriflame": reviews, description, specifications, instructions</a></li>
+<li><a href="../G16893/index.html">How to make a strawberry costume for a girl with your own hands</a></li>
+<li><a href="../G16894/index.html">"Golden parachute" - what is it? What is the largest size of a "golden parachute"?</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

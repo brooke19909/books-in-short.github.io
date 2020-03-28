@@ -1,0 +1,318 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🤛 ♟️ 🧡 The general principle of the ADC 👨🏿‍🌾 👰🏽 📍</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="Let's look at the main range of issues that can be attributed to the principle of operation of analog-to-digital converters (ADCs) of various types. S...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>The general principle of the ADC</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  Let's look at the main range of issues that can be attributed to the principle of operation of <span>analog-to-digital converters (ADCs) of</span> various types.  Sequential counting, bitwise balancing - what is hidden behind these words?  What is the principle of operation of the ADC microcontroller?  These, as well as a number of other issues, we will consider in the framework of the article.  The first three parts we will devote to the general theory, and from the fourth subheading we will study the principle of their work.  You can find the terms ADC and DAC in various literature.  The principle of operation of these devices is slightly different, so do not confuse them.  So, the article will consider the <span>conversion of signals</span> from analog to digital form, while the DAC works the other way around. </p><h2>  Definition </h2><p>  Before considering the principle of the ADC, let's find out what kind of device it is.  Analog-to-digital converters are devices that convert a physical quantity into an appropriate numerical representation.  As an initial parameter, almost anything can be used - current, voltage, capacitance, resistance, angle of rotation of the shaft, pulse frequency, and so on.  But to be certain, we will only work with one transformation.  This is the voltage code.  The choice of this format of work is not accidental.  After all, the ADC (the principle of operation of this device) and its features largely depend on what concept of measurement is used.  By this we mean the process of comparing a certain value with a previously established standard. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="ADC working principle" class="if" height="401" src="//fb.ru/misc/i/gallery/37840/1280702.jpg" width="592"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  ADC Characteristics </h2><p>  The main ones are bit depth and conversion frequency.  The first is expressed in bits, and the second in counts per second.  Modern analog-to-digital converters can have a bit capacity of 24 bits or a conversion speed that comes to GSPS units.  Please note that the ADC can provide you with only one of its characteristics at a time.  The greater their performance, the more difficult it is to work with the device, and even it costs more.  But the benefit can be obtained the necessary indicators of capacity, sacrificing the speed of the device. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  ADC Types </h2><p>  The principle of operation varies among different groups of devices.  We will consider the following types: </p><ol><li>  With direct conversion. </li><li>  With a consistent approximation. </li><li>  With parallel conversion. </li><li>  Charge-balanced analog-to-digital converter (delta-sigma). </li><li>  Integrating ADCs. </li></ol><p>  There are many other conveyor and combined types that have their own special characteristics with different architectures.  But those samples that will be considered in the framework of the article are of interest due to the fact that they play a significant role in their niche of devices of this specificity.  Therefore, let's study the principle of the ADC, as well as its dependence on the physical device. </p><h2>  Direct A / D Converters </h2><p>  They became very popular in the 60-70s of the last century.  In the form of <span>integrated circuits</span> produced since the 80s.  These are very simple, even primitive devices that can not boast of significant indicators.  Their bit capacity is usually 6-8 bits, and the speed rarely exceeds 1 GSPS. </p><p>  The principle of operation of this type of ADC is as follows: the input signal is simultaneously input to the positive inputs of the comparators.  A negative voltage is applied to the negative terminals.  And then the device determines its mode of operation.  This is done due to the reference voltage.  Let's say we have a device with 8 comparators.  When ½ of the reference voltage is applied, only 4 of them will be switched on.  The priority encoder generates a <span>binary code,</span> which is fixed by the output register.  Regarding the advantages and disadvantages, we can say <span>that this principle of</span> operation allows you to create high-speed devices.  But to get the required bit depth you have to sweat a lot. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="ADC working principle" class="if" height="492" src="//fb.ru/misc/i/gallery/37840/1280704.jpg" width="527"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The general formula for the number of comparators is as follows: 2 ^ N.  Under N it is necessary to put the number of digits.  The example considered earlier can be used again: 2 ^ 3 = 8.  In total, 8 comparators are needed to obtain the third rank.  This is the principle of operation of the ADCs that were created first.  Not very convenient, so other architectures subsequently appeared. </p><h2>  Analog-to-Digital Converters </h2><p>  The “weighting” algorithm is used here.  In abbreviated form, devices operating by this technique are simply called ADCs of serial counting.  The principle of operation is as follows: the device measures the value of the input signal, and then it is compared with the numbers that are generated by a certain method: </p><ol><li>  Half of the possible voltage reference is set. </li><li>  If the signal has overcome the limit value from point No. 1, it is compared with a number that lies in the middle between the remaining value.  So, in our case it will be ¾ of the reference voltage.  If the reference signal does not reach this indicator, then the comparison will be carried out with another part of the interval according to the same principle.  In this example, this is ¼ of the reference voltage. </li><li>  Step 2 must be repeated H times, which will give us H bits of the result.  This is due to the H number of comparisons. </li></ol><p>  This principle of operation allows to obtain devices with a relatively high conversion speed, which are the ADCs of successive approximation.  The principle of operation, as you see, is simple, and these devices are great for various occasions. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="ADC sequential approximation working principle" class="if" height="351" src="//fb.ru/misc/i/gallery/5158/1281427.jpg" width="570"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  Parallel A / D Converters </h2><p>  They work like serial devices.  The calculation formula is (2 ^ N) -1.  For the case considered earlier, we need (2 ^ 3) -1 comparators.  For work, a certain array of these devices is used, each of which can compare the input and individual reference voltage.  Parallel analog-to-digital converters are fairly fast devices.  But the principle of construction of these devices is such that considerable support is needed to support their operability.  Therefore, it is impractical to use them with battery power. </p><h2>  Bit-to-Bit Analog-to-Digital Converter </h2><p>  It operates in a similar pattern as the previous device.  Therefore, to explain the functioning of the ADC bitwise balancing, the principle of work for beginners will be considered literally on the fingers.  The basis of these devices is the phenomenon of dichotomy.  In other words, a sequential comparison of the measured value with a certain part of the maximum value is carried out.  Values ​​of ½, 1/8, 1/16 and so on can be taken.  Therefore, an analog-to-digital converter can perform the entire process in N iterations (sequential steps).  Moreover, H is equal to the ADC capacity (look at the previously given formulas).  Thus, we have a significant gain in time, if the speed of technology is especially important.  Despite the significant speed, these devices are also characterized by low static error. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="ADC and DAC working principle" class="if" height="419" src="//fb.ru/misc/i/gallery/37840/1280707.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  Charge Balanced Analog to Digital Converters (Delta Sigma) </h2><p>  This is the most interesting type of device, not least due to its principle of operation.  It consists in comparing the input voltage with what the integrator has accumulated.  Pulses with negative or positive polarity are applied to the input (it all depends on the result of the previous operation).  Thus, it can be said that such an analog-to-digital converter is a simple tracking system.  But this is just an example for comparison, so you can understand <span>what a delta-sigma</span> ADC is.  The principle of operation is systemic, but for the effective functioning of this analog-to-digital converter is not enough.  The end result is an endless stream of ones and zeros that goes through the digital low-pass filter.  A certain bit sequence is formed from them.  There are first and second order ADC converters. </p><h2>  Integrating Analog-to-Digital Converters </h2><p>  This is the last special case that will be considered in the framework of the article.  Next, we will describe the principle of operation of these devices, but at a general level.  This ADC is a push-pull analog-to-digital converter.  You can meet a similar device in a digital multimeter.  And this is not surprising, because they provide high accuracy and at the same time suppress noise well. </p><p>  Now let's focus on its working principle.  It lies in the fact that the input signal charges the capacitor for a fixed time.  As a rule, this period is a unit of the frequency of the network that powers the device (50 Hz or 60 Hz).  It can also be a multiple.  Thus, high frequency interference is suppressed.  At the same time, the influence of the unstable voltage of the network source of power generation on the accuracy of the result is leveled. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="ADC dual integration working principle" class="if" height="385" src="//fb.ru/misc/i/gallery/37840/1280709.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  When the charge time of the analog-to-digital converter ends, the capacitor begins to discharge at a certain fixed speed.  The internal device counter counts the number of clock pulses that are generated during this process.  Thus, the longer the time period, the greater the performance. </p><p>  Push-pull ADCs have high accuracy and <span>resolution.</span>  Due to this, as well as a relatively simple structure, they are implemented as microcircuits.  The main drawback of this principle of operation is its dependence on the network metric.  Remember that its capabilities are tied to the duration of the frequency period of the power source. </p><p>  This is how dual integration ADCs work.  The principle of operation of this device, although it is quite complex, but it provides quality indicators.  In some cases, this is simply necessary. </p><h2>  We select AOC with the principle of work that we need </h2><p>  Let's say we have a specific task.  How to choose a device so that it can satisfy all our needs?  First, let's talk about resolution and accuracy.  They are often confused, although in practice they are very weakly dependent on one of the second.  Remember that a 12-bit A / D converter may have less accuracy than an 8-bit one.  In this case, resolution is a measure of how many segments can be extracted from the input range of the measured signal.  So, 8-bit ADCs have 2 <sup>8</sup> = 256 such units. </p><p>  Accuracy is the total deviation of the obtained conversion result from the ideal value, which should be at a given input voltage.  That is, the first parameter characterizes the potential capabilities that the ADC has, and the second shows what we have in practice.  Therefore, a simpler type (for example, direct analog-to-digital converters) may be suitable for us, which will allow us to satisfy our needs due to high accuracy. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="the principle of operation of the apc microcontroller" class="if" height="224" src="//fb.ru/misc/i/gallery/37840/1280708.jpg" width="300"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  To have an idea of ​​what you need, first you need to calculate the physical parameters and build a mathematical formula for the interaction.  Important in them are the static and dynamic errors, because when using various components and principles of the construction of the device, they will affect its characteristics in different ways.  More detailed information can be found in the technical documentation that the manufacturer of each particular device offers. </p><h2>  Example </h2><p>  Let's look at the SC9711 ADC.  The principle of operation of this device is complicated due to its size and capabilities.  By the way, speaking about the latter, it should be noted that they are truly diverse.  So, for example, the frequency of possible operation ranges from 10 Hz to 10 MHz.  In other words, it can do 10 million samples per second!  And the device itself is not something solid, but has a modular structure.  But it is used, as a rule, in complex technology, where it is necessary to work with a large number of signals. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="ADC bitwise balancing principle of work for beginners" class="if" height="302" src="//fb.ru/misc/i/gallery/37840/1280710.jpg" width="302"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  Conclusion </h2><p>  As you can see, ADCs basically have different operating principles.  This allows us to select devices that will satisfy the requests that have arisen, and at the same time allow us to reasonably manage the available funds. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G16648/index.html">Travel to Antarctica. How to get to Antarctica? Mysteries and secrets of Antarctica</a></li>
+<li><a href="../G16649/index.html">International loans as a tool used to develop the country's economy</a></li>
+<li><a href="../G1665/index.html">The capital of Dagestan: attractions, mosques, theaters of Makhachkala. Where is the city of Makhachkala on the map of Russia?</a></li>
+<li><a href="../G16650/index.html">The immune system</a></li>
+<li><a href="../G16651/index.html">Chemical and physical properties, use and production of oxygen</a></li>
+<li><a href="../G16653/index.html">Beach Resort by Bin Majid Hotels & Resorts 4 * (United Arab Emirates / Ras Al Khaimah): photos and reviews</a></li>
+<li><a href="../G16654/index.html">Thomas Carlyle: biography, essays. Quotes and aphorisms by Thomas Carlyle</a></li>
+<li><a href="../G16655/index.html">The best Malta hotels for holidays</a></li>
+<li><a href="../G16656/index.html">How to make a model of the solar system?</a></li>
+<li><a href="../G16657/index.html">The most interesting facts about bacteria: overview, description and types</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>😸 📂 ↕️ Setting up the Internet MTS. Setting up the MTS router. Configuring the MTS 4G router ☁️ 🚵🏻 🙎🏼</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="MTS is one of the largest providers of high-speed cable and mobile Internet in Russia. The presence of a large number of devices with access to the Wo...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Setting up the Internet MTS. Setting up the MTS router. Configuring the MTS 4G router</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  MTS is one of the largest providers of high-speed cable and mobile Internet in Russia.  The presence of a large number of devices with access to the World Wide Web requires the organization of local networks based on routers.  The routers themselves must be configured to access the Internet through the selected provider.  The article will help readers install, connect and configure MTS routers of various manufacturers on their own. </p><h2>  Appearance of routers </h2><p>  MTS Internet Service Provider does not practice supporting restrictions on the use of routers of certain models.  Stable and reliable operation in its networks was shown by models from manufacturers Zyxel and ASUS. </p><div class="photo" data-original="geek-nose.com" data-author=": "><img itemprop="image" alt="Indicator panel" class="if uuid-3033209" src="https://fb.ru/misc/i/gallery/112511/3033209.jpg"></div><p>  The front panels of their housings are designed to accommodate a line of LED indicators or pictograms illuminated from the inside.  They inform the user about the connection of the power source, the receipt and transmission of information from the provider, the health of the WI-FI network, and the connection of users via cable lines.  Indicators can change their color depending on the state of the monitored circuit, operate in silent, constant light or flash mode. </p><div class="photo" data-original="keenetic.com" data-author=": "><img itemprop="image" alt="Rear panel" class="if uuid-3033211" src="https://fb.ru/misc/i/gallery/112511/3033211.jpg"></div><p>  On the rear panel of the housings are connectors of various configurations.  Plug sockets are used to supply power to routers.  RJ-11 connectors are used when connecting to ADSL Internet access lines.  RJ-45 connectors, if the provider provides access to the global network using FTTx technology.  A similar type of connector is used as part of a “twisted pair”.  These cable assemblies are necessary for connecting end devices that do not have WI-FI modules into a local network.  Some router models also have USB sockets.  They are used to connect mobile modems, external hard drives, flash drives. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><p>  On the back panel of almost all routers, manufacturers install buttons that are necessary to perform some manipulations.  For example, POWER (ON / OFF) turns the router on and off.  WPS is used to connect user devices via Wi-Fi with automatic password substitution.  RESET resets to factory settings.  Some Zyxel models have a switch that determines the mode of use of the router on the local network.  The number of high-frequency connectors corresponds to the number of antennas used for WI-FI bands. </p><h2>  Connection and preparation for setup </h2><p>  Connection to the network of the MTS provider is made by Ethernet cable, which is brought into the living room by the company's technical service employees.  Its RJ-45 connector is docked with the WAN port of the router.  The cable length must be predetermined taking into account the installation location of the router.  The power adapter that comes with the product is connected to the plug connector on the rear panel.  One of the LAN ports of the router with a patch cord is connected to the network card of a personal computer. </p><p>  After turning on the power to the PC and the router, the network card of the computer is pre-configured.  It consists in setting the mode to automatically obtain IP addresses and DNS server.  To do this, in network connections, right-click on the symbol of the cable connection between the PC and the router and select the "Properties" line in the context menu.  In the window that opens, the section of the TPC / IP protocol is searched for, followed by the mandatory installation of “checkmarks” in the lines for automatically receiving addresses.  If an error occurs, the configuration mode must be manually corrected.  The procedure is completed by pressing the OK key. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><h2>  Enter the settings menu </h2><p>  All settings of MTS routers are made in the web interface.  To log in, use any browser installed on the computer.  In its address bar, you must enter the IP address of the router used.  Information about him can be obtained in various ways. </p><p>  If the router is purchased in a trading network, then on the label fixed on the bottom surface of the case there is the necessary information about the router address in the local network, the factory preset login and administrator password.  The IP address is represented by a combination of numbers 192.168.0.1 or 192.168.1.1.  The rest of the authorization data is admin.  After entering them and executing the “Login” command, you are taken to the main page of the router control panel. </p><h2>  Zyxel MTS router setup </h2><p>  On the start page, the user is offered configuration options - "Quick Setup" or "Web Configurator".  Before performing more fine-tuning using the web configurator, you must carefully read the information specified in the contract.  MTS regional units can use different types of Internet connections.  A prerequisite may be binding equipment at its MAC address.  If in doubt or questions, please contact technical support. </p><p>  When configuring the MTS Zyxel Keenetic router, after clicking on the "Web Configurator" button, a pop-up window will appear asking you to replace the factory password.  This must be done to protect against unauthorized access to the entered data.  After entering your new password and confirming it, press the "Apply" key.  Next, the router is rebooted.  In the window that appears, a login is entered with a new password value for re-authorization.  Actions are confirmed by pressing the OK button. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><div class="photo" data-original="www.intersv.ru" data-author=": "><img itemprop="image" alt="PPPoE setup" class="if uuid-3033218" src="https://fb.ru/misc/i/gallery/112511/3033218.jpg"></div><p>  MTS provider can use the following types of Internet connection: PPPoE;  PPTP  L2TP.  To configure any of them, click on the Internet symbol (globe) in the bottom row of icons.  On the page that opens, when you go to the PPPoE / VPN section, you need to click on the "Add Connection" stencil.  On the connection setup page, when choosing a PPPoE connection type, you must enter the username and password received from the provider.  For dynamic PPTP / L2TP connections, in addition to this data, you must enter the VPN server address - vpn.mts.ru. </p><div class="photo" data-original="tvoirouter.ru" data-author=": "><img itemprop="image" alt="L2TP Connection" class="if uuid-3033228" src="https://fb.ru/misc/i/gallery/112511/3033228.jpg"></div><p>  When a static IP address is received from the MTS provider, the connection type settings are changed - the "Set IP address manually" checkbox is checked, its value, subnet mask, main gateway, and DNS server addresses are entered.  The user receives their values ​​from the provider along with a fixed address.  The configuration ends with the "Apply" command followed by a reboot of the router. </p><h2>  Setting up an ASUS router </h2><p>  As for the Zyxel router, all settings of the ASUS router for MTS are made in the settings panel via the web interface.  To replace the factory password, in the "Administration" section, select the "System" tab.  The "New Password" field is filled in with subsequent confirmation.  Settings are activated by clicking the "Apply" button.  Internet connection is configured in the WAN section.  On it you need to select the type of connection provided by the regional MTS provider.  The data that you want to enter in the appropriate columns were noted in the previous section of the article.  In addition, it should be marked with a “Yes” marker to obtain an IP address and connect to a DNS server automatically.  Data entry is completed by pressing the "Confirm" key. </p><h2>  Configuring a 4G router for MTS </h2><div class="photo" data-original="www.decker.su" data-author=": "><img itemprop="image" alt="MTS 4G router" class="if uuid-3033213" src="https://fb.ru/misc/i/gallery/112511/3033213.jpg"></div><p>  The case of the mobile router resembles a black soap box.  Connection to the Internet from MTS is made using 3G / 4G LTE technology.  Work is done in modem and router modes.  Up to 5 wireless devices can connect to a WIFI network at the same time.  At the first step, a MTS SIM card is installed in the router slot for operation in a 4G network.  To configure the MTS 4G router, it must be connected to the computer with a MiniUSB cable. </p><p>  After turning on the device, the Connect Manager firmware is automatically launched.  When the installation is complete, a shortcut appears on the PC desktop.  In the application, you can change the preset settings.  The default settings allow the device to function as a full WI-FI router.  A local wireless network is created by pressing the WPS button on the device.  The network name and access code are shown on a label affixed to the back of the product.  They can be changed on the Connect Manager program pages. </p><h2>  WIFI network setup </h2><div class="photo" data-original="www.keenetic4g.ru" data-author=": "><img itemprop="image" alt="WIFI Security" class="if uuid-3033219" src="https://fb.ru/misc/i/gallery/112511/3033219.jpg"></div><p>  The settings are made on the page of the "Wireless Network" section (for ASUS routers) or the pages of the "Wi-Fi Network" section (for Zyxel routers).  The corresponding fields and sections indicate the user-invented network name (SSID), 802.11 standard (b / g / n mixed), channel selection method (Auto), authentication method (WPA2-PSK), network access key.  The key is invented independently and is a set of letters of the English alphabet scattered with numbers (at least 8 characters).  After completing the input, the "Apply" command is executed. </p><h2>  Conclusion </h2><p>  Installing, connecting and configuring the MTS WiFi router to connect to the Internet should not cause difficulties for the user.  To do this, it is enough to familiarize yourself with the material presented in the article.  The subscriber can check all the data necessary for setting up routers in the MTS technical support service. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </article>
+            
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G35708/index.html">Sunmelia Beach Resort Hotel Spa 5: traveler reviews</a></li>
+<li><a href="../G35709/index.html">Hotel Pr Club Saphire 5 (Kemer / Turkey)</a></li>
+<li><a href="../G3571/index.html">Oil Stones - the first offshore platform in the world</a></li>
+<li><a href="../G35710/index.html">What to mold from salt dough with your own hands: photo ideas, modeling workshops</a></li>
+<li><a href="../G35711/index.html">The city of Lankaran, Azerbaijan: recreation, weather, attractions</a></li>
+<li><a href="../G35713/index.html">Sweets of the USSR - the sweet taste of childhood</a></li>
+<li><a href="../G35714/index.html">Vyksa: attractions, excursions, reviews</a></li>
+<li><a href="../G35715/index.html">Who are the cyclops? The meaning of the word and the cyclops myth</a></li>
+<li><a href="../G35716/index.html">The first banknotes of the Russian Empire: photo and description, interesting facts</a></li>
+<li><a href="../G35717/index.html">Sights of Tchaikovsky, Perm Territory</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

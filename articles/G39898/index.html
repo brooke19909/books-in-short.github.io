@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>💷 🧑🏼‍🤝‍🧑🏻 👩‍👩‍👧‍👦 DIY Triac Power Controller ⚰️ ⤵️ 🆑</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="In the article we will talk about how to make a triac power regulator with your own hands. What is a triac? This is a device built on a semiconductor ...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>DIY Triac Power Controller</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  In the article we will talk about how to make a triac power regulator with your own hands.  What is a triac?  This is a device built on a semiconductor chip.  It has as many as 5 pn junctions, the current can pass in both forward and reverse directions.  But these elements are not widely used in modern industrial equipment, since they have a high sensitivity to electromagnetic interference. </p><p>  Also, they cannot work at a high frequency of the current, they emit a large amount of heat if they switch large loads.  Therefore, industrial equipment uses IGBT transistors and thyristors.  But triacs should also not be overlooked - they are cheap, they have a small size, and most importantly - a high resource.  Therefore, they can be used where the above disadvantages do not play a big role. </p><h2>  How does a triac work? </h2><p>  Today you can meet a triac power regulator in any household appliance - in grinders, screwdrivers, washing machines and vacuum cleaners.  In other words, wherever there is a need for smooth adjustment of the engine speed. </p><div class="photo" data-original="magazinchik-mastera.ru" data-author=": "><img itemprop="image" alt="DIY Triac Power Controller" class="if uuid-2878665" src="https://fb.ru/misc/i/gallery/57090/2878665.jpg"></div><p>  The controller works like an electronic key - it closes and opens at a certain frequency, which is set by the control circuit.  When the device is unlocked, a half-wave of voltage passes through it.  Consequently, a small part of the minimum power is supplied to the load. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  Can I do it myself? </h2><p>  Many hams make do-it-yourself triac power regulators for various purposes.  With it, you can control the heating of the soldering iron tip.  But, unfortunately, ready-made devices can be found on the market, but quite rarely. </p><div class="photo" data-original="slarkenergy.ru" data-author=": "><img itemprop="image" alt="Power controller design" class="if uuid-2878691" src="https://fb.ru/misc/i/gallery/57090/2878691.jpg"></div><p>  They have a low cost, but often the devices do not meet the requirements of consumers.  That is why it is much simpler, it turns out, not to buy a ready-made regulator, but to make it yourself.  In this case, you can take into account all the nuances of using the device. </p><h2>  Regulator circuit </h2><p>  Let's look at a simple triac power controller that can be used with any load.  Phase-pulse control, all components are traditional for such structures.  It is necessary to apply such elements: </p><ol><li>  Directly triac designed for a voltage of 400 V and a current of 10 A. </li><li>  Dinistor with an opening threshold of 32 V. </li><li>  A variable resistor is used to adjust the power. </li></ol><p>  The current that flows through the variable resistor and resistance charges the capacitor with each half-wave.  As soon as the capacitor accumulates charge and the voltage between its plates is 32 V, the dynistor will open.  In this case, the capacitor is discharged through it and the resistance to the control input of the triac.  The latter opens up so that the current passes to the load. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><div class="photo" data-original="ampexpert.ru" data-author=": "><img itemprop="image" alt="Triac power regulator for transformer" class="if uuid-2878668" src="https://fb.ru/misc/i/gallery/57090/2878668.jpg"></div><p>  To change the pulse duration, you need to choose a variable resistor and a threshold voltage of the dynistor (but this is a constant value).  Therefore, you have to "play" with the resistance of a variable resistor.  In the load, the power is <span>directly proportional to the</span> resistance of the variable resistor.  It is not necessary to use diodes and a constant resistor; the chain is designed to ensure the accuracy and smoothness of power control. </p><h2>  How the device works </h2><p>  The current that flows through the dynistor is limited by a constant resistor.  It is with its help that the pulse length is corrected.  With the help of a fuse, the circuit is protected against short circuit.  It should be noted the fact that the dinistor in each half-wave opens at the same angle. </p><p>  Therefore, the rectification of the flowing current does not occur; even an inductive load can be connected to the output.  Therefore, a triac power regulator can also be used for a transformer.  In order to pick up triacs, you need to take into account that for a load of 200 W it is necessary that the current be 1 A. </p><div class="photo" data-original="sdelaysam-svoimirukami.ru" data-author=": "><img itemprop="image" alt="Triac controller" class="if uuid-2878662" src="https://fb.ru/misc/i/gallery/57090/2878662.jpg"></div><p>  The following elements are used in the scheme: </p><ol><li>  Dinistor type DB3. </li><li>  Triacs type VT136-600, TC106-10-4 and similar with a current rating of up to 12 A. </li><li>  Semiconductor diodes germanium - 1N4007. </li><li>  An electrolytic capacitor for a voltage of more than 250 V, a capacity of 0.47 μF. </li><li>  A variable resistor of 100 kOhm, constant - from 270 Ohms to 1.6 kOhm (selected experimentally). </li></ol><h2>  Regulator circuit features </h2><p>  Such a scheme is the most common, but its small variations can be found.  For example, sometimes instead of a dinistor they put a diode bridge.  In some circuits there is a chain of capacitance and resistance to suppress interference.  There are more modern designs that use a control circuit on microcontrollers.  When using such a scheme, you get precise adjustment of current and voltage in the load, but it is more difficult to implement. </p><h2>  Preparatory work </h2><div class="photo" data-original="p90590qa.bget.ru" data-author=": "><img itemprop="image" alt="Simple triac power controller" class="if uuid-2878669" src="https://fb.ru/misc/i/gallery/57090/2878669.jpg"></div><p>  In order to assemble a triac power regulator for an electric motor, you just adhere to the following sequence: </p><ol><li>  First you need to determine the characteristics of the device that will be connected to the regulator.  The characteristics include: the number of phases (either 3 or 1), the need for accurate power adjustment, voltage and current. </li><li>  Now you need to choose a specific type of device - digital or analog.  After that, you can select the components according to the load power.  In principle, special software can be used for modeling. </li><li>  Calculate heat dissipation.  To do this, multiply two parameters - the rated current (in Amps) and the voltage drop across the triac (in Volts).  All this data can be found among the characteristics of the element.  As a result, you get the dissipation power, expressed in watts.  Based on this value, you need to choose a radiator and cooler (if necessary). </li><li>  Buy all the necessary items or prepare them if you have them. </li></ol><p>  Now you can proceed directly to the assembly of the device. </p><h2>  Controller assembly </h2><div class="photo" data-original="solo-project.com" data-author=": "><img itemprop="image" alt="Triac power regulator circuit" class="if uuid-2878666" src="https://fb.ru/misc/i/gallery/57090/2878666.jpg"></div><p>  Before you assemble a triac power regulator according to the scheme, you need to perform a number of actions: </p><ol><li>  Route the tracks on the board and prepare the areas on which you want to install the elements.  Plan ahead for mounting the triac and heatsink. </li><li>  Install all the elements on the board and solder them.  In the event that you do not have the opportunity to make a printed circuit board, you can use a hinged installation.  The wires that connect all the elements should be as short as possible. </li><li>  Pay attention to whether polarity is observed when connecting a triac and diodes.  If there is no marking, ring the elements with a multimeter. </li><li>  Check the circuit using a multimeter in resistance measurement mode. </li><li>  Fix the triac on the radiator, it is advisable to use thermal grease for better contact surfaces. </li><li>  The entire circuit can be installed in a plastic case. </li><li>  Set the handle of the variable resistor to the leftmost position and turn on the device. </li><li>  Measure the voltage value at the output of the device.  If you rotate the handle of the resistor, the voltage should increase smoothly. </li></ol><p>  As you can see, a self-made triac power controller is a useful design that can be used in everyday life with almost no limits.  Repair of this device is cheap, since the cost is quite low. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </article>
+            
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G39893/index.html">Carnival costume Harlequin: description, patterns</a></li>
+<li><a href="../G39894/index.html">Mobile networks: overview, features, rates and reviews</a></li>
+<li><a href="../G39895/index.html">Taxes and the tax system as a problem of public policy</a></li>
+<li><a href="../G39896/index.html">Panfilov’s. The feat of Panfilov’s heroes during the Great Patriotic War</a></li>
+<li><a href="../G39897/index.html">Federated States of Micronesia: History and Population</a></li>
+<li><a href="../G39899/index.html">Electrolytes: examples. Composition and properties of electrolytes. Strong and weak electrolytes</a></li>
+<li><a href="../G399/index.html">Order of Zhukov - Honorary Award</a></li>
+<li><a href="../G3990/index.html">Printer Canon MAXIFY MB2340: reviews and specifications</a></li>
+<li><a href="../G39900/index.html">Hotel Fiesta Hotel Playa Paraiso</a></li>
+<li><a href="../G39901/index.html">Amazing pink beach in Crete</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

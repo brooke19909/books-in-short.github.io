@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🐝 📽️ 👨🏾‍🤝‍👨🏽 Cramer's method and its application 👩🏻‍🚒 🌩️ 🧑🏼‍🤝‍🧑🏻</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="Cramer's method is one of the exact methods for solving systems of linear algebraic equations (SLAE). Its accuracy is due to the use of determinants o...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Cramer's method and its application</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  Cramer's method is one of the exact methods for solving systems of linear algebraic equations (SLAE).  Its accuracy is due to the use of determinants of the matrix of the system, as well as some restrictions imposed during the proof of the theorem. </p><p>  <span>A system of linear algebraic equations</span> with coefficients belonging, for example, to the set R - real numbers, of unknowns x1, x2, ..., xn is a set of expressions of the form </p><p>  ai2 x1 + ai2 x2 + ... ain xn = bi for i = 1, 2, ..., m, (1) </p><p>  where aij, bi are real numbers.  Each of these expressions is called a <span>linear equation,</span> aij - coefficients for unknowns, bi - free coefficients of equations. </p><p>  The solution to system (1) is the n-dimensional vector x ° = (x1 °, x2 °, ..., xn °), when substituting into the system instead of the unknown x1, x2, ..., xn, each of the lines in the system becomes the correct equality . </p><p>  A system is called joint if it has at least one solution, and incompatible if its set of solutions coincides with an empty set. </p><p>  It must be remembered that in order to find a solution to systems of linear algebraic equations using the Cramer method, the matrices of the systems must be square, which essentially means the same number of unknowns and equations in the system. </p><p>  So, to use the Cramer method, you must at least know <span>what a matrix of</span> systems of linear algebraic equations is and how it is written out.  And secondly, understand what is called the determinant of the matrix and have the skills to calculate it. </p><div id="NRent-5ced10a04aa78-2"></div><p>  Suppose you have this knowledge.  Wonderful!  Then you just have to remember the formulas that determine the Cramer method.  To simplify memorization, we use the following notation: </p><ul><li><p>  Det is the main determinant of the system matrix; </p></li><li><p>  deti is the determinant of a matrix obtained from the main matrix of the system if we replace the ith column of the matrix with a column vector whose elements are the right-hand sides of systems of linear algebraic equations; </p></li><li><p>  n is the number of unknowns and equations in the system. </p></li></ul><p>  Then the Cramer rule for computing the ith component xi (i = 1, .. n) of the n-dimensional vector x can be written as </p><p>  xi = deti / Det, (2). </p><p>  In this case, Det is strictly nonzero. </p><p>  The uniqueness of the solution of the system, when it is compatible, provides the condition of inequality to zero of the main determinant of the system.  Otherwise, if the sum (xi) squared is strictly positive, then a square matrix SLAE will be incompatible.  This can happen, in particular, when at least one of deti is nonzero. </p><p>  <strong>Example 1</strong>  Solve a three-dimensional LAU system using Cramer's formulas. <br>  x1 + 2 x2 + 4 x3 = 31, <br>  5 x1 + x2 + 2 x3 = 29, <br>  3 x1 - x2 + x3 = 10. </p><p>  Decision.  We write out the matrix of the system line by line, where Ai is the ith row of the matrix. <br>  A1 = (1 2 4), A2 = (5 1 2), A3 = (3 –1 1). <br>  The column of free coefficients b = (31 29 10). </p><p>  The main determinant of the Det system is <br>  Det = a11 a22 a33 + a12 a23 a31 + a31 a21 a32 - a13 a22 a31 - a11 a32 a23 - a33 a21 a12 = 1 - 20 + 12 - 12 + 2 - 10 = –27. </p><div id="inpage"></div><div id="NRent-5ced10a04aa78-3"></div><p>  To calculate det1, we use the substitution a11 = b1, a21 = b2, a31 = b3.  Then <br>  det1 = b1 a22 a33 + a12 a23 b3 + a31 b2 a32 - a13 a22 b3 - b1 a32 a23 - a33 b2 a12 = ... = –81. </p><p>  Similarly, to calculate det2, we use the substitution a12 = b1, a22 = b2, a32 = b3 and, accordingly, to calculate det3 - a13 = b1, a23 = b2, a33 = b3. <br>  Then you can check that det2 = –108, and det3 = - 135. <br>  According to Cramer's formulas, we find x1 = -81 / (- 27) = 3, x2 = -108 / (- 27) = 4, x3 = -135 / (- 27) = 5. <br><strong> </strong></p><p>  <strong>Answer:</strong> x ° = (3,4,5). </p><p>  Based on the conditions of applicability of this rule, the Cramer method for solving systems of linear equations can be used indirectly, for example, to study the system for a possible number of solutions depending on the value of some parameter k. </p><p>  <strong>Example 2.</strong> Determine for which values ​​of the parameter k the inequality | kx - y - 4 | + | x + ky + 4 | &lt;= 0 has exactly one solution. </p><p>  Decision. <br>  By virtue of the definition of the modulus of a function, this inequality can be satisfied only if both expressions are simultaneously equal to zero.  Therefore, this problem reduces to finding a solution to a linear system of algebraic equations </p><p>  kx - y = 4, <br>  x + ky = –4. </p><p>  The solution to this system is the only one if its main determinant <br>  Det = k ^ {2} + 1 is nonzero.  Obviously, this condition is satisfied for all real values ​​of the parameter k. </p><p>  <strong>Answer:</strong> for all real values ​​of the parameter k. </p><p>  Many practical problems from the field of <span>mathematics, physics, or chemistry</span> can also be reduced to problems of this kind <span>.</span> </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G26913/index.html">Kola Peninsula: history. Rivers and cities of the Kola Peninsula</a></li>
+<li><a href="../G26914/index.html">A person in a system of social connections. Theoretical aspect</a></li>
+<li><a href="../G26915/index.html">The Communist Party is ... History of creation, stages of development, structure, goals and objectives</a></li>
+<li><a href="../G26916/index.html">Duke of England: biography, history of the branch</a></li>
+<li><a href="../G26917/index.html">Mari Kristin Beach Hotel (Greece / Crete): photos and reviews of tourists</a></li>
+<li><a href="../G26919/index.html">Z 5R controller: instructions, wiring diagram</a></li>
+<li><a href="../G2692/index.html">Bowling in Elektrostal on Mira street</a></li>
+<li><a href="../G26920/index.html">Hotel Trang Long Nha Trang 3 * Vietnam, Nha Trang: description</a></li>
+<li><a href="../G26921/index.html">Cyprus in September: holiday features, weather, attractions and reviews</a></li>
+<li><a href="../G26922/index.html">City of Sarapul: attractions. What to see in Sarapul</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

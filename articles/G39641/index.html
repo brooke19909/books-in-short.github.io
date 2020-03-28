@@ -1,0 +1,290 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>😗 🌸 💍 Triac: principle of operation, application, device and their management 🤛🏿 😶 👨‍👨‍👧‍👧</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="From the article you will learn about what a triac, the principle of operation of this device, as well as the features of its application. But to begi...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Triac: principle of operation, application, device and their management</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  From the article you will learn about what a triac, the principle of operation of this device, as well as the features of its application.  But to begin with, it is worth mentioning that a triac is the same as a thyristor (only symmetrical).  Therefore, the article cannot do without a description of the principle of operation of thyristors and their features.  Without knowledge of the basics, it will not be possible to design and build even the simplest control scheme. </p><h2>  Thyristors </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="triac principle of operation" class="if" height="395" src="//fb.ru/misc/i/gallery/33200/1272834.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  A thyristor is a <span>semiconductor</span> switching <span>device</span> that is capable of transmitting current in only one direction.  It is often called a valve and draw analogies between it and a controlled diode.  Thyristors have three terminals, and one is the control electrode.  To put it bluntly, this is a button with the help of which the element is switched to the conducting mode.  The article will consider a special case of a thyristor - a triac - a device and its operation in various circuits. </p><p>  A thyristor is also a rectifier, switch, and even a signal amplifier.  Often it is used as a regulator (but only if the entire electrical circuit is powered from an AC voltage source).  All thyristors have some features that need to be discussed in more detail. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  Thyristor Properties </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="triac operation principle for dummies" class="if" height="500" src="//fb.ru/misc/i/gallery/33200/1272833.jpg" width="333"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  Among the huge set of characteristics of this semiconductor element, the most significant can be distinguished: </p><ol><li>  Thyristors, like diodes, are able to conduct <span>electric current in</span> only one direction.  In this case, they work in the circuit as a <span>rectifier diode.</span> </li><li>  From a disconnected to an on state, the thyristor can be converted by applying a signal with a certain shape to the control electrode.  Hence the conclusion - the thyristor as a switch has two states (both stable).  The triac can also function in the same way.  The principle of operation of an electronic type key based on it is quite simple.  But in order to return to the initial open state, it is necessary that certain conditions are met. </li><li>  The current of the control signal, which is necessary for the transition of the thyristor crystal from the locked mode to the open mode, is much less than the working one (literally measured in milliamperes).  This means that the thyristor has the properties of a current amplifier. </li><li>  It is possible to fine-tune the average current flowing through the connected load, provided that the load is connected in series with the thyristor.  The accuracy of the adjustment directly depends on how long the signal is on the control electrode.  In this case, the thyristor acts as a power regulator. </li></ol><h2>  Thyristor and its structure </h2><h2><div class="photo iau"><img itemprop="image" alt="principle of operation of the power regulator on the triac" class="if" height="450" src="//fb.ru/misc/i/gallery/11007/1273924.jpg" width="600"></div></h2><p>  A thyristor is a semiconductor element that has control functions.  The crystal consists of four layers of p and n type, which alternate.  The triac is also precisely built.  The principle of operation, application, the structure of this element and restrictions on use are examined in detail in the article. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><p>  The described structure is also called four-layer.  The extreme region of the p-structure with the power supply terminal connected to it with a positive polarity is called the anode.  Therefore, the second region n (also extreme) is the cathode.  The negative voltage of the power source is applied to it. </p><h2>  What properties does a thyristor have? </h2><p>  If we conduct a complete analysis of the structure of the thyristor, then we can find in it three transitions (electron-hole).  Therefore, it is possible to draw up an equivalent circuit for semiconductor transistors (polar, bipolar, field) and diodes, which will help to understand how the thyristor behaves when the power to the control electrode is turned off. </p><p>  In the case when the anode is positive relative to the cathode, the diode closes, and, therefore, the thyristor also behaves similarly.  In the case of a change in polarity, both diodes are displaced, the thyristor is also locked.  The triac also functions in a similar way. </p><p>  The principle of working on the fingers, of course, is not very easy to explain, but we will try to do this further. </p><h2>  How thyristor unlocking works </h2><p>  To understand the <span>principle of operation of the thyristor,</span> you need to pay attention to the equivalent circuit.  It can be composed of two semiconductor triodes (transistors).  Here on it and it is convenient to consider the process of unlocking the thyristors.  Specifies a certain current that flows through the thyristor control electrode.  In this case, the current has a forward bias.  This current is considered basic for a transistor with a p-p-p structure. </p><p>  Therefore, the current in the collector will be several times larger (it is necessary to multiply the value of the control current by the gain of the transistor).  Further, it can be seen that this current value is basic for the second transistor with the conductivity structure rpn, and it is unlocked.  In this case, the collector current of the second transistor will be equal to the product of the gain of both transistors and the initially specified control current.  Triacs (the principle of operation and their management are discussed in the article) have similar properties. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><p>  Further, this current must be summed with the previously set control circuit current.  And it turns out exactly the value that is necessary to maintain the first transistor in the unlocked state.  In the case when the control current is very large, two transistors are simultaneously saturated.  The internal OS continues to maintain its conductivity even when the initial current at the control electrode disappears.  At the same time, a rather high current value is detected on the thyristor anode. </p><h2>  How to turn off the thyristor </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="triac principle on fingers" class="if" height="399" src="//fb.ru/misc/i/gallery/33200/1273437.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The transition to the locked state of the thyristor is possible if a signal is not applied to the control electrode of the open element.  In this case, the current drops to a certain value, which is called the hypostatic current (or holding current). </p><p>  The thyristor will turn off even if there is an open in the load circuit.  Or when the voltage that is applied to the circuit (external) changes its polarity.  This occurs at the end of each half-cycle in the case when the circuit is powered by an AC source. </p><p>  When the thyristor operates in a <span>DC circuit,</span> locking can be done using a simple switch or mechanical type button.  It connects to the load in series and is used to de-energize the circuit.  The principle of operation of the <span>power regulator on the triac is</span> similar <span>,</span> however, there are some features in the circuit. </p><h2>  Ways to turn off thyristors </h2><p>  But you can connect the switch in parallel, then with its help the anode current is bypassed, and the thyristor is put into a locked state.  Some types of thyristors can turn on again if you open the contacts of the switch.  This can be explained by the fact that during the opening of the contacts, the stray capacitances of the thyristor junctions accumulate a charge, thereby creating interference. </p><p>  Therefore, it is desirable to position the switch so that it is between the cathode and the control electrode.  This will ensure that the thyristor shuts off normally and the holding current is cut off.  Sometimes, for convenience and speed and reliability, an auxiliary thyristor is used instead of a mechanical key.  It is worth noting that the operation of the triac is in many ways similar to the functioning of thyristors. </p><h2>  Triacs </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="triac key operation principle" class="if" src="//fb.ru/misc/i/gallery/33200/1273438.jpg"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  And now closer to the topic of the article - you need to consider a special case of a thyristor - a triac.  The principle of its operation is similar to that which was considered earlier.  But there are some differences and characteristic features.  Therefore, you need to talk about it in more detail.  A triac is a device based on a semiconductor crystal.  Very often used in systems that operate on alternating current. </p><p>  The simplest definition of this device is a switch, but controllable.  When locked, it works in the same way as a circuit breaker with open contacts.  When a signal is applied to the control electrode of the triac, the device switches to the open state (conduction mode).  When working in this mode, you can draw a parallel with the switch, in which the contacts are closed. </p><p>  When there is no signal in the control circuit, in any of the half-periods (when working in AC circuits), the triac switches from open to closed mode.  Triacs are widely used in relay mode (for example, in the design of photosensitive switches or thermostats).  But they are also often used in control systems that operate according to the principles of phase control of the voltage at the load (they are smooth regulators). </p><h2>  The structure and principle of operation of the triac </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="triac device and work" class="if" height="450" src="//fb.ru/misc/i/gallery/33200/1272827.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  A triac is nothing more than a symmetric thyristor.  Therefore, based on the name, we can conclude - it is easy to replace it with two thyristors that are turned on in parallel.  In any direction, it is able to pass current.  The triac has three main outputs - the control one, for supplying signals, and the main ones (anode, cathode), so that it can pass working currents. </p><p>  The triac (the principle of operation for the "dummies" of this semiconductor element is provided for your attention) opens when the minimum required current value is supplied to the control terminal.  Or in the case when between two other electrodes the potential difference is higher than the maximum permissible value. </p><p>  In most cases, an excess of voltage leads to the triac spontaneous tripping at the maximum amplitude of the supply voltage.  The transition to the locked state occurs if the polarity changes or when the operating current decreases to a level lower than the holding current. </p><h2>  How the triac is unlocked </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="triac work" class="if" height="450" src="//fb.ru/misc/i/gallery/33200/1272826.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  When powered by an <span>alternating current main</span> , a change in operating modes occurs due to a change in the polarity of the voltage at the working electrodes.  For this reason, depending on the polarity of the control current, there are 4 types of this procedure. </p><p>  Suppose a voltage is applied between the working electrodes.  And on the control electrode, the sign voltage is opposite to that applied to the anode circuit.  In this case, the triac will shift in the quadrant - the principle of operation, as you can see, is quite simple. </p><p>  There are 4 quadrants, and for each of them a release current, holding, switching on, is determined.  The unlocking current must be maintained until then, until it exceeds several times (2-3 times) the value of the holding current.  This is exactly what the triac switching current is - the minimum required unlocking current.  If you get rid of the current in the control circuit, the triac will be in a conductive state.  Moreover, in this mode it will work until the current in the anode circuit is greater than the holding current. </p><h2>  What are the limitations when using triacs </h2><p>  It is difficult to use when the load is inductive type.  The rate of change of voltage and current is limited.  When the triac goes from locked to open mode, a significant current arises in the external circuit.  The voltage does not drop instantly on the power terminals of the triac.  And the power will instantly develop and reaches quite large values.  The energy that is dissipated, due to the small space, sharply increases the temperature of the semiconductor. </p><p>  If the critical value is exceeded, the crystal is destroyed, due to the excessively rapid increase in the current strength.  If a voltage is applied to the triac, which is in a locked state and sharply increased, then the channel will open (in the absence of a signal in the control circuit).  This phenomenon can be observed due to the fact that charge accumulation occurs by the internal parasitic capacitance of the semiconductor.  Moreover, the charge current is of sufficient value to unlock the triac. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G39637/index.html">The majestic Lincoln Cathedral is a must-see in England</a></li>
+<li><a href="../G39638/index.html">Lucy Beach Hotel 5 * - premium vacation</a></li>
+<li><a href="../G39639/index.html">Trip to Turkey in April</a></li>
+<li><a href="../G3964/index.html">Hotel "Jasmine Side", Turkey. Description. Reviews</a></li>
+<li><a href="../G39640/index.html">Owl pattern, ideas for tailoring toys, workshop</a></li>
+<li><a href="../G39642/index.html">The most extraordinary sights of Russia</a></li>
+<li><a href="../G39643/index.html">A Brief History of the 20th Army</a></li>
+<li><a href="../G39644/index.html">White Rock Castle 4 * (Balchik, Bulgaria): hotel description, services, reviews</a></li>
+<li><a href="../G39645/index.html">What is natural selection: for whom is he a friend and for whom is an enemy?</a></li>
+<li><a href="../G39646/index.html">Sberbank: details for transfer to the card. Sberbank details for transfer to the card</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

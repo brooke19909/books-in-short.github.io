@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🙄 🚕 🏩 Arduino sensors: description, specifications, connection, reviews 🖲️ 🌘 👦🏼</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="The Arduino platform is one of the best for the design of various automated systems. Moreover, many universities and colleges use Arduino to introduce...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Arduino sensors: description, specifications, connection, reviews</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  The Arduino platform is one of the best for the design of various automated systems.  Moreover, many universities and colleges use Arduino to introduce students to the field of robotics.  Indeed, Arduino is a very light, but at the same time powerful platform for constructing various robots and smart systems.  And of course, so that it all takes less time, ready-made sensors are sold.  There are a lot of them in stores, so it's pretty hard to get confused in choosing the right one.  In this article, we will look at some of the main Arduino sensors and how they work. </p><div class="photo" data-original="tech.get.ba" data-author=": "><img itemprop="image" alt="Sensors for Arduino" class="if uuid-2887557" src="https://fb.ru/misc/i/gallery/101519/2887557.jpg"></div><h2>  Where could I buy </h2><p>  The fact is that sensors in our stores cost a lot of money.  And if you are going to start studying the Arduino platform, then you just need to know where you can buy them at a low price.  The answer is simple - Chinese shops.  It can be Aliexpress, Joom, Pandao and others.  Almost all stores buy sensors there and sell them with a huge margin, which reaches up to 300%.  Of course, you will have to wait a while, and you can’t be sure of the quality of the goods, but paying for the same sensor three times as much is also not worth it.  Example: on Aliexpress there is a set of 36 sensors, which costs 800 rubles.  The same set in a Russian store is sold for 3.5 thousand rubles.  Therefore, you decide. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><div class="photo" data-original="mind-hacks.wonderhowto.com" data-author=": "><img itemprop="image" alt="Where to buy sensors for arduino" class="if uuid-2887564" src="https://fb.ru/misc/i/gallery/101519/2887564.jpg"></div><h2>  Servo </h2><p>  The servo drive is used in the design of robots and various smart systems.  With the help of a servo, you can open the door, find out the degree of rotation and much more.  But basically it is used to create robots.  Maximum angle of rotation of the servo: 180 degrees.  But sometimes on the expanses of Aliexpress you can see options with a rotation angle of 360 degrees.  This is quite a basic element, almost all lessons on Arduino with sensors begin with it.  The servo is easy to connect, the control code is very simple. </p><p>  To connect the servo, only three wires are used: ground, power, logic.  The signal wire (usually yellow or brown) is connected to any pin with support for PWM (wide pulse modulation) on the Arduino. </p><div class="photo" data-original="www.instructables.com" data-author=": "><img itemprop="image" alt="Connecting Servo to Arduino" class="if uuid-2887567" src="https://fb.ru/misc/i/gallery/101519/2887567.jpg"></div><p>  Code example: </p><pre class=" language-cpp"><code class=" language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;Servo.h&gt;</span> </span><span class="token comment">//       Servo servo1; //   servo  "servo1" void setup() //  setup { servo1.attach(11); //      11 } void loop() //  loop { servo1.write(0); //     0 delay(2000); //  2  servo1.write(90); //     90 delay(2000); //  2  servo1.write(180); //     180 delay(2000); //  2  }</span></code> </pre> <p>  First, add the library that is already in the Arduino to the code, then indicate which contact the servo drive is connected to.  As you can see, working with a servo drive is really very simple, control is only one operator. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><p>  Price on Aliexpress: 80-100 rubles. </p><h2>  DHT-11 </h2><p>  DHT-11 is used to measure temperature and humidity.  This temperature sensor for Arduino is the most popular because of its price and features.  Measures temperature in the range from 0 to 50 degrees, and humidity from 20 to 80%.  Also on sale is another version of this sensor, DHT-22, its measurement range is larger, but it also costs several times more.  For simple projects, its use is not advisable, so everyone prefers DHT-11, which does an excellent job with measurements.  Power can be supplied from 3.3 to 5V.  In general, the sensor itself has 4 connection pins, but there are DHT-11 modules on sale, it is much more convenient to work with them, since connecting through 3 contacts does not need to be tormented with resistors. </p><p>  <span>Connection.</span>  This temperature sensor is <span>connected</span> to the Arduino using three contacts: ground, power and logic. </p><div class="photo" data-original="www.circuitbasics.com" data-author=": "><img itemprop="image" alt="Connect dht11 to arduino" class="if uuid-2887576" src="https://fb.ru/misc/i/gallery/101519/2887576.jpg"></div><p>  Code example: </p><pre class=" language-cpp"> <code class=" language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"DHT.h"</span> #<span class="token directive keyword">define</span> DHTPIN 2 </span><span class="token comment">//    ,     DHT dht(DHTPIN, DHT11); void setup() { Serial.begin(9600); dht.begin(); } void loop() { delay(2000); // 2   float h = dht.readHumidity(); //  float t = dht.readTemperature(); //  if (isnan(h) || isnan(t)) { // .     ,  « »,     Serial.println(" "); return; } Serial.print(": "); Serial.print(h); Serial.print(" %\t"); Serial.print(": "); Serial.print(t); Serial.println(" *C "); //    }</span></code> </pre> <p>  At the very beginning, as with a servo drive, a library is connected.  By the way, about the library.  Initially, it is not in the Arduino package, this library needs to be downloaded.  There are several versions of this library, in our example the most standard one is used.  Be careful when downloading, as the syntax may be different and the code will not work.  Then it is also written to which contact the sensor and its version are connected (DHT11 or DHT22).  As with the servomotor, working with this sensor for the Arduino is very easy, only a few operators are used.  By the way, often the servo drive and dht11 work together, for example, when creating automatic windows that will open if the room or greenhouse is too hot. </p><p>  Price on Aliexpress: 80-100 rubles. </p><h2>  Soil moisture sensor </h2><p>  This sensor is used in the design of automatic irrigation.  Using it, you can measure soil moisture, then process these data and, if necessary, water the plant.  There are many variants of this sensor on sale for the Arduino, but the FC-28 is popular.  Quite a budget option, so everyone loves and uses it in their projects.  The sensor has two probes that conduct electricity through the earth.  With dry soil, resistance is greater, and with wet soil less.  Basically, this sensor is used only in small projects, this is due to the fact that the probes are made of poor material and sooner or later during active work they become corroded, after which the sensor stops working.  The service life of the sensor can be increased if it is activated only when taking data from the soil, for example, every 6 hours.  Some craftsmen even change probes to better ones made by their own hands, or even from scratch they assemble a humidity sensor for the Arduino. </p><p>  Connecting a soil moisture sensor is quite simple.  Usually, a potentiometer and a comparator are included with it to control the sensitivity of the sensor.  In total, he has three contacts: logic, power and earth.  It can be connected to both digital and analog contacts.  By the way, working in analog mode is more convenient. </p><div class="photo" data-original="www.circuitstoday.com" data-author=": "><img itemprop="image" alt="Connecting a soil moisture sensor to an arduino" class="if uuid-2887580" src="https://fb.ru/misc/i/gallery/101519/2887580.jpg"></div><p>  Code example: </p><pre class=" language-cpp"> <code class=" language-cpp"><span class="token keyword">int</span> sensor_pin <span class="token operator">=</span> A0<span class="token punctuation">;</span> <span class="token keyword">int</span> output_value <span class="token punctuation">;</span> <span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> Serial<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token number">9600</span><span class="token punctuation">)</span><span class="token punctuation">;</span> Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"   "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span> <span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> output_value<span class="token operator">=</span> <span class="token function">analogRead</span><span class="token punctuation">(</span>sensor_pin<span class="token punctuation">)</span><span class="token punctuation">;</span> output_value <span class="token operator">=</span> <span class="token function">map</span><span class="token punctuation">(</span>output_value<span class="token punctuation">,</span><span class="token number">550</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span> Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string">" : "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> Serial<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span>output_value<span class="token punctuation">)</span><span class="token punctuation">;</span> Serial<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"%"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token function">delay</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code> </pre> <p>  First of all, we determine the contacts to which the sensor is connected to the Arduino.  Then we read the data from it and display them.  As with other sensors, working with the FC-28 is quite easy.  And all thanks to ready-made libraries and sensors. </p><p>  Price on Aliexpress: 30-50 rubles. </p><h2>  PIR sensor </h2><p>  This motion sensor for Arduino is used in the design of various security systems.  Detects moving elements from 0 to 7 meters.  We will not consider the principle of operation, we will proceed immediately to the connection of this sensor to the Arduino. </p><p>  Judging by the reviews, it is also connected using three contacts: logic, power and ground.  It works through digital outputs. </p><div class="photo" data-original="www.instructables.com" data-author=": "><img itemprop="image" alt="Connecting a motion sensor to an arduino" class="if uuid-2887584" src="https://fb.ru/misc/i/gallery/101519/2887584.jpg"></div><p>  Code example: </p><pre class=" language-cpp"> <code class=" language-cpp"><span class="token macro property">#<span class="token directive keyword">define</span> PIN_PIR 2 #<span class="token directive keyword">define</span> PIN_LED 13 void setup() { Serial.begin(9600); pinMode(PIN_PIR, INPUT); pinMode(PIN_LED, OUTPUT); } void loop() { int pirVal = digitalRead(PIN_PIR); Serial.println(digitalRead(PIN_PIR)); </span><span class="token comment">//   if (pirVal) { digitalWrite(PIN_LED, HIGH); Serial.println("Motion detected"); delay(2000); } else { //Serial.print("No motion"); digitalWrite(PIN_LED, LOW); } }</span></code> </pre> <p>  We determine the contacts to which the sensor is connected, and then check for movement.  It is very convenient and easy to work with it, but there are cases of false positives. </p><p>  Price on Aliexpress: 30-50 rubles. </p><h2>  Draw conclusions </h2><p>  Above were considered the main sensors for the "Arduino", which are the very first to be studied by beginner radio amateurs.  As you can see, they are quite inexpensive, they connect easily, and reading data takes just a couple of lines.  In addition to them, there are still a huge number of other sensors, even there are for measuring the pulse!  It is most profitable to purchase them on Aliexpress kits, so they will cost even cheaper.  It's easy to create, the main thing is to remember the three basic rules of robotics! </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G44127/index.html">How to find out control information on a Sberbank card: instructions, alternative methods</a></li>
+<li><a href="../G44128/index.html">Stalin's near dacha: how to get there?</a></li>
+<li><a href="../G44129/index.html">Nokia 107: an excellent workhorse</a></li>
+<li><a href="../G4413/index.html">Ivan Mazepa is a national hero or traitor. Historical portrait</a></li>
+<li><a href="../G44130/index.html">Voluntary medical insurance for foreign citizens - subtleties of registration</a></li>
+<li><a href="../G44132/index.html">Deposit insurance of individuals. Deposit Insurance Act</a></li>
+<li><a href="../G44133/index.html">Alien ships: types and photos</a></li>
+<li><a href="../G44134/index.html">DIY paper flowers</a></li>
+<li><a href="../G44135/index.html">How to get a Yandex-wallet. Brief instruction</a></li>
+<li><a href="../G44136/index.html">How to find out the tariff on Megaphone without contacting the operator’s office?</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

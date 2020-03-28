@@ -1,0 +1,336 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🥌 📘 🕣 Debug board for AVR microcontrollers: features, diagram. DIY debug board ♍️ 🛂 👴🏾</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="The debug board is a rather useful tool in the development of various electronic devices. But is it possible to create it with your own hands? Or shou...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Debug board for AVR microcontrollers: features, diagram. DIY debug board</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  The debug board is a rather useful tool in the development of various electronic devices.  But is it possible to create it with your own hands?  Or should we rely only on industrial analogues?  What features does this device have?  We’ll talk about this today. </p><h2>  general information </h2><p>  When they talk about this topic, the most commonly understood is the debug board for Atmega8 or another similar microcontroller, which is based on an 8 or 16-bit operating principle.  But the world is moving forward.  The time has come for 32-bit microcontrollers.  In this regard, we will consider what may be available to us now.  Particular attention should be paid to the STM32 debugging board, although the article still considers AVR.  But first, imagine the big picture. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="Debug Board" class="if" height="320" src="//fb.ru/misc/i/gallery/37840/1975410.jpg" width="480"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The advent of 32-bit microcontrollers has significantly expanded the amount of tasks that they could perform.  But it is necessary to optimize the decisions made and the technology being created.  Although attention will be paid to the old models, because it is simply impossible not to note their universality and quality factor. </p><h2>  What is STM32? </h2><p>  Of course, the most interesting part of the article is the debug board.  But to understand the additional point, let's look at the main one.  Let's say we have STM32F103C8T6.  The debug board is a microcontroller design that is built on the core of the ARM Cortex-M3.  It has a significant number of advantages, the most important of which is universality.  By the way, now Cortex-M3 is a full-fledged industry standard.  The debug board is a surface on which all STM32 legs can interact, ensuring the fulfillment of existing tasks. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  Getting started </h2><p>  So, we need a debug board.  What parameters should she have?  Buy it or do it yourself?  What size should she be?  Here with the last question we will begin.  Initially, it is necessary to choose such a device so that all mechanisms and constituent elements can successfully fit on it.  In most cases, it is enough that the debug board for the AVR has sides of fifteen centimeters.  This size is suitable due to its compact size and capabilities. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="debug board for avr" class="if" height="324" src="//fb.ru/misc/i/gallery/37840/1975411.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  Before proceeding with the manufacture or purchase of the board, you must first draw up its circuit.  To do this, you can lay out the elements on paper and draw connection lines between them.  If everything worked out without problems - excellent, then you can start practical actions.  Then you just need to place and solder all the required elements, and that's it - the board is ready.  So it looks briefly.  Now let's look at everything in more detail. </p><h2>  Planning </h2><p>  The need to use debug boards sooner or later overtakes every amateur radio operator.  This is a kind of debugging at the iron level.  If desired, you can buy a ready-made board for every taste.  But we are interested in a detailed analysis of this topic?  Therefore, we will consider how to create a debug board with your own hands. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><p>  Initially, it is necessary to decide whether we are developing a board for specific needs or doing universal.  Since the first option is quite specific, the second one will be considered within the framework of the article.  You need to think about the foundation.  If you look at most casual amateur circuit boards, it should be noted that they look very messy.  The wires stick out as you like, and consider what is connected to what can be somewhat problematic.  Therefore, it is necessary to provide for the possibility of securing them so that they do not overlap. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="stm32 debug board" class="if" height="418" src="//fb.ru/misc/i/gallery/37840/1975412.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  If you create for a specific case and develop a scheme, then you can etch the track.  This option is the most interesting.  By the way, the situation when a universal scheme is used, and the tracks are applied or deleted, is quite popular.  To better understand, let's look at a few examples. </p><h2>  Power board </h2><p>  Suppose we are building something significant in size, and our device consists of several modules.  In this case, the circuit board should include the possibility of obtaining at the input of a constant or alternating voltage.  To achieve several connection methods, you need to think about connectors and terminal blocks.  To ensure operation, it is necessary to provide not only batteries, but also a stabilizer.  And in case of light overloads and related overheating, you can use a small radiator. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><h2>  Microcontroller board </h2><p>  And here is the fun part.  It is quite possible that debug boards for microcontrollers and auxiliary elements are the most difficult components.  After all, they are the “brains” of technical devices.  For a successful start in the field of debug boards, it is undesirable to start with complex 32-bit controllers.  You can start with something simpler.  For example, from the veteran of mechatronic developments ATmega8.  In order not to complicate the situation further, you can get by building one-sided printing. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="circuit board" class="if" height="500" src="//fb.ru/misc/i/gallery/37840/1975413.jpg" width="375"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  But what if the requirements go beyond this?  Use duplex printing?  As an option, yes.  But if the excess of capabilities is insignificant, then often you can do without mounting jumpers.  It is better to take out the port connectors and pull-up chains on separate miniature scarves.  This approach will facilitate the wiring of the microcontroller board.  But this is only a general theory.  Let's talk about practical implementation. </p><h2>  Manual PCB manufacturing </h2><p>  Initially, we need paper on which the layout for the printed circuit board will be drawn.  It is desirable that it be thin.  This is important to achieve accurate hole drilling.  To avoid any surprises, the paper can be glued to cardboard with glue.  Next, cut out the glued pattern.  Well, the drilling template is ready.  We select the blank of foil fiberglass of the required size.  We attach a paper-cardboard template and draw it around the perimeter with a pencil or marker.  Then we cut fiberglass according to the lines drawn by us, using scissors for metal, or we saw with a hacksaw.  Glue the parts with glue. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="DIY debug board" class="if" height="337" src="//fb.ru/misc/i/gallery/37840/1975414.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  By the way, a little advice: you do not need to smear the entire surface, just leave a drop of glue in each of the four corners.  If you don’t want to wait, use the “Moment”.  It will allow you to continue working in a few seconds. </p><h2>  Drill holes </h2><p>  For this purpose, a special mini-machine is best suited.  But you can use hand tools.  Drills with a diameter of 0.8 mm are more than enough for the vast majority of purposes.  It should be noted that a quality board may not work the first time due to the complexity of the work and the need to have a firm hand.  If such actions will be carried out for the first time (and so, most likely, will be), then we can only advise you to mentally prepare for the drill being broken.  After completing the entire spectrum of work, to make sure of their quality, look at the clearance.  If certain defects are noticeable, they must be promptly eliminated. </p><h2>  Drawing a topographic drawing </h2><p>  Places where conductive paths will pass must be protected from destruction during etching.  To do this, they are covered with a special mask.  Before applying, remove all foreign substances.  This is especially true for glue that could accidentally leak to the surface. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="microcontroller debug boards" class="if" height="319" src="//fb.ru/misc/i/gallery/37840/1975415.jpg" width="447"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  After the tracks are marked, we can begin the process of applying the drawing.  For this purpose, waterproof enamel (any) is suitable. </p><h2>  Transfer the drawing from paper to fiberglass </h2><p>  This is the most crucial stage.  It is necessary to apply the paper (the side where the picture is) to the fiberglass and press with great effort.  Then we heat the resulting “sandwich” in the oven to a temperature of 200 degrees.  We wait until the board cools to room value.  After that, it remains to tear off the paper - and the drawing will remain on the printed circuit board.  This may seem rather complicated, especially with temperature.  Especially for such doubting people, some craftsmen suggest using an electric iron.  But here one important warning should be made: the result is unstable.  Of course, you can try to practice a day or two, and perhaps it will not be worse than in the case of the stove.  But still there is the problem of the difficulty of ensuring the simultaneous heating of the surface throughout the printed circuit board to one temperature.  Therefore, the drawing in this way is not completely transferred. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="debug board for atmega8" class="if" height="210" src="//fb.ru/misc/i/gallery/37840/1975417.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The most significant problems are the gaps that arise with such a creation.  For safety, during the "preparation" of the printed circuit board in the oven, it can additionally be covered from different sides with sheets of metal five to six millimeters thick.  This is done to avoid negative deformation during heat treatment of the board. </p><h2>  Conclusion </h2><p>  Here, in general, the board for AVR is ready.  Of course, a universal method is described here, and everyone will have to finish it for specific conditions independently, guided by their needs.  You can also experiment with the creation of universal boards.  Each craftsman constantly modifies them in some way, so that they are better and better.  In addition, their development allows to ensure the reliability of the created schemes. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </article>
+            
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G5233/index.html">Neck stitching: a description of different ways, useful tips</a></li>
+<li><a href="../G5234/index.html">Lesion. What is it?</a></li>
+<li><a href="../G5235/index.html">Interbank loans are ... The concept, definition, features of the provision and lending rates</a></li>
+<li><a href="../G5236/index.html">How to collect a debt?</a></li>
+<li><a href="../G5237/index.html">Hotel Chau Loan Hotel 3 * (Vietnam, Nha Trang): overview, description, characteristics and reviews of tourists</a></li>
+<li><a href="../G5239/index.html">The structure of the human brain</a></li>
+<li><a href="../G524/index.html">"Forest Fairy Tale", Voronezh: photos and reviews of tourists. Rest in the winter and in the summer</a></li>
+<li><a href="../G5240/index.html">Travel to Kemer in October: weather, prices, attractions</a></li>
+<li><a href="../G5241/index.html">How the weapons of victory were forged</a></li>
+<li><a href="../G5242/index.html">Jem Sultan, son of Mehmed II: biography, photo</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

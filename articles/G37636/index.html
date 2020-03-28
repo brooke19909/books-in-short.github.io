@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>👨‍🌾 👼 📰 1C server installation and setup at the enterprise 💹 🏻 🌴</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="In the article, we will consider instructions for installing the 1C: Enterprise server in the office. The 1C installation option in the client-server ...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>1C server installation and setup at the enterprise</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  In the article, we will consider instructions for installing the 1C: Enterprise server in the office.  The 1C installation option in the client-server form is the most suitable.  But first you need to understand what a client-server architecture is.  After that, we will tell you in what cases it makes sense to implement this architecture, and most importantly - how to do it right.  If you are faced with the installation for the first time, then our material will be very useful to you. </p><h2>  What is a client-server architecture </h2><p>  It is worth noting that 1C in all cases works as a client-server.  But there is a so-called file version, in which all work takes place exclusively on local computers.  At the same time, the system itself divides the entire computer memory into a conditionally server and conditionally client.  In this case, its own built-in database management system is used.  It has one drawback - low speed and low stability. </p><p>  When working in the client part, requests to 1C are generated, after which they are transferred to the conditionally server part, where processing takes place.  The results of this processing go back to the conditional client part.  In fact, this is a server version of the system, but it is customary to call it file.  As you can see, there is subtlety, but it is small.  In general, it is much better to use the server version of the software, since it is much more stable and allows more clients to work with one database at the same time. </p><div class="photo" data-original="www.1s-up.ru" data-author=": "><img itemprop="image" alt="1C server windows installation" class="if uuid-2865058" src="https://fb.ru/misc/i/gallery/57090/2865058.jpg"></div><p>  As for the client-server option, then for the proper functioning of the database, third-party software systems are used.  These are MS <span>SQL, Oracle, DB, DB2,</span> PostgresSQL.  It is worth noting that third-party control systems are considered more powerful than integrated ones.  At the same time, the best performance is ensured, and most importantly, the database security is increased significantly. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><p>  We will consider installation of client-server architecture on MS SQL.  This is the best option for the correct operation of 1C.  When installing PostgreSQL 1C server, there is a need for databases to be indexed frequently.  Oracle has a large number of problems with organizing data in a database.  DB2, when compared with competitors, is limited in number length. </p><h2>  Do I need to transfer the database to the server version </h2><p>  In the event that no more than 7 people work with one database, and its size is quite small, then it will be quite enough to use the file option.  But if from 8 to 12 people work simultaneously with one base, and its volume is up to 4 GB, then it is best to use the client-server version.  In this case, a lot will depend on personal perception when working with the database.  Problems can occur with a large number of simultaneous resource requests. </p><div class="photo" data-original="www.pvsm.ru" data-author=": "><img itemprop="image" alt="Install postgresql 1C server" class="if uuid-2865061" src="https://fb.ru/misc/i/gallery/57090/2865061.jpg"></div><p>  The question is that during operation, each user accesses the registers, and access to them may be blocked for other employees.  Therefore, they will be queued when trying to access a register that has been locked.  1C at the same time freezes. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><p>  In the event that with a large number of calls the system freezes, it is necessary to modernize the architecture, use a more advanced type.  If it works with the database for more than 15 people, and its total size is more than 4 GB, then you should not even think about installing the file system.  Immediately you need to install the client-server version 1C. </p><h2>  Installation: basic steps </h2><p>  Steps to be performed when deploying client-server: MS SQL installation on the server: </p><ol><li>  Installation on the same server platform 1C. </li><li>  Installation on all computers of clients 1C.  You need to install only where you need to connect to the database server. </li><li>  Creating an infobase in SQL. </li></ol><p>  We will tell about how 1C is installed on a Windows server, as well as settings, in our article. </p><h2>  Software Update </h2><p>  You can even use any powerful personal computer as a server.  But it is best to use the server hardware, as it is much more powerful and will be able to work with requests faster.  To install, you need the SQL distribution.  Open the folder with it and run the installation file, which will automatically unpack all the necessary resources to your computer. </p><p>  Note that the NET component must be installed on the computer.  Framework  If it is not there, you need to update the operating system.  But you can simply download the installation file separately and run it.  This procedure is completely free, files need to be downloaded only from official sources - from the Microsoft website. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><h2>  Distribution Installation Procedure </h2><p>  As soon as you run the installer of the database management system distribution kit, you need to enter the license key.  Next, you will be asked to read the licensing conditions and check the box that you agree with them.  After that, you can move on.  When you get to the choice of components, you need to do it right.  If you plan to use the control system only for 1C operation, check the boxes next to the following components: </p><ol><li>  Database Engine Service. </li><li>  Management Tool Management Tool. </li><li>  Client Tool Connectivity Communications Tool. </li></ol><p>  As for the other components, they are not needed during 1C operation.  They will only take up space on your hard drive.  After that, click the “Next” button and continue installing the distribution. </p><h2>  The final installation of the DBMS </h2><p>  Next, go to the "Sorting Options" tab.  Be sure to select the Cyrillic_General_CI_AS parameter, which determines the server configuration.  You also need to check the “Mixed mode” box in the “Server Configurations” tab. </p><p>  During installation, you will need to enter the username and password of the super-user (usually the username is SA, and the password is SQL).  Here you need to specify the administrators of this instance of the database management system. </p><div class="photo" data-original="buhkz.ru" data-author=": "><img itemprop="image" alt="Enterprise 1C Server Installation" class="if uuid-2865053" src="https://fb.ru/misc/i/gallery/57090/2865053.jpg"></div><p>  Now go to the “Data Directories” tab and select the location <span>of</span> user and temporary <span>databases</span> on disks with the maximum performance.  It is advisable to use SSDs on RAID.  Now it remains to click "Next" and proceed to install the distribution.  Leave all other settings as default.  After installation, your SQL distribution is fully operational. </p><h2>  Installation on a server computer </h2><p>  Now you can begin to install the 1C 8.3 server on Windows and start the services.  You will need a distribution of the 1C: Enterprise platform.  You can use these: </p><ol><li>  Technological platform 1C: Enterprise for Windows - this installs the software on computers with a capacity of 32 bits. </li><li>  The version “Server 1C: Enterprise” can be installed on servers with a bit capacity of both 32 and 64 bits. </li></ol><p>  It is worth mentioning about the extended version of "CORP."  True, not every company needs the installation of the 1C Enterprise 8.3 server.  If necessary, to begin the installation, you need to open the directory and run the file named setup.exe. </p><h2>  Software Installation Procedure </h2><div class="photo" data-original="sohabr.net" data-author=": "><img itemprop="image" alt="1C server installation and configuration" class="if uuid-2865055" src="https://fb.ru/misc/i/gallery/57090/2865055.jpg"></div><p>  After that, the assistant will start, it will remain to follow its prompts.  On the very first page you just need to click "Next", then select the components that you want to install: </p><ol><li>  Administration of the 1C: Enterprise server.  Installation instructions will follow. </li><li>  Directly server software components. </li></ol><p>  The list will contain many components, their list varies depending on the version, but you only need to install these two.  Select all the necessary components and proceed to the next step.  In the event that the server is installed as one of the services of the Windows OS, you need to make a point for an individual user.  From under it, the service will be launched.  To do this, you will need: </p><ol><li>  Check the box next to “Install 1C: Enterprise server as a Windows service (recommended)”. </li><li>  Turn the "Create USR1CV8 User" switch to the desired position. </li><li>  Enter the password twice for the user you are creating. </li></ol><h2>  Installation complete </h2><p>  You can also select an existing user in order to start 1C.  But he must have the following rights: </p><ol><li>  Logging in as a batch job. </li><li>  Logging in as a service. </li><li>  Users of performance logs. </li></ol><p>  You will also need to set permissions on the service file directories on the server.  A user that is created automatically by default has all the necessary privileges.  As soon as you are done, click the “Next” button and proceed directly to the installation.  In this case, all the necessary files will be copied to the server. </p><div class="photo" data-original="infostart.ru" data-author=": "><img itemprop="image" alt="Install 1C 8 3 server on windows" class="if uuid-2865054" src="https://fb.ru/misc/i/gallery/57090/2865054.jpg"></div><p>  During installation, the assistant will offer you to install the protection driver.  In that case, if you use a software license for 1C server, then you do not need to install this driver.  After the installation is successfully completed, you will see the last window with the “Finish” button.  Click on it and complete the installation. </p><h2>  Installation on client computers </h2><p>  Now let's look at how to install software on client computers.  Earlier we looked at installing 1C 8.3 server on Windows.  The procedure is almost similar, but there are differences in the details.  For installation, you need to run the installation file, which is located in the distribution folder.  If you click on the “Change” button, you will have the opportunity to edit the list of components that will be installed.  The number of components depends on which version of the distribution you are using. </p><h2>  Software components </h2><p>  Description of software components: </p><ol><li>  Thin client - these components are required for normal operation in client-server mode. </li><li>  “1C: Enterprise” is the main set of components, including thin and thick clients, configuration and administration elements. </li><li>  File version of the thin client - necessary for the normal functioning of the file version of the client. </li><li>  Various modules for expanding the web server - are necessary for the operation of web services and clients. </li><li>  Server "1C: Enterprise" (installation of 1C 8. 2 server is considered in our material, it is performed in the same way as version 8. 3). </li><li>  Language Interfaces - A user interface for working using various languages. </li><li>  Server administration is a set of additional components that allow you to administer 1C server clusters. </li><li>  Information base converter for 1C: Enterprise. </li><li>  Configuration storage servers - allow you to save all the settings of software components. </li></ol><p>  When you select the necessary components, click on the "Next" button and install the program. </p><div class="photo" data-original="coinsys.ru" data-author=": "><img itemprop="image" alt="Installing 1C 8 2 Server" class="if uuid-2865056" src="https://fb.ru/misc/i/gallery/57090/2865056.jpg"></div><p>  As with the installation of the 1C: Enterprise server, the assistant will offer you to install the protection driver.  But it will be needed only if the electronic key installed in the USB connector is used during the operation of the software. </p><p>  Upon successful completion of the installation, you will be taken to the finish window, you just have to read the contents of the Readme file (optional) and click on the “Finish” button. </p><h2>  How to add an infobase to the list </h2><p>  When setting up and installing the 1C: Enterprise server, a shortcut for launching the software appears on the desktop.  When you open, you start the program, but the list of databases will be empty.  The program will offer you to choose the right base: </p><ol><li>  If you need to create a new database to keep records, click the "No" button.  And first, install a standard template, on the basis of which create a database. </li><li>  If you have a base, you need to connect to it.  In this case, click “Yes” and add the existing database to the list. </li></ol><h2>  Database Creation Procedure </h2><p>  In the SQL version, the database is created in much the same way as in the file one.  But there are differences - when choosing the type of database location, you must specify "On the server."  Next, set the parameters necessary for work: </p><ol><li>  On the “Server Cluster” tab, specify the name or address of the server on which SQL is installed. </li><li>  Specify a name in the column "Information Base Name". </li><li>  Indicate the type of database management system - SQL. </li><li>  Indicate the name of the super-user and his password (discussed above). </li><li>  If necessary, indicate the date offset. </li><li>  Be sure to check the box next to "Create a database if it is missing." </li><li>  Click the "Next" button. </li></ol><p>  That's all, now the database is created and it is located on the server.  It can be seen among available and edited. </p><div class="photo" data-original="cryohirurgi.ru" data-author=": "><img itemprop="image" alt="Installing 1C server 8 3" class="if uuid-2865062" src="https://fb.ru/misc/i/gallery/57090/2865062.jpg"></div><p>  Initially, the database is empty, it is a kind of framework - a place on the server allocated for data.  For filling, you need to use the means of loading / unloading infobases.  It is recommended that you specify a maintenance plan after configuration — these are the procedures that SQL must perform according to a schedule.  For example, it can make copies at specific times or delete temporary files. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G37631/index.html">Hotel Porto Plaza Hotel (Greece / Crete / Hersonissos): description, photos and reviews of tourists</a></li>
+<li><a href="../G37632/index.html">How to transfer money from NSS to NSS. How to put money on an NSS</a></li>
+<li><a href="../G37633/index.html">Ice Palace in Klin: description and address</a></li>
+<li><a href="../G37634/index.html">Yuri Khmelnitsky: short biography, politics, years of rule</a></li>
+<li><a href="../G37635/index.html">War with napoleon</a></li>
+<li><a href="../G37637/index.html">Hotel Sol Polynesia Apartments 3 * (Croatia, Istria): overview, rooms, history and reviews of tourists</a></li>
+<li><a href="../G37638/index.html">Khabarovsk Territory, cities and towns: geographical location, population</a></li>
+<li><a href="../G37639/index.html">PAMM Accounts - Divorce? Why not invest, reviews</a></li>
+<li><a href="../G3764/index.html">How to solve sudoku of any complexity</a></li>
+<li><a href="../G37640/index.html">Park "Flower Garden" in Pyatigorsk: address, how to get, description with photos and reviews of tourists</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

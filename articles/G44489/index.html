@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>☠️ 🤷🏿 🆔 Inertial navigation system: general information, principle of operation, classification and methods of orientation 🍃 🎆 🎅🏻</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="Increasing requirements for coordinate determination systems necessitates the development of new navigation principles. In particular, one of the cond...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Inertial navigation system: general information, principle of operation, classification and methods of orientation</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  Increasing requirements for coordinate determination systems necessitates the development of new navigation principles.  In particular, one of the conditions dictated by modernity is the introduction of relatively independent means of measuring the location of target objects.  Such capabilities are provided by an inertial navigation system, eliminating the need for the use of signals from beacons and satellites. </p><h2>  Technology Overview </h2><div class="photo" data-original="www.semanticscholar.org" data-author=": "><img itemprop="image" alt="Inertial Navigation System Components" class="if uuid-2945384" src="https://fb.ru/misc/i/gallery/33143/2945384.jpg"></div><p>  Inertial navigation is based on the laws of mechanics, allowing you to record the parameters of the motion of bodies relative to the established reference system.  For the first time, this principle of navigation began to be applied relatively recently in ship gyrocompasses.  With the improvement of measuring instruments of this type, a technique arose that determines the measured parameters based on the accelerations of bodies.  The theory of inertial navigation system began to take shape closer to the 1930s.  From that moment, researchers in this area began to pay more attention to the principles of stability of mechanical systems.  In practice, this concept is quite difficult to implement, so for a long time it remained only in a theoretical form.  But in recent decades, with the advent of special computer-based equipment, inertial navigation tools began to be actively used in aviation, water technology, etc. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  System components </h2><div class="photo" data-original="www.gyroscope.com" data-author=": "><img itemprop="image" alt="Gyroscope inertial navigation system" class="if uuid-2945394" src="https://fb.ru/misc/i/gallery/33143/2945394.jpg"></div><p>  Mandatory elements of any inertial system are blocks of sensitive measuring devices and computing devices.  The first category of elements is represented by gyroscopes and accelerometers, and the second is computer equipment that implements certain calculation algorithms.  The accuracy of the method largely depends on the characteristics of sensitive devices.  For example, reliable data make it possible to obtain inertial navigation systems only with precision-type gyroscopes in conjunction with accelerometers.  But in this case, the technical equipment has a serious drawback in the form of high complexity of the electromechanical filling, not to mention the large size of the equipment. </p><h2>  The principle of the system </h2><div class="photo" data-original="geopolmonitor.com" data-author=": "><img itemprop="image" alt="The use of inertial navigation system" class="if uuid-2945377" src="https://fb.ru/misc/i/gallery/33143/2945377.jpg"></div><p>  The method for determining coordinates using an inertial system is to process data on the acceleration of bodies, as well as their angular velocities.  For this, again, sensitive elements installed directly on the target object are used, thanks to which information is generated about the meta-position, course of movement, distance traveled and speed.  In addition, the principle of the inertial navigation system makes it possible to use means for stabilization and even automatic control of the object.  For such purposes, linear acceleration sensors with gyroscopic equipment are used.  Using these devices, a report system is generated that works with respect to the trajectory of the object.  The generated coordinate system determines the angles of inclination and rotation.  The advantages of this technology include autonomy, the possibility of automation and a high degree of noise immunity. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><h2>  Classification of inertial navigation systems </h2><div class="photo" data-original="timeandnavigation.si.edu" data-author=": "><img itemprop="image" alt="Inertial Navigation System Platform" class="if uuid-2945381" src="https://fb.ru/misc/i/gallery/33143/2945381.jpg"></div><p>  Basically, the navigation systems under consideration are divided into platform and strapdown (SINS).  The former are also called geographical and may contain two platforms.  One is provided by gyroscopes and is oriented in an inertial field, and the second is controlled by accelerometers and is stabilized relative to the horizontal plane.  As a result, the coordinates are determined using information about the relative location of the two platforms.  More technological are considered SINS models.  The strapdown inertial navigation system is free from the disadvantages associated with restrictions on the use of gyro platforms.  The functions for determining the speed and location of objects in such models are transferred to digital computer technology, which is also capable of capturing data on angular orientation.  The modern development of SINS systems aims to optimize computational algorithms without compromising the accuracy of the source data. </p><h2>  Methods for determining the orientation of platform systems </h2><p>  Systems that work with platforms to determine the initial data on the dynamics of an object do not lose relevance.  At the moment, the following types of platform inertial navigation models are successfully operating: </p><ul><li>  Geometric system.  The standard model with two platforms, which was described above.  Such systems are highly accurate, but have limitations in servicing highly maneuverable vehicles operating in outer space. </li><li>  Analytical system.  It also uses accelerometers and gyroscopes that are stationary relative to stars.  The advantages of such systems include the ability to effectively service maneuverable objects like missiles, helicopters and fighters.  But even in comparison with the strapdown inertial navigation system, analytical systems demonstrate low accuracy in determining the parameters of the object’s dynamics. </li><li>  Semi-analytical system.  It is provided by one platform, continuously stabilizing in the space of the local horizon.  A gyroscope and an accelerometer are located on this base, and calculations are organized outside the working platform. </li></ul><div class="photo" data-original="news.ifmo.ru" data-author=": "><img itemprop="image" alt="Inertial Navigation System Technologies" class="if uuid-2945397" src="https://fb.ru/misc/i/gallery/33143/2945397.jpg"></div><h2>  Features of inertial satellite systems </h2><p>  This is a promising class of integrated navigation systems that combine the advantages of satellite signal sources and the inertial models under consideration.  Unlike popular satellite systems, such complexes allow additional use of data on angular orientation and the formation of independent positioning algorithms in the absence of navigation signals.  Obtaining additional geolocation information allows you to technically simplify the model of sensitive elements, abandoning expensive equipment.  The advantages of the inertial-satellite navigation system include light weight, small size and simplified data processing schemes.  On the other hand, the instability of microelectromechanical gyroscopes causes the accumulation of errors in the determination of data. </p><h2>  Scopes of inertial systems </h2><p>  Among potential consumers of inertial navigation technology are representatives of various industries.  This is not only astronautics and aviation, but also the automotive industry (navigation systems), robotics (means of controlling the kinematic characteristics), sports (determining the dynamics of movement), medicine and even household appliances, etc. </p><h2>  Conclusion </h2><div class="photo" data-original="www.mwrf.com" data-author=": "><img itemprop="image" alt="Inertial Navigation System" class="if uuid-2945374" src="https://fb.ru/misc/i/gallery/33143/2945374.jpg"></div><p>  The theory of inertial navigation, the concept of which began to form in the last century, today can be considered as a full-fledged section of mechatronics.  Nevertheless, recent advances suggest that more progressive discoveries may appear ahead.  This is evidenced by the close interaction of inertial navigation systems with computer science and electronics.  New ambitious tasks are emerging that expand the space for the development of related technologies, also based on theoretical mechanics.  At the moment, specialists in this direction are actively working on the optimization of technical means, the basic among which are micromechanical gyroscopes. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G44484/index.html">USSR joining the League of Nations</a></li>
+<li><a href="../G44485/index.html">The history of knitting. First knitted clothes</a></li>
+<li><a href="../G44486/index.html">The village of Dzhemete. Holiday Village near the sea</a></li>
+<li><a href="../G44487/index.html">LCD "Flower City", Mytishchi</a></li>
+<li><a href="../G44488/index.html">Museums in Tbilisi: overview, features, interesting facts and reviews</a></li>
+<li><a href="../G4449/index.html">Unlimited insurance: the perfect solution for car owners</a></li>
+<li><a href="../G44490/index.html">How did the earth come about</a></li>
+<li><a href="../G44491/index.html">Charles Darwin's book, “The Origin of Species by Natural Selection, or the Preservation of Favorable Races in the Struggle for Life”</a></li>
+<li><a href="../G44492/index.html">Office taxpayer audit</a></li>
+<li><a href="../G44493/index.html">What Nefertiti actually looked like: description, history and interesting facts</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

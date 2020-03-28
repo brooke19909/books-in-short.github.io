@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🔣 🍰 🥧 Connecting LCD 1602 to Arduino: description, functions, instructions, features, problems and their solution 👐🏻 ⤴️ 👩🏽‍🤝‍👨🏼</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="Each radio amateur, after a number of simple homemade products, comes to the goal of constructing something grand with the use of sensors and buttons....">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Connecting LCD 1602 to Arduino: description, functions, instructions, features, problems and their solution</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  Each radio amateur, after a number of simple homemade products, comes to the goal of constructing something grand with the use of sensors and buttons.  It is much more interesting to display data on a display than on a port monitor.  But then the question arises: which display to choose?  And in general, how to connect it, what is needed to connect?  The answers to these questions will be discussed in this article. </p><div class="photo" data-original="learn.adafruit.com" data-author=": "><img itemprop="image" alt="LCD 1602 for connecting to arduino" class="if uuid-2722821" src="https://fb.ru/misc/i/gallery/101519/2722821.jpg"></div><h2>  LCD 1602 </h2><p>  Among the many options among the displays, I would like to separately mention the LCD1602 display based on the HD4478 controller.  There is this display in two colors: white letters on a blue background, black letters on a yellow background.  Connecting the LCD 1602 to the Arduino will also not cause any problems, as there is a built-in library, and you do not need to download anything else.  Displays differ not only in price but also in size.  Hams are often used 16 x 2, that is, 2 lines of 16 characters.  But there is also 20 x 4, where 4 lines of 20 characters.  Dimensions and color do not play any role in connecting the LCD 1602 display to Arduno, they are connected the same way.  The viewing angle is 35 degrees, the response time of the display is 250 ms.  It can work at temperatures from -20 to 70 degrees Celsius.  When working, it uses 4 mA per screen and 120 mA for backlight. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><div class="photo" data-original="www.site2241.net" data-author=": "><img itemprop="image" alt="LCD 1602 pinout" class="if uuid-2722818" src="https://fb.ru/misc/i/gallery/101519/2722818.jpg"></div><h2>  Where is it used? </h2><p>  This display has its popularity not only among hams, but also among large manufacturers.  For example, printers, coffee machines also use LCD1602.  This is due to its low price, this display on Chinese sites costs 200-300 rubles.  It’s worth buying there, because in our stores the margins for this display are very high. </p><h2>  Connection to Arduino </h2><p>  Connecting the LCD 1602 to the Arduino Nano and Uno is no different.  You can work with the display in two modes: 4 bits and 8. When working with 8-bit, the low and high bits are used, and with 4-bit only the low bits are used.  It makes no sense to work with 8-bit, as it will add 4 more contacts to connect, which is not advisable, because there will be no higher speed, the limit of display updates is 10 times per second.  In general, a lot of wires are used to connect the lcd 1602 to the Arduino, which causes some inconvenience, but there are special shields, but more on that later.  The photo shows the connection of the display to the Arduino Uno: </p><div class="photo" data-original="electronics.stackexchange.com" data-author=": "><img itemprop="image" alt="Connecting a display to an arduino" class="if uuid-2722824" src="https://fb.ru/misc/i/gallery/101519/2722824.jpg"></div><p>  Example code: </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><pre class=" language-c"><code class=" language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;LiquidCrystal.h&gt;</span> </span><span class="token comment">//    LiquidCrystal lcd(7, 6, 5, 4, 3, 2); // (RS, E, DB4, DB5, DB6, DB7) void setup(){ lcd.begin(16, 2); //    lcd.setCursor(0, 0); //     1  lcd.print("Hello, world!"); //   lcd.setCursor(0, 1); //     2  lcd.print("fb.ru"); //   } void loop(){ }</span></code> </pre> <p>  What does the code do?  The first step is connecting the library to work with the display.  As mentioned above, this library is already part of the Arduino IDE and you do not need to download or install it additionally.  Next, the contacts that are connected to the terminals are determined: RS, E, DB4, DB5, DB6, DB7, respectively.  Then the screen dimension is set.  Since we are working with a version with 16 characters and 2 lines, we write such values.  We place the cursor at the beginning of the first line and display our first Hello World text.  Next, put the cursor on the second line and display the name of the site.  That's all!  The connection of the lcd 1602 to the Arduino Uno was reviewed. </p><h2>  What is I2C and why is it needed? </h2><p>  As mentioned above, connecting a display takes up a lot of contacts.  For example, when working with multiple sensors and an LCD display, 1602 pins may not be enough.  Often radio amateurs use versions of Uno or Nano, where there are not many contacts.  Then people came up with special shields.  For example, I2C.  It allows you to connect the display in just 4 contacts.  This is half the size.  The I2C module is sold both separately, where you yourself need to solder, or already soldered to the LCD 1602 display. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><div class="photo" data-original="www.instructables.com" data-author=": "><img itemprop="image" alt="I2C LCD Display Module 1602" class="if uuid-2722828" src="https://fb.ru/misc/i/gallery/101519/2722828.jpg"></div><h2>  Connection using I2C module </h2><p>  Connecting the LCD 1602 to an Arduino Nano with I2C takes up little space, only 4 contacts: ground, power, and 2 outputs for data transfer.  We connect power and ground to 5V and GND to Arduino, respectively.  The remaining two pins: SCL and SDA are connected to any analog pins.  In the photo you can see an example of connecting an LCD 1602 to an arduino with an I2C module: </p><div class="photo" data-original="magnusglad.wordpress.com" data-author=": "><img itemprop="image" alt="Display Connections Using I2C Module" class="if uuid-2722827" src="https://fb.ru/misc/i/gallery/101519/2722827.jpg"></div><h2>  Program code </h2><p>  If you needed to use only one library to work with a display without a module, then you need two libraries to work with the module.  One of them is already part of the Arduino IDE - Wire.  Another library, LiquidCrystal I2C, must be downloaded separately and installed.  To install the library in Arduino, the contents of the downloaded archive must be downloaded to the Libraries root folder.  Example code using I2C: </p><pre class=" language-c"> <code class=" language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;Wire.h&gt;</span> #<span class="token directive keyword">include</span> <span class="token string">&lt;LiquidCrystal_I2C.h&gt;</span> LiquidCrystal_I2C lcd(0x27,16,2); </span><span class="token comment">//   void setup() { lcd.init(); lcd.backlight();//    lcd.print("FB.ru"); lcd.setCursor(8, 1); lcd.print("LCD 1602"); } void loop() { //        . lcd.setCursor(0, 1); //          lcd.print(millis()/1000); }</span></code> </pre> <p>  As you can see, the code is almost the same. </p><h2>  How to add your character? </h2><p>  The problem with these displays is that there is no support for Cyrillic characters.  For example, you need to load some symbol into the display so that it can reflect it.  To do this, the display allows you to create up to 7 of your characters.  Present the table: </p><table cellpadding="5" cellspacing="0" class="if"><tbody><tr><td>  0 </td><td>  0 </td><td>  0 </td><td>  1 </td><td>  0 </td></tr><tr><td>  0 </td><td>  0 </td><td>  0 </td><td>  0 </td><td>  1 </td></tr><tr><td>  1 </td><td>  1 </td><td>  0 </td><td>  0 </td><td>  1 </td></tr><tr><td>  0 </td><td>  0 </td><td>  0 </td><td>  0 </td><td>  1 </td></tr><tr><td>  1 </td><td>  1 </td><td>  0 </td><td>  0 </td><td>  1 </td></tr><tr><td>  0 </td><td>  0 </td><td>  0 </td><td>  0 </td><td>  1 </td></tr><tr><td>  0 </td><td>  0 </td><td>  0 </td><td>  1 </td><td>  0 </td></tr><tr><td>  0 </td><td>  0 </td><td>  0 </td><td>  0 </td><td>  0 </td></tr></tbody></table><p>  If 0 - there is nothing there, if 1 - this is a shaded area.  In the example above, you can see the creation of the symbol "smiling smiley".  For an example program in Arduino, this would look like this: </p><pre class=" language-c"> <code class=" language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;Wire.h&gt;</span> #<span class="token directive keyword">include</span> <span class="token string">&lt;LiquidCrystal.h&gt;</span> </span><span class="token comment">//    //     byte smile[8] = { B00010, B00001, B11001, B00001, B11001, B00001, B00010, }; LiquidCrystal lcd(7, 6, 5, 4, 3, 2); // (RS, E, DB4, DB5, DB6, DB7) void setup(){ lcd.begin(16, 2); //    lcd.createChar(1, smile); //     1 lcd.setCursor(0, 0); //     1  lcd.print("\1"); //   (   1) - "\1" } void loop(){ }</span></code> </pre> <p>  As you can see, the bit mask was created the same as the table.  Once created, it can be displayed as a variable in the display.  Remember that only 7 characters can be stored in memory.  In principle, this is enough.  For example, if you want to show a degree symbol. </p><div class="photo" data-original="embeddedlifehelp.blogspot.com" data-author=": "><img itemprop="image" alt="Adding Your Characters to LCD 1602" class="if uuid-2722831" src="https://fb.ru/misc/i/gallery/101519/2722831.jpg"></div><h2>  Problems where the display may not work </h2><p>  There are times when the display does not work.  For example, it turns on, but does not show characters.  Or does not turn on at all.  First, see if you connected the contacts correctly.  If you used the connection of lcd 1202 to Arduino without I2C, then it is very easy to get confused in the wires, which can cause the display to work incorrectly.  You should also make sure that the contrast of the display is increased, since with a minimum contrast it is not even visible whether the LCD 1602 is on or not.  If this does not help, then perhaps the problem may lie in the soldering of contacts, this is when using the I2C module.  Also a common reason why the display may not work is the incorrect setting of the I2C address.  The fact is that there are many manufacturers, and they can set a different address, you need to fix it here: </p><pre class=" language-c"> <code class=" language-c">LiquidCrystal_I2C <span class="token function">lcd</span><span class="token punctuation">(</span><span class="token number">0x27</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code> </pre> <p>  In brackets you can see two values, 0x27 and 16.2 (16, 2 is the size of the display, and 0x27 is just the same I2C address).  Instead of these values, you can try to put 0x37 or 0x3F.  Well, another reason is simply a faulty LCD 1602. Given that almost everything for Arduino is made in China, you can’t be 100% sure that the purchased product is not defective. </p><h2>  Pros and Cons of LCD 1602 </h2><p>  Consider the pros and cons of the LCD 1602 display. </p><p>  pros </p><ul><li>  Price.  This module can be purchased at a very affordable price in Chinese stores.  The price is 200-300 rubles.  Sometimes sold even with the I2C module. </li><li>  Easy to connect.  Probably no one is now connecting the LCD 1602 without I2C.  And with this module, the connection takes only 4 contacts, there will be no "cobwebs" of wires. </li><li>  Programming.  Thanks to ready-made libraries, working with this module is easy; all functions are already registered.  And if necessary, add your character takes only a couple of minutes. </li></ul><p>  Minuses </p><ul><li>  During the use by thousands of radio amateurs, no big minuses were revealed, only there are cases of buying a defect, since Chinese display options are mainly used. </li></ul><p>  In this article, we examined the connection of the <span>LCD</span> 1602 <span>display</span> to Arduino, and also presented examples of programs for working with this display.  Indeed, he is one of the best in his category, it’s not just that thousands of ham radioists choose him for their projects! </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G9952/index.html">Explay Infinity 2 Smartphone Review: Specifications</a></li>
+<li><a href="../G9953/index.html">"White River" - a residential complex in Ufa: description, reviews</a></li>
+<li><a href="../G9954/index.html">The concept of the shape of the state and its elements</a></li>
+<li><a href="../G9955/index.html">How to make paper blinds with your own hands?</a></li>
+<li><a href="../G9956/index.html">Steel melting point</a></li>
+<li><a href="../G9958/index.html">Residential complex "Pioneer" (Volgograd): description, reviews</a></li>
+<li><a href="../G9959/index.html">How to connect a keyboard to a tablet? Step-by-step instruction</a></li>
+<li><a href="../G996/index.html">The emergence of nobility and inequality. Transition from a clan community to a neighborhood</a></li>
+<li><a href="../G9960/index.html">Academic degrees and titles</a></li>
+<li><a href="../G9961/index.html">How much does a firefighter make in America and Russia?</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

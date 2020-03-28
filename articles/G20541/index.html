@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🙏🏻 🕦 🚟 How to set up a local network: step-by-step instructions 🥅 🧚🏻 🔠</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="If earlier local networks were considered such a means of combining computers among themselves, which was used exclusively in small and large offices ...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>How to set up a local network: step-by-step instructions</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  If earlier local networks were considered such a means of combining computers among themselves, which was used exclusively in small and large offices or at enterprises, then with the current development of <span>network technologies, you can</span> create your own network in two accounts at home.  Next, we will consider how to configure a local network in two versions, which can be called the simplest and do not require special knowledge when creating and configuring.  We will take Windows systems as a basis, since in our country they are the most common. </p><h2>  How to configure a local computer-to-computer network: selecting or changing a workgroup </h2><p>  So where to start?  First of all, you need to understand that all computers that will connect to the future network must be in the same workgroup, otherwise they will not be recognized when connected to each other.  By default, Windows mainly uses two types of names: MSHOME or WORKGROUP, although the names of the computers themselves can be changed at will. </p><p>  To configure a local area network between computers, you must first set the same workgroup name on all stationary terminals and laptops.  In principle, you can access the settings through the "Control Panel", where the system and security section is selected, and then go to the "System" section.  However, as practice shows, the easiest way is to use the Run console, which introduces the abbreviation sysdm.cpl (for versions of Windows from the seventh to the tenth). </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><div class="photo" data-original="pomkomp.ru" data-author=": "><img itemprop="image" alt="Working group" class="if uuid-2301785" src="https://fb.ru/misc/i/gallery/26550/2301785.jpg"></div><p>  In the window that appears, we are interested in the computer name field.  Enter any name, then click the edit button for the existing default group and enter a name for the new group that is different from the default one.  In both cases, use only the Latin alphabet.  Such actions must be performed on all terminals (so that the group name is the same), after which all of them must be reloaded. </p><h2>  IPv4 Protocol Settings </h2><p>  In order to configure the local network in the 7th version of the system and above, you need to check the IPv4 protocol settings.  To do this, go to the network and sharing section in the “Control Panel”, select the change in the properties of the network adapter, and use the settings of the specified protocol in the properties themselves. </p><div class="photo" data-original="link-region.ru" data-author=": "><img itemprop="image" alt="IPv4 Configuration" class="if uuid-2301787" src="https://fb.ru/misc/i/gallery/26550/2301787.jpg"></div><p>  Usually, all the parameters present there are set to receive automatically.  But in our case, it is better to set static addresses, which on all connected computers should differ from each other by the last value.  So, for example, if an internal address is set for one terminal, starting with a combination of 192.168, followed by 0 and 5, for the other, you can use the seven as the last value.  And so for all computers (values ​​can vary between 1-255).  Obtaining addresses of DNS servers can be left in automatic mode, but it is necessary to disable the use of proxies for local addresses in additional parameters, if this option is activated. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><h2>  Setting the visibility of computers on the network </h2><p>  Now the solution to the question of how to configure the local network implies taking actions that will allow computers to become visible on the network so that you can exchange files and folders, watch movies or play on the network. </p><div class="photo" data-original="remontka.pro" data-author=": "><img itemprop="image" alt="Computer visibility on the network" class="if uuid-2301788" src="https://fb.ru/misc/i/gallery/26550/2301788.jpg"></div><p>  To do this, additional access options are selected in the same network management section, and for all terminals, the network discovery resolution item is activated with the activation of the automatic configuration line on network devices. </p><div class="photo" data-original="remontka.pro" data-author=": "><img itemprop="image" alt="Disabling password logon to the network" class="if uuid-2301794" src="https://fb.ru/misc/i/gallery/26550/2301794.jpg"></div><p>  After that, go to additional parameters, select "All networks" and deactivate password-protected sharing. </p><h2>  Sharing directories </h2><p>  As you can see, setting up a local network on Windows 7 or higher is quite simple.  However, this is not all.  Now, after all, you need to make public terminals visible on the terminals, where files that can be exchanged are stored. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><p>  Select the folder you want, through RMB use the properties, go to the access tab, click the advanced settings button.  Now check the box next to access permission and check the necessary privileges.  Save the changes, go to the security tab, click the change button, and in the new window - add. </p><div class="photo" data-original="hobbyits.com" data-author=": "><img itemprop="image" alt="Sharing settings" class="if uuid-2301796" src="https://fb.ru/misc/i/gallery/26550/2301796.jpg"></div><p>  Indicate the name of the computer or group (usually “All”) and check the boxes for the permissions that were used in the previous version.  Save the changes again, and after that, in the "Explorer" the selected directory and its contents will become visible.  On this setting can be considered complete. </p><h2>  How to configure a local network through a router: check connected devices </h2><p>  Now a few words about setting up a local network using a router.  The first step is to check if there is a connection between devices connected to the router based on a wireless connection. </p><p>  How to configure a local network?  In this case, we need a router only to determine the addresses of connected devices, and its basic parameters can be left without touching.  First, enter the router’s web interface through any browser and enter 192.168.0.1 or 1.1 in the address bar, go to the DHCP and DHCP Clients List sections.  The list will show all connected computers with their IP addresses.  Remember the address of the terminal you want to verify. </p><div class="photo" data-original="f1comp.ru" data-author=": "><img itemprop="image" alt="Ping Check" class="if uuid-2301797" src="https://fb.ru/misc/i/gallery/26550/2301797.jpg"></div><p>  Now call the command line (cmd), enter the ping command, and after it, the space for the desired address.  If packet exchange has begun, you can continue. </p><h2>  Create a home group </h2><p>  As in the previous network configuration option, we check the workgroup, and if necessary, change it.  Now in the network management section, select the network that has the status of home.  If you have a public network installed, change its type. </p><div class="photo" data-original="3dnews.ru" data-author=": "><img itemprop="image" alt="home group creation" class="if uuid-2301800" src="https://fb.ru/misc/i/gallery/26550/2301800.jpg"></div><p>  After that, on the right, click the readiness for creation hyperlink, and in the new “Wizards” window, use the create home group button. </p><h2>  Select objects to share </h2><p>  Now the solution to the question of how to configure the local network implies the choice of objects to which it is supposed to open public access.  In the settings window that appears, they will be categorized (images, music, videos, printers, etc.). </p><p>  Tick ​​off what is required, and after going to the next window, click the "Finish" button.  Next, you will need to configure shared access to the selected folders, but we will not consider this issue, since the procedure is completely similar to that described above. </p><h2>  Additional tips </h2><p>  Finally, a few words about additional measures, the use of which in some cases allows you to fix a lot of problems and eliminate problems.  If the IPv4 protocol settings are set correctly, but there is no connection between the terminals, and the DNS addresses are set to automatic, try using free Google combinations for them, consisting of eights and fours (for example, four eights for the main server, for alternative - two eights and two fours). </p><p>  In some cases, if the provider does not support IPv6 protocol maintenance due to the lack of a sixth version DHCP server, its use should be disabled by unchecking the corresponding line in the network adapter settings. </p><p>  In the case of a wireless connection based on a router, a problem may arise: ping verification through the command console does not work.  As a rule, antiviruses are at fault (at least ESET software products can block this).  Thus, before specifying a ping, just temporarily disable the installed antivirus. </p><h2>  Conclusion </h2><p>  Here, in fact, is all about how to set up a local network.  It seems that neither in the first nor in the second case any difficulties should arise.  But which option to prefer?  Apparently, creating a network based on a wireless connection is simpler.  However, its only problem is that the router supports a limited number of simultaneous connections, and when creating a network, as described in the first version, there are no such conventions. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G20537/index.html">How to sew a poncho with your own hands? DIY poncho: pattern and description</a></li>
+<li><a href="../G20538/index.html">Crown Resort Horizon 4 * (Paphos, Cyprus): description, leisure and reviews</a></li>
+<li><a href="../G20539/index.html">The dynasty of French kings, ruling since 987, from the 14th century, in the 19th century. Dynasties of French Kings: table</a></li>
+<li><a href="../G2054/index.html">Everlasting beauty - flowers from ribbons!</a></li>
+<li><a href="../G20540/index.html">Sights of Nicosia. Nicosia, interesting place Selimiye Mosque: photos, history</a></li>
+<li><a href="../G20542/index.html">The structure of eukaryotic cells</a></li>
+<li><a href="../G20543/index.html">Mount of Olives in Jerusalem: Main Shrines and Attractions</a></li>
+<li><a href="../G20544/index.html">Lev Semenovich Pontryagin, Soviet mathematician: biography, scientific career</a></li>
+<li><a href="../G20545/index.html">Teletype mode on the phone - what is it?</a></li>
+<li><a href="../G20546/index.html">US losses in Vietnam: by years</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

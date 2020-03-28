@@ -1,0 +1,318 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🏘️ 🆎 🙍🏿 I2C interface: description in Russian 🗽 🍐 👩🏽‍🤝‍👩🏼</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="In modern household appliances, industrial electronics and various telecommunications equipment, quite often you can find similar solutions, although ...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>I2C interface: description in Russian</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  In modern household appliances, industrial electronics and various telecommunications equipment, quite often you can find similar solutions, although the products can be practically unrelated.  For example, almost every system includes the following: </p><ul><li>  a certain “smart” control unit, which in the predominant majority of cases is a single-crystal microcomputer; </li><li>  general purpose nodes such as LCD buffers, RAM, I / O ports, EEPROM, or specialized data converters; </li><li>  specific nodes, including digital tuning and signal processing circuits for video and radio systems. </li></ul><h2>  How to optimize their application? </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="a brief description of the interfaces uart spi i2c" class="if" height="395" src="//fb.ru/misc/i/gallery/32280/1282988.jpg" width="580"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  To ensure the most efficient use of such common solutions for the benefit of designers and manufacturers themselves, as well as to increase the overall degree of performance of various equipment and simplify the circuitry used, Philips set out to develop an extremely simple two-wire bi-directional bus that provides the most productive inter-microcircuit control.  This bus provides <span>data transfer</span> through the I2C interface. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><p>  To date, the range of the specified manufacturer includes more than 150 CMOS, as well as bipolar devices compatible with I2C and designed to operate in any of the above categories.  It is worth noting that the I2C interface is initially built into all compatible devices, due to which they can easily communicate with each other using a special bus.  Through the use of such a design solution, it was possible to solve a fairly large number of problems in pairing various equipment, which is quite typical for the development of digital systems. </p><h2>  Main advantages </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="i2c interface" class="if" height="304" src="//fb.ru/misc/i/gallery/32280/1282994.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  Even if you look at a brief <span>description of the UART,</span> SPI, I2C interfaces, you can highlight the following advantages of the latter: </p><ul><li>  To work, you need only two lines - synchronization and data.  Any device that connects to such a bus can subsequently be programmatically addressed to a completely unique address.  At any time, there is a simple relationship that allows facilitators to act as master-transmitter or master-receiver. </li><li>  This bus provides for the possibility of having several leaders at once, providing all the necessary tools for determining conflicts, as well as arbitration, which helps prevent data corruption in the event that two or more leaders begin to transmit information simultaneously.  In standard mode, only eight-bit serial data transmission is provided at a speed of not more than 100 kbit / s, and in fast mode this threshold can be increased four times. </li><li>  The chips use a special built-in filter that effectively suppresses bursts and ensures maximum data integrity. </li><li>  The maximum possible number of microcircuits that can be connected to one bus is limited only by its maximum possible capacity of 400 pF. </li></ul><h2>  Benefits for Designers </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="i2c interface lcd1602" class="if" height="500" src="//fb.ru/misc/i/gallery/5158/1283418.jpg" width="500"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><p>  The I2C interface, as well as all compatible microcircuits, can significantly accelerate the development process, from the functional diagram to its final prototype.  It is worth noting that due to the possibility of connecting such microcircuits directly to the bus without using all kinds of additional circuits, there is room for further modernization and modification of the prototype system by disconnecting and connecting various devices from the bus. </p><p>  There are tons of benefits that make the I2C interface stand out.  The description, in particular, allows you to see the following advantages for designers: </p><ul><li>  The blocks on the <span>functional diagram</span> fully correspond to the microcircuits, and at the same time, a fairly quick transition from functional to fundamental is ensured. </li><li>  There is no need to develop bus interfaces, because the bus is already initially integrated into special microcircuits. </li><li>  Integrated information transfer protocols and device addressing enable the system to be fully software-defined. </li><li>  The same types of chips, if necessary, can be used in completely different applications. </li><li>  The total development time is significantly reduced due to the fact that designers can quickly get acquainted with the most commonly used function blocks, as well as all kinds of microcircuits. </li><li>  If desired, you can add or remove microcircuits from the system, and at the same time do not have a special effect on other equipment connected to one bus. </li><li>  The total software development time can be significantly reduced due to the fact that a library of reusable software modules is allowed here. </li></ul><p>  Among other things, it is worth noting the extremely simple procedure for diagnosing failures and further debugging, which distinguishes the I2C interface.  The description suggests that, if necessary, without any difficulty, even minor deviations in the operation of such equipment can be instantly tracked without any difficulty and, accordingly, appropriate measures can be taken.  It is also worth noting that designers receive special solutions, which, in particular, are quite attractive for various portable equipment and systems that provide battery power using the I2C interface.  The description in Russian also indicates that its use provides the following important advantages: </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><ul><li>  A sufficiently high degree of resistance to any interference. </li><li>  Extremely low energy consumption. </li><li>  The widest range of supply voltage. </li><li>  Wide temperature range. </li></ul><h2>  Benefits for Technologists </h2><p>  It is worth noting that not only designers, but also technologists quite often recently began to use a specialized I2C interface.  The description in Russian indicates a fairly wide range of advantages that are provided by this category of specialists: </p><ul><li>  A standard two-wire serial bus with such an interface allows minimizing connections between microcircuits, that is, they have fewer contacts and fewer tracks, so PCBs are not so expensive and have much smaller dimensions. </li><li>  Fully integrated I2C interface LCD1602 or some other option completely eliminates the need for address decoders, as well as other external small logic. </li><li>  It is possible to use several hosts simultaneously on such a bus, which greatly speeds up testing and subsequent equipment setup, as the bus can be connected to an assembly line computer. </li><li>  The availability of integrated circuits compatible with this interface in VSO, SO, and a specialized DIL package can significantly reduce the size requirements of the device. </li></ul><p>  This is only a short list of advantages that distinguish the I2C interface LCD1602 and others.  In addition, compatible microcircuits can significantly increase the flexibility of the system used, providing extremely simple design of various equipment options, as well as relatively easy upgrades to further support development at a modern level.  Thus, it is possible to develop a whole family of different equipment, using as a basis a specific basic model. </p><p>  Further equipment modernization and expansion of its functions can be carried out by standard connection to the bus of the corresponding microcircuit using the Arduino 2C interface or some other available list.  If you need to provide more ROM, then in this case it will be enough only to choose another microcontroller having an increased amount of ROM.  Since the updated chips, if necessary, can completely replace the old ones, you can easily add new properties to the equipment or increase its overall performance by simply disconnecting the outdated chips and then replacing them with newer equipment. </p><h2>  ACCESS.bus </h2><p>  Due to the fact that the bus has a two-wire nature, as well as the possibility of software addressing, for ACCESS.bus one of the most ideal platforms is precisely the I2C interface.  The specification (description in Russian is presented in the article) of this device makes it a much cheaper alternative to the previously actively used RS-232C interface for connecting various peripherals to computers using a standard four-pin connector. </p><h2>  Specification introduction </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="i2c interface description in Russian" class="if" height="430" src="//fb.ru/misc/i/gallery/32280/1282991.jpg" width="500"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  For modern 8-bit control applications that use microcontrollers, it is possible to set some design criteria: </p><ul><li>  the complete system in the predominant majority of cases includes one microcontroller and other <span>peripheral devices,</span> including memory and all kinds of input / output ports; </li><li>  the total cost of combining various devices within one system should be minimized to the maximum; </li><li>  the system entrusted with the management functions does not require the provision of high-speed transmission of information; </li><li>  overall efficiency directly depends on the equipment chosen, as well as on the nature of the connecting bus. </li></ul><p>  To develop a system that fully meets the above criteria, you need to use a bus in which the serial I2C interface will be used.  Although the serial bus does not have parallel bandwidth, it requires fewer connections and fewer chip contacts.  At the same time, do not forget that the bus includes not only connecting wires, but also various procedures and formats necessary to ensure communication within the system. </p><p>  Devices that use I2C software emulation or an appropriate bus to communicate must have a specific protocol that allows them to preempt various collisions, loss or blocking of information.  Fast devices should be able to communicate with slow ones, and the system should not depend on the equipment connected to it, since otherwise all improvements and modifications cannot be used.  It is also necessary to develop a procedure by which it is possible to establish which specific device currently provides bus control and at what point in time.  In addition, if various devices with different clock frequencies are connected to the same bus, you need to determine the source of its synchronization.  All these criteria correspond to the I2C interface for AVR and any others from this list. </p><h2>  Basic concept </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="i2c interface specification description in Russian" class="if" height="399" src="//fb.ru/misc/i/gallery/32280/1282990.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The I2C bus can support any chip technology used.  The I2C LabVIEW interface and others similar to it provide for the use of two lines for transferring information - data and synchronization.  Any device connected in this way is recognized by a unique address, regardless of whether it is an LCD buffer, microcontroller, memory or keyboard interface, and at the same time can work as a receiver or transmitter, depending on what this equipment is intended. </p><p>  In the predominant majority of cases, the LCD buffer is a standard receiver, and the memory can not only receive, but also transmit various data.  Among other things, by the process of moving information, devices can be classified as slaves and masters. </p><p>  In this case, the leader is the device that initiates the transfer of data, and also generates synchronization signals.  In this case, any addressable devices will be considered as slaves in relation to it. </p><p>  The I2C communication interface provides for the presence of several masters at once, that is, more than one device capable of controlling the bus, is capable of connecting to it.  The possibility of using more than one microcontroller in one bus indicates that more than one master can be sent at a certain point in time.  To eliminate the potential chaos that risks appearing in the event of such a situation, a specialized arbitration procedure has been developed that uses the I2C interface.  Extenders and other devices provide for connecting devices to the bus according to the so-called mounting rule I. </p><p>  Generating a clock signal is the responsibility of the master, and each of them generates its own signal in the process of sending data, and in the future it can only change if it is “pulled” by a slow slave or another master in the event of a collision. </p><h2>  Common parameters </h2><p>  Both SCL and SDA are bi-directional lines that connect to a positive power source using a pull-up resistor.  When the tire is completely free, each line is in a high position.  The output stages of devices that are connected to the bus must be open-drain or open-collector, so that the mounting I function can be provided. Information via the I2C interface can be transmitted at a speed of no more than 400 kbit / s in fast mode, while in standard mode does not exceed 100 kbit / s.  The total number of devices that can be simultaneously connected to the bus depends on only one parameter.  This is the line capacity of not more than 400 pF. </p><h2>  the confirmation </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="i2c interface description" class="if" height="450" src="//fb.ru/misc/i/gallery/32280/1282992.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  Confirmation is a mandatory procedure in the data transfer process.  The master generates the corresponding synchronization pulse, while the transmitter releases the SDA line during the given clock pulse as an acknowledgment.  After that, the receiver must ensure that the SDA line is stably maintained for a high state of the clock in a stable low state.  In this case, you must take into account the installation and retention time. </p><p>  In the predominant majority of cases, the addressed receiver must necessarily generate a confirmation after each byte received, and the only exception here are only those situations when the beginning of the sending includes the CBUS address. </p><p>  If the receiving slave does not have the opportunity to send a confirmation of its own address, you need to leave the data line in a high state, and after that the master will have the opportunity to issue a Stop signal that will interrupt the sending of all information.  If the address has been confirmed, but at the same time the slave can no longer receive any data, the package must also be interrupted by the master.  To do this, the slave does not confirm the next byte received and simply leaves the data line in a high state, as a result of which the stop signal is generated by the master. </p><p>  If the transfer procedure provides for the presence of the master receiver, then in this case he must inform the slave about the end of the transmission, and this is done by not confirming the last received byte.  In this case, the slave-transmitter immediately releases the data line, so that the master could give a Stop signal or repeat the Start signal again. </p><p>  To check the equipment’s performance, you can try to introduce standard examples of sketches for the I2C interface in Arduino, as in the photo above. </p><h2>  Arbitration </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="2c arduino interface" class="if" height="228" src="//fb.ru/misc/i/gallery/32280/1282989.jpg" width="565"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The host can start sending information only after the bus is completely released, but two or more hosts can generate a start signal at the minimum holding time.  This ultimately leads to a specific start signal on the bus. </p><p>  Arbitration is performed on the SDA bus while the SCL bus is in a high state.  If one of the presenters begins to transmit a low level to the data line, but the other is high, the latter is completely disconnected from it, because the SDL state is not consistent with the high state of its internal line. </p><p>  The continuation of the arbitration may take several bits.  Due to the fact that the address and then the data are transferred first, the arbitration can take up to the end of the address, and if the same device is addressed by the presenters, then in this case various data will also take part in the arbitration.<font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Due to this arbitration scheme, in the event of any collisions, data will not be lost. </font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> If the master loses the arbitration, then in this case he can give out synchronization pulses in the SCL until the end of the byte, during which access was lost. </font></font></p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G11908/index.html">"Pearl of Russia" (Anapa). DSOK "Pearl of Russia", Anapa - reviews, prices</a></li>
+<li><a href="../G11909/index.html">Hotel Dream Beach Resort Sharm 5 *: overview, description, features and reviews</a></li>
+<li><a href="../G1191/index.html">Real reviews about the boarding house "Soyuz Gazprom"</a></li>
+<li><a href="../G11910/index.html">Zoo, Chelyabinsk: work schedule, ticket price, address and photo</a></li>
+<li><a href="../G11911/index.html">Michael Emerson: biography, best roles</a></li>
+<li><a href="../G11913/index.html">Pension "South" (Tuapse): description and reviews</a></li>
+<li><a href="../G11914/index.html">To Europe by car. Independent travel in Europe. Travelling by car</a></li>
+<li><a href="../G11915/index.html">St. Petersburg, "Vvedensky" hotel: photos and reviews of tourists</a></li>
+<li><a href="../G11916/index.html">The primitive man and his art</a></li>
+<li><a href="../G11917/index.html">What is the GPS module for?</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

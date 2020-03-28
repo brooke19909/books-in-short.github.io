@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🌋 💊 🙍🏻 Thyristor power controller: circuit, principle of operation and application 👸🏾 🐤 🥛</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="The article describes how the thyristor power regulator works, the circuit of which will be presented below 
+
+ In everyday life, very often there is a...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Thyristor power controller: circuit, principle of operation and application</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  The article describes how the thyristor power regulator works, the circuit of which will be presented below </p><p>  In everyday life, very often there is a need to regulate the power of household appliances, such as electric stoves, a soldering iron, boilers and electric heaters, in transport - engine speed, etc.  The simplest amateur radio design comes to the rescue - a thyristor power regulator.  To assemble such a device is not difficult, it can become the very first home-made device that will perform the function of adjusting the temperature of the tip of the soldering iron of a beginner radio amateur.  It is worth noting that ready-made soldering stations with temperature control and other pleasant functions are much more expensive than a simple soldering iron.  The minimum set of parts allows you to assemble a simple thyristor power regulator with mounted mounting. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="thyristor power regulator circuit" class="if" height="486" src="//fb.ru/misc/i/gallery/3663/1713439.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  For information, surface mounting is a way of assembling electronic components without using a printed circuit board, and with good skill it allows you to quickly assemble electronic devices of medium complexity. </p><p>  You can also order an <span>electronic designer of a</span> thyristor regulator, and for those who want to understand everything on their own, a diagram will be presented below and an explanation of the principle of operation. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  Scope of thyristor regulators </h2><p>  Incidentally, this is a single-phase thyristor power regulator.  Such a device can be used to control power or the number of revolutions.  However, first you need to understand the <span>principle of the thyristor,</span> because this will allow us to understand what load it is better to use such a regulator. </p><h2>  How does a thyristor work? </h2><p>  A thyristor is a controlled semiconductor device that can conduct current in one direction.  The word “controlled” is used for a reason, because with its help, unlike a diode, which also conducts current to only one pole, you can choose the moment when the thyristor starts to conduct current.  The thyristor has three outputs: </p><ul><li>  Anode. </li><li>  Cathode. </li><li>  Control electrode. </li></ul>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="DIY thyristor power controller" class="if" height="226" src="//fb.ru/misc/i/gallery/48827/1703601.jpg" width="226"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  In order for the current to start flowing through the thyristor, it is necessary to fulfill the following conditions: the part must be in a circuit under voltage, a short-term pulse must be applied to the control electrode.  Unlike a transistor, thyristor control does not require holding a control signal.  The nuances do not end there: the thyristor can be closed only by interrupting the current in the circuit, or by forming the reverse voltage of the anode - cathode.  This means that the use of a thyristor in DC circuits is very specific and often unreasonable, but alternating circuits, for example in a device such as a thyristor power regulator, are designed in such a way that a condition for closing is provided.  Each of the half-waves will close the corresponding thyristor. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><p>  You, most likely, do not understand everything?  Do not despair - the process of operation of the finished device will be described in detail below. </p><h2>  Scope of thyristor regulators </h2><p>  In which circuits is it effective to use a thyristor power regulator?  The circuit allows you to fine-tune the power of heating devices, that is, affect the active load.  When working with a high inductive load, the thyristors may simply not close, which can lead to controller failure. </p><h2>  Is it possible to <span>adjust the engine</span> speed? </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="thyristor power regulator" class="if" height="450" src="//fb.ru/misc/i/gallery/48827/1703546.jpg" width="600"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  I think many of the readers saw or used drills, angle grinders, which the people call "grinders," and other power tools.  You may have noticed that the number of revolutions depends on the depth of pressing the trigger button of the device.  This thyristor power regulator (the circuit of which is given below) is precisely built into this element, with the help of which the number of revolutions is changed. </p><p>  Note!  Thyristor controller can not change the speed of induction motors.  Thus, the voltage is regulated on the collector motors equipped with a brush assembly. </p><h2>  Scheme of <span>thyristor power regulator on</span> one and two thyristors </h2><p>  A typical circuit in order to assemble a thyristor power regulator with your own hands is shown in the figure below. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="light dimmer switch" class="if" src="//fb.ru/misc/i/gallery/48827/1703602.jpg"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The output voltage of this circuit is from 15 to 215 volts, in the case of the use of these thyristors installed on heat sinks, the power is about 1 kW.  By the way, a switch with a dimmer is made according to a similar scheme. </p><p>  If you do not need to fully adjust the voltage and it is enough to get 110 to 220 volts at the output, use this circuit, which shows a half-wave power regulator on a thyristor. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="single phase thyristor power controller" class="if" src="//fb.ru/misc/i/gallery/48827/1703620.jpg"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <h2>  How it works? </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="simple thyristor power controller" class="if" src="//fb.ru/misc/i/gallery/48827/1703604.jpg"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  The information below is valid for most circuits.  The letters will be taken in accordance with the first scheme of the thyristor controller </p><p>  A thyristor power regulator, the principle of which is based on phase control of the voltage value, changes the power.  This principle lies in the fact that under normal conditions, the load is affected by an alternating voltage of the household network, which varies according to a sinusoidal law.  Above, when describing the principle of operation of the thyristor, it was said that each thyristor works in one direction, that is, it controls its half-wave from a sinusoid.  What does it mean? </p><p>  If the load is periodically connected with a thyristor at a strictly defined moment, the value of the effective voltage will be lower, since part of the voltage (the effective value that "falls" on the load) will be less than the mains voltage.  This phenomenon is illustrated in the graph. </p><p>  The shaded area - this is the area of ​​stress, which was under load.  The letter “a” on the horizontal axis indicates the moment the thyristor opens.  When the positive half-wave ends and the period begins with the negative half-wave, one of the thyristors closes, and at the same moment the second thyristor opens. </p><h2>  Let's see how our thyristor power regulator works specifically </h2><p>  <em>Scheme One</em> </p><p>  We will stipulate in advance that instead of the words “positive” and “negative”, the “first” and “second” (half-wave) will be used. </p><p>  So, when the first half-wave begins to act on our circuit, capacitances C1 and C2 begin to charge.  The speed of their charge is limited by the potentiometer R5.  This element is variable, and with its help the output voltage is set.  When the voltage necessary for opening the VS3 dynistor appears on the capacitor C1, the dynistor opens, a current flows through it, with which the thyristor VS1 will be opened.  The moment of breakdown of the dinistor is the point “a” on the graph presented in the previous section of the article.  When the voltage value passes through zero and the circuit is under the second half-wave, the thyristor VS1 is closed, and the process is repeated again, only for the second dinistor, thyristor and capacitor.  Resistors R3 and R3 are used to <span>limit the</span> control <span>current</span> , and R1 and R2 are used to thermally stabilize the circuit. </p><p>  The principle of operation of the second circuit is similar, but it controls only one of the half-waves of alternating voltage.  Now, knowing the principle of operation and the circuit, you can assemble or repair your own thyristor power regulator. </p><h2>  The use of the regulator in everyday life and safety </h2>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <div class="photo iau"><img itemprop="image" alt="thyristor power controller operating principle" class="if" height="250" src="//fb.ru/misc/i/gallery/48827/1703587.jpg" width="510"></div>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    <p>  It is impossible not to say that this circuit does not provide galvanic isolation from the network, therefore there is a danger of electric shock.  This means that you should not touch the elements of the regulator with your hands.  An insulated enclosure must be used.  You should design the design of your device so that, if possible, you can hide it in an adjustable device, find free space in the case.  If the adjustable device is stationary, then it generally makes sense to connect it through a switch with a dimmer.  This solution partially protects against electric shock, eliminates the need to find a suitable housing, has an attractive appearance and is manufactured industrially. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G28254/index.html">Petroglyph - what is it?</a></li>
+<li><a href="../G28255/index.html">Incredibly beautiful lotus valley in Taman</a></li>
+<li><a href="../G28256/index.html">ZhZhZ for the military man. Accumulative-mortgage housing system for military personnel</a></li>
+<li><a href="../G28257/index.html">Preserve "Pillars" (Krasnoyarsk)</a></li>
+<li><a href="../G28258/index.html">How to make decoy on a hazel grouse with your own hands? Hunting for hazel grouse with semolina</a></li>
+<li><a href="../G2826/index.html">Unforgettable rafting on the Chusovaya river: attractions, routes, reviews</a></li>
+<li><a href="../G28260/index.html">War in korea</a></li>
+<li><a href="../G28261/index.html">Inductive Method in Natural Science</a></li>
+<li><a href="../G28262/index.html">Culture as a subject of culturology</a></li>
+<li><a href="../G28263/index.html">Panticapaeum, Kerch: history and modernity</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>

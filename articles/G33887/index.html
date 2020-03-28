@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134228602-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134228602-8');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🎊 🈹 🙆🏿 Simple thyristor power regulator: description, circuit and device 📌 🍊 🐵</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="description" content="Thyristor power controllers are the most common designs that are made by ham radio. Long gone are the days when the installation of equipment was carr...">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../../css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../js/vendors/jquery-3.3.1.min.js"><\/script>')</script>
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <header class="page-header js-page-header">
+    <a class="page-header-logo-container" href="https://books-in-short.github.io/index.html"></a>
+    <div class="page-header-text">Books in Short</div>
+  </header>
+  <section class="page js-page"><h1>Simple thyristor power regulator: description, circuit and device</h1><article itemscope="" itemtype="http://schema.org/Article" class="article .page"><div id="content" class="pagedata"><p>  Thyristor power controllers are the most common designs that are made by ham radio.  Long gone are the days when the installation of equipment was carried out with soldering irons with a power of 80 W or more.  Modern elements have small dimensions and they can be easily soldered with a soldering iron, the power of which is 40 W or even less.  But the problem is that such an instrument often overheats, smokes and hisses.  And the thin sting with which all the work is done burns out very quickly, becomes covered with a layer of soot.  Soldering with such a device becomes very difficult. </p><h2>  Why do I need a power regulator </h2><p>  The power regulator of the soldering iron on the thyristor allows you to set a threshold value for the tip temperature.  But the device will not have a clear calibration, since the voltage in the network can range from 200 to 250 volts.  In some cases, it even drops to a critical value of 170-180 V. Therefore, you need to focus on how the solder behaves when it touches with a sting.  Rosin should smoke and melt, but without splashing and hissing.  Soldering should be shiny and contour. </p><div class="photo" data-original="forum.cxem.net" data-author=": "><img itemprop="image" alt="Power controller board" class="if uuid-2261189" src="https://fb.ru/misc/i/gallery/57090/2261189.jpg"></div><p>  Soldering stations do not need power control devices - they already have built-in thermal stabilization units, heat and temperature controls, as well as a digital indication of all parameters.  But the cost of the soldering station is very high - the simplest will cost 3000 rubles.  And if you perform work of small volumes, you can use a simple soldering iron with a power of up to 25 W and a thyristor regulator.  Of course, the quality of the soldering depends on the experience of the master. </p><div><sjdiv id="SlickJumpNativeAds-cuiwcdj54" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-2"></div><h2>  The principle of operation of thyristors </h2><p>  A thyristor is a four-layer semiconductor element of the pnpn structure.  In DC circuits, these elements are not used, since in this case it becomes very difficult to turn it off.  Thyristors are used in the development of devices that operate in circuits with high voltage and current.  And if the thyristor will work at a constant current, then you have to go to different tricks. </p><div class="photo" data-original="monokoleso24.ru" data-author=": "><img itemprop="image" alt="Simple thyristor regulator" class="if uuid-2261213" src="https://fb.ru/misc/i/gallery/57090/2261213.jpg"></div><p>  In the diagrams, the thyristor is denoted approximately the same as the semiconductor diode.  With the only difference - there is also a control output.  In fact, the thyristor can be used in rectifiers, since it has one-sided conductivity.  But it can be used as a rectifier device only if a positive voltage is applied to the control electrode.  In Soviet literature, thyristors were called control diodes.  Until an impulse is applied to the control terminal, the element is completely closed.  And in all directions. </p><h2>  Connecting an LED to indicate operation </h2><p>  Through the thyristor, an LED is connected to the 9 V power supply via a limiting resistor.  Using the button, voltage is supplied from the divider assembled on the resistors to the thyristor control electrode.  In this case, the element goes into the open state and passes the current that is supplied to the LED. </p><div id="sjcont" style="display: none;"><sjdiv id="SlickJumpNativeAds-sm00vk" prerender=""></sjdiv></div><div id="NRent-5ced10a04aa78-3"></div><p>  The button used in the circuit does not have a latch, but when it is released, the LED will still light up.  Therefore, pressing the button gives a current pulse that will open the thyristor transition and cause the LED to light up.  Moreover, repeated presses will not make the LED go out or change the brightness of the glow.  Such a circuit can be used in a simple thyristor power regulator to make an indication. </p><h2>  Small nuances </h2><p>  The thyristor is working if the transition is opened by clicking on the button.  Only external factors can deduce it from such a state.  Such a simple device can be used, for example, to diagnose the health of an element. </p><p>  But there are exceptions.  For example, when a button is pressed, the LED lights up, and after it is released, it immediately goes out.  What could be the problem?  No, everything with a pressing force is normal - the quality of the circuit does not depend on it.  The work also does not depend on the pulse duration.  Then from what?  There is such a characteristic as the holding current - it is possible that in the circuit it is less than the thyristor's passport. </p><div class="photo" data-original="svntsix.appspot.com" data-author=": "><img itemprop="image" alt="Assembled Power Regulator" class="if uuid-2261222" src="https://fb.ru/misc/i/gallery/57090/2261222.jpg"></div><p>  In order for everything to work, you just need to install a simple incandescent lamp instead of an LED.  It is worth noting that the holding current is a characteristic that has a very large spread.  In some cases, it is necessary to select a thyristor for use in a particular circuit.  For imported elements, the holding current has a smaller scatter, so they are increasingly used in structures. </p><div><sjdiv id="SlickJumpNativeAds-sm01vj" prerender=""></sjdiv></div><h2>  How can I close the thyristor junction? </h2><p>  But the problem is that in no way will you close the element.  By applying voltage to the control electrode, you can only turn on the LED.  There are elements of a lockable type.  But they are not used in power regulators on thyristors or switches.  Conventional thyristors are switched off only if the current ceases to flow along the anode-cathode section. </p><p>  The easiest way is to disconnect the battery (constant voltage source) from the entire circuit.  In this case, the thyristor will close and the LED will go out.  And if you reconnect the battery to the circuit, the LED will not light.  You have to click on the button to start the entire circuit. </p><h2>  The second way to close the thyristor </h2><div class="photo" data-original="forum.cxem.net" data-author=": "><img itemprop="image" alt="Checking the soldering iron power regulator" class="if uuid-2261190" src="https://fb.ru/misc/i/gallery/57090/2261190.jpg"></div><p>  Another way to close the thyristor is to short the <span>anode and cathode.</span>  But in the voltage and power regulators on the thyristors, not an LED is used, but a rather powerful spiral.  And her thermal inertia is quite large.  When switching the thyristor in this way, you can get a decrease in the power of the spiral (soldering iron) by 50%.  Similarly, there is a power adjustment in household microwave ovens. </p><h2>  Simple power controller design </h2><p>  The figure shows a practical diagram of a thyristor power regulator.  Please note that it is not necessary to reduce the power of the spiral to zero, for this reason you can only adjust the positive half-period of the mains voltage.  Negative can go through a semiconductor diode directly to the soldering iron spiral.  This will reduce the power by half. </p><div class="photo" data-original="electrik.info" data-author=": "><img itemprop="image" alt="Scheme of the simplest thyristor regulator" class="if uuid-2261179" src="https://fb.ru/misc/i/gallery/57090/2261179.jpg"></div><p>  But the positive half-cycle will go to the thyristor, with the help of which regulation will occur.  The control of the element is very simple - two resistors and a capacitor.  The capacitor is charged, after which voltage is supplied from it to the thyristor control electrode.  At that moment, when the voltage at the terminals of the capacitor is high enough, the thyristor will turn on.  And the positive half-period of the mains voltage will begin to flow to the load.  At this time, the capacitor discharges. </p><p>  Using a variable resistor installed in the power circuit of the capacitor, the charge speed is adjusted.  From here you can catch a simple pattern: the faster the charge on the capacitor, the faster the thyristor junction opens.  Therefore, rather, the positive part of the half-cycle of the mains voltage will go into the load.  This property is used in all thyristor power controllers without exception, control circuits only have different designs. </p><h2>  Complex regulator circuits </h2><p>  The above scheme can be used to control the power of the soldering iron.  But the problem is that there is no smoothness of adjustment, jumps can occur, and the circuit works with only one half-cycle.  A slightly more complex power regulator circuit on a KU202N thyristor or the like can be implemented with a little complication. </p><div class="photo" data-original="gstgstm.appspot.com" data-author=": "><img itemprop="image" alt="Simple thyristor regulator for soldering iron" class="if uuid-2261216" src="https://fb.ru/misc/i/gallery/57090/2261216.jpg"></div><p>  Now consider the more complex design of the thyristor power regulator.  With your own hands it is not difficult to assemble it, you only have to find the necessary components.  A KT117 type transistor is used in the design - this is the development of Soviet engineers, it has two bases and one emitter, there is no collector.  This element is used only in circuits where it is necessary to implement pulse generation.  If it is not possible to find such a transistor, it can be assembled from two.  As in the previous design, only the positive half-wave is regulated, but more smoothly.  A variable resistor controls the rate of rise of the charge on the capacitor, which opens the thyristor. </p><p>  And here is a circuit in which two half-periods are regulated at once: </p><div class="photo" data-original="nauchebe.net" data-author=": "><img itemprop="image" alt="Sophisticated power controller circuitry" class="if uuid-2261196" src="https://fb.ru/misc/i/gallery/57090/2261196.jpg"></div><p>  This is a dimmer, the voltage supplied from the network passes through the diode bridge and is rectified.  The thyristor control circuit is powered by zener diodes.  Thanks to the use of a bridge rectifier, it is possible to achieve the adjustment of both half-periods of the mains voltage. </p>
+      <br>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+          style="display:block; text-align:center;"
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-6974184241884155"
+          data-ad-slot="8945601208"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      <br>
+      <p></p>
+    </div></article>
+<section class="more-articles-navigation-panel js-more-articles-navigation-panel">
+<h4>More articles:</h4>
+<nav class="list-of-articles-container js-list-of-articles-container"><ul class="list-of-pages js-list-of-pages">
+<li><a href="../G33882/index.html">Cadastral home passport: how to get it? Cadastral Chamber</a></li>
+<li><a href="../G33883/index.html">"Berendeevo kingdom" - a park in the Kaluga region</a></li>
+<li><a href="../G33884/index.html">DIY decoupage vases: photos</a></li>
+<li><a href="../G33885/index.html">How to make a screen on iPhone 6: all the ways</a></li>
+<li><a href="../G33886/index.html">Smooth on LEDs: scope and device</a></li>
+<li><a href="../G33888/index.html">Methods for assessing the effectiveness of investment projects and their characteristics</a></li>
+<li><a href="../G33889/index.html">Interactive television "Rostelecom": instructions, description, connection and setup</a></li>
+<li><a href="../G3389/index.html">Holiday Village "Anchor" (Nizhnekamsk): description, services, reviews</a></li>
+<li><a href="../G33890/index.html">Endowment life insurance: ranking of companies in Russia and abroad</a></li>
+<li><a href="../G33891/index.html">Mobile phone "Siemens M65" (Siemens M65): description, specifications</a></li>
+</ul></nav>
+</section><br />
+<a href="../../allArticles.html"><strong>All Articles</strong></a>
+<script src="../../js/main.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter57465334 = new Ya.Metrika({
+                  id:57465334,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57465334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+<!-- Google Analytics -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-134228602-8', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer-legal-info-container page-footer-element">
+    <p>
+      Books in Short | <span class="page-footer-legal-info-year js-page-footer-legal-info-year">2020</span>
+    </p>
+  </div>
+  <div class="page-footer-counters-container page-footer-element">
+    <a class="page-footer-counter-clustrmap" href='#'  title='Visit tracker'><img src='https://clustrmaps.com/map_v2.png?cl=698e5a&w=271&t=t&d=VE9H7v77vvWNEMhQH-j5Be_qjj0YcBcXSh3tK9RhEb4&co=3a3a3a&ct=ffffff'/></a>
+  </div>
+</footer>
+  
+</body>
+
+</html>
